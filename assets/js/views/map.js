@@ -13,6 +13,14 @@ $(function(){
     mapId: 'josebaseba.0mn1ij48',
 
     initialize: function(){
+      this.listenTo(Backbone, 'printPokemon', this.printPokemon);
+      this.MarkerStyle = L.Icon.extend({
+        options: {
+          iconSize:     [40, 30],
+          iconAnchor:   [40, 30],
+          popupAnchor:  [-25, -20]
+        }
+      });
       this.startLeaflet();
     },
 
@@ -24,6 +32,14 @@ $(function(){
           id: this.mapId,
           accessToken: this.accessToken
       }).addTo(this.map);
+      Backbone.trigger('printPokemon')
+    },
+
+    printPokemon: function(pokemon){
+      var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/6.png'});
+      var marker = L.marker([43.222, -2.729], {icon: pokeIcon})
+                    .addTo(this.map)
+                    .bindPopup("I am Charmander.");
     }
 
   });
