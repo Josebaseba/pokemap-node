@@ -31,6 +31,7 @@ var jsFilesToInject = [
   'js/dependencies/jquery-2.1.0.min.js',
   'js/dependencies/bootstrap.min.js',
   'js/dependencies/underscore-min.js',
+  'js/dependencies/leaflet.js',
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/**/*.js',
   'js/app.js',
