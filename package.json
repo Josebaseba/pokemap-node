@@ -24,7 +24,8 @@
     "sails-mongo": "~0.11.0",
     "pokemon-go-node-api": "^1.0.0",
     "connect-redis": "1.4.7",
-    "bcrypt": "^0.8.0"
+    "bcrypt": "^0.8.0",
+    "socket.io-redis": "^1.0.0"
   },
   "scripts": {
     "debug": "node debug app.js",

@@ -24,10 +24,15 @@ module.exports.policies = {
   },
 
   UserController: {
-    '*': false,
+    '*': 'isAdmin',
     'login': true,
     'signup': true,
     'logout': true
+  },
+
+  PokemonController: {
+    '*': 'isAdmin',
+    'find': 'sessionAuth'
   }
 
 };
