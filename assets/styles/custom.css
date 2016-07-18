@@ -23,3 +23,8 @@ body {
 .explanation {
   font-weight: 300;
 }
+
+.error-msg {
+  color: #ED5565;
+  visibility: hidden;
+}

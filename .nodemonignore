@@ -1,0 +1,7 @@
+
+/.tmp/*
+**/.tmp/**
+/.git/*
+/views/*
+/assets/*
+/node_modules/*

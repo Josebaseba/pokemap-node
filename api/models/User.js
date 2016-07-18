@@ -33,6 +33,12 @@ module.exports = {
     admin: {
       type: 'boolean',
       defaults: false
+    },
+
+    toJSON: function(){
+      var obj = this.toObject();
+      delete this.password;
+      return this;
     }
 
   },
@@ -58,7 +64,17 @@ module.exports = {
         unique: true
       }
     }
-  ]
+  ],
+
+  login: function(email, password, done){
+    User.findOne({email: email}).exec(function(err, user){
+      if(err) return done(err);
+      bcrypt.compare(password, user.password, function (err, valid){
+        if(err || !valid) return done();
+        return done(null, user.toJSON());
+      });
+    });
+  }
 
 };
 

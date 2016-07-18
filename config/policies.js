@@ -24,7 +24,10 @@ module.exports.policies = {
   },
 
   UserController: {
-    '*': true
+    '*': false,
+    'login': true,
+    'signup': true,
+    'logout': true
   }
 
 };
