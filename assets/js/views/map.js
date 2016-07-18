@@ -19,7 +19,7 @@ $(function(){
     startLeaflet: function(){
       this.map = L.map('pokemap').setView([43.222, -2.729], 16);
       L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoiam9zZWJhc2ViYSIsImEiOiJjaXFzOHV5MWEwMGFwaTRubWl2dDVpZzlrIn0.CsuTlScie63UPdbTsdd_6w', {
-          attribution: '<span class="h5 created-by" target="_blank">Created by <a href="https://twitter.com/josebaseba">Josebaseba</a></span>',
+          attribution: '<span class="small h6 created-by" target="_blank">Created by <a href="https://twitter.com/josebaseba">Josebaseba</a></span>',
           maxZoom: 18,
           id: this.mapId,
           accessToken: this.accessToken

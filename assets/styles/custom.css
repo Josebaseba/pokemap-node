@@ -16,8 +16,21 @@ body {
   border-radius: 2px;
 }
 
+.created-by.small {
+  font-weight: 200;
+  position: fixed;
+  bottom: -10px;
+  right: -5px;
+  padding: 5px 15px;
+  font-size: 10px;
+}
+
 .created-by a {
   font-weight: 400;
+}
+
+.created-by.small a {
+  font-weight: 300;
 }
 
 .explanation {
