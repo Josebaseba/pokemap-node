@@ -1,0 +1,25 @@
+body {
+  background: #E6E9ED;
+}
+
+.img-responsive.center {
+  margin: auto;
+}
+
+.created-by {
+  font-weight: 300;
+  position: fixed;
+  bottom: 0px;
+  right: -5px;
+  background-color: #CCD1D9;
+  padding: 5px 15px;
+  border-radius: 2px;
+}
+
+.created-by a {
+  font-weight: 400;
+}
+
+.explanation {
+  font-weight: 300;
+}

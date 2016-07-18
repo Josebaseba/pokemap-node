@@ -19,6 +19,10 @@
 
 module.exports.policies = {
 
+  IndexController: {
+    '*': true
+  },
+
   UserController: {
     '*': true
   }

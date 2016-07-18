@@ -39,13 +39,13 @@ module.exports = {
 
   beforeCreate: function(values, next){
     values.admin = false;
-    if(values.password) hashPassword(values, next);
+    if(values.password) return hashPassword(values, next);
     return next();
   },
 
   beforeUpdate: function(values, next){
     if(values.admin) delete values.admin;
-    if(values.password) hashPassword(values, next);
+    if(values.password) return hashPassword(values, next);
     return next();
   },
 
