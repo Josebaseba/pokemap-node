@@ -45,12 +45,14 @@ module.exports = {
 
   beforeCreate: function(values, next){
     values.admin = false;
+    values.actived = false;
     if(values.password) return hashPassword(values, next);
     return next();
   },
 
   beforeUpdate: function(values, next){
     if(values.admin) delete values.admin;
+    if(values.actived) console.log('TODO: send welcome email');
     if(values.password) return hashPassword(values, next);
     return next();
   },
