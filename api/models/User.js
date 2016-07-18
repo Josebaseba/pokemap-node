@@ -35,6 +35,10 @@ module.exports = {
       defaults: false
     },
 
+    message: {
+      type: 'string'
+    },
+
     toJSON: function(){
       var obj = this.toObject();
       delete this.password;

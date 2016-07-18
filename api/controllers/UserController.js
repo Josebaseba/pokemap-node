@@ -20,7 +20,23 @@ module.exports = {
   },
 
   signup: function(req, res){
-    return res.ok();
+    if(!req.param('password') || !req.param('email') || !req.param('name')){
+      return res.badRequest();
+    }
+    User.count({email: req.param('email')}).exec(function(err, user){
+      if(err) return res.serverError(err);
+      if(user) return res.send(409);
+      var data = {
+        name    : req.param('name'),
+        email   : req.param('email'),
+        password: req.param('password'),
+        message : req.param('message')
+      }
+      User.create(data).exec(function(err, user){
+        if(err) return res.negotiate(err);
+        return res.ok();
+      });
+    });
   },
 
   logout: function(req, res){
