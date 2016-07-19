@@ -60,7 +60,6 @@ module.exports = {
       values.password = password;
       return hashPassword(values, function(err){
         if(err) return next(err);
-        console.log('TODO: send welcome email with password ->', password, 'PASS CREATED');
         MailService.sendWelcome(values.id, password);
         return next();
       });

@@ -33,7 +33,7 @@ $(function(){
           accessToken: data.accessToken
       }).addTo(this.map);
       // TODO: REMOVE THIS AFTER MOCK
-      Backbone.trigger('printPokemon')
+      Backbone.trigger('printPokemon');
     },
 
     printPokemon: function(pokemon){

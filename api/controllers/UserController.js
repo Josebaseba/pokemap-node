@@ -53,7 +53,6 @@ module.exports = {
       var password = generatePassword();
       User.update({email: req.param('email')}, {password: password}).exec(function(err, user){
         if(err) return res.negotiate(err);
-        console.log('TODO: send welcome email with password ->', password, user, 'PASS UPDATED');
         MailService.sendPassword(user[0], password);
         return res.ok();
       });
