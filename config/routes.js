@@ -34,6 +34,8 @@ module.exports.routes = {
 
   'GET /me': 'UserController.me',
 
+  'GET /mapbox-token': 'IndexController.mapboxToken',
+
   'GET /reset/:email': 'UserController.resetPassword'
 
 };
