@@ -13,7 +13,6 @@ $(function(){
       this.$signupBtn = this.$('button#signup');
       this.$name      = this.$('input#name');
       this.$email     = this.$('input#email');
-      this.$password  = this.$('input#password');
       this.$message   = this.$('textarea#message');
     },
 
@@ -22,7 +21,6 @@ $(function(){
       var data = {
         name : this.$name.val(),
         email: this.$email.val(),
-        password: this.$password.val(),
         message : this.$message.val()
       };
       app.proxy('POST', '/signup', data, this.signedUp, this.error, this);
