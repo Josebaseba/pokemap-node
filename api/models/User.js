@@ -61,7 +61,7 @@ module.exports = {
       return hashPassword(values, function(err){
         if(err) return next(err);
         console.log('TODO: send welcome email with password ->', password, 'PASS CREATED');
-        MailService.sendWelcome(values.id, password);
+        return MailService.sendWelcome(values.id, password);
       });
     }
     if(values.password) return hashPassword(values, next);
