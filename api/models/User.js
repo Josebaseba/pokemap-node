@@ -26,8 +26,7 @@ module.exports = {
     },
 
     password: {
-      type: 'string',
-      required: true
+      type: 'string'
     },
 
     admin: {
@@ -56,7 +55,15 @@ module.exports = {
 
   beforeUpdate: function(values, next){
     if(values.admin) delete values.admin;
-    if(values.actived) console.log('TODO: send welcome email');
+    if(values.actived){
+      var password = generatePassword();
+      values.password = password;
+      return hashPassword(values, function(err){
+        if(err) return next(err);
+        console.log('TODO: send welcome email with password ->', password, 'PASS CREATED');
+        MailService.sendWelcome(values.id, password);
+      });
+    }
     if(values.password) return hashPassword(values, next);
     return next();
   },
@@ -93,4 +100,13 @@ function hashPassword(values, next) {
       next();
     });
   });
+}
+
+function generatePassword() {
+  var text = "";
+  var possible = "abcdefghijklmnopqrstuvwxyz0123456789";
+  for(var i= 0; i < 5; i++){
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  }
+  return text;
 }

@@ -20,20 +20,32 @@ module.exports = {
   },
 
   signup: function(req, res){
-    if(!req.param('password') || !req.param('email') || !req.param('name')){
-      return res.badRequest();
-    }
+    if(!req.param('email') || !req.param('name')) return res.badRequest();
     User.count({email: req.param('email')}).exec(function(err, user){
       if(err) return res.serverError(err);
       if(user) return res.send(409);
       var data = {
         name    : req.param('name'),
         email   : req.param('email'),
-        password: req.param('password'),
         message : req.param('message')
       }
       User.create(data).exec(function(err, user){
         if(err) return res.negotiate(err);
+        return res.ok();
+      });
+    });
+  },
+
+  resetPassword: function(req, res){
+    if(!req.param('email')) return res.badRequest();
+    User.findOne({email: req.param('emai')}).exec(function(err, user){
+      if(err) return res.serverError();
+      if(!user) return res.badRequest();
+      var password = generatePassword();
+      User.update({email: req.param('email')}, {password: password}).exec(function(err, user){
+        if(err) return res.negotiate(err);
+        console.log('TODO: send welcome email with password ->', password, user, 'PASS UPDATED');
+        MailService.sendPassword(user, password);
         return res.ok();
       });
     });
@@ -45,3 +57,12 @@ module.exports = {
   }
 
 };
+
+function generatePassword() {
+  var text = "";
+  var possible = "abcdefghijklmnopqrstuvwxyz0123456789";
+  for(var i= 0; i < 5; i++){
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  }
+  return text;
+}
