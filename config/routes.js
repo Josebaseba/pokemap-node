@@ -30,6 +30,10 @@ module.exports.routes = {
 
   'POST /signup': 'UserController.signup',
 
-  'GET /logout': 'UserController.logout'
+  'GET /logout': 'UserController.logout',
+
+  'GET /me': 'UserController.me',
+
+  'GET /reset/:email': 'UserController.resetPassword'
 
 };

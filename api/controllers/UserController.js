@@ -15,6 +15,7 @@ module.exports = {
       if(!req.session) req.session = {};
       req.session.authenticated = true;
       if(user.admin) req.session.admin = true;
+      req.session.user = {id: user.id};
       return res.ok();
     });
   },
@@ -36,16 +37,24 @@ module.exports = {
     });
   },
 
+  me: function(req, res){
+    User.findOne({id: req.session.user.id}).exec(function(err, user){
+      if(err) return res.serverError(err);
+      if(!user) return res.notFound();
+      return res.json(user);
+    });
+  },
+
   resetPassword: function(req, res){
     if(!req.param('email')) return res.badRequest();
-    User.findOne({email: req.param('emai')}).exec(function(err, user){
+    User.findOne({email: req.param('email')}).exec(function(err, user){
       if(err) return res.serverError();
       if(!user) return res.badRequest();
       var password = generatePassword();
       User.update({email: req.param('email')}, {password: password}).exec(function(err, user){
         if(err) return res.negotiate(err);
         console.log('TODO: send welcome email with password ->', password, user, 'PASS UPDATED');
-        MailService.sendPassword(user, password);
+        MailService.sendPassword(user[0], password);
         return res.ok();
       });
     });

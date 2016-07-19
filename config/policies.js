@@ -27,7 +27,9 @@ module.exports.policies = {
     '*': 'isAdmin',
     'login': true,
     'signup': true,
-    'logout': true
+    'logout': true,
+    'me': 'sessionAuth',
+    'resetPassword': true
   },
 
   PokemonController: {
