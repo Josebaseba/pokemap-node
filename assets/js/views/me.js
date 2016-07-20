@@ -1,6 +1,6 @@
 $(function(){
 
-  if(!$('div#pokemap').length && !$('div#admin-view')) return;
+  if(!(!$('div#pokemap').length && !$('div#admin-view'))) return;
 
   var Me = Backbone.View.extend({
 
