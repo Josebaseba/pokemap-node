@@ -32,6 +32,7 @@ module.exports = {
       }
       User.create(data).exec(function(err, user){
         if(err) return res.negotiate(err);
+        User.publishCreate(user.toJSON());
         return res.ok();
       });
     });

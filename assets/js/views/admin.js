@@ -21,7 +21,6 @@ $(function(){
     },
 
     suscribeToUsers: function(users, jwres){
-      console.log(users, jwres, 'SUB USER');
       this.users = new app.UserCollection(users);
       this.users.each(function(user){
         var userView = new app.UserView({model: user});
@@ -30,9 +29,25 @@ $(function(){
     },
 
     userEvent: function(event){
+      if(event.verb === 'created') return this.createUser(event.data);
       if(!this.users) return;
       var user = this.users.findWhere({id: event.id});
       if(user) user.set(event.data);
+    },
+
+    createUser: function(user){
+      if(!this.users){
+        this.users = new app.UserCollection(users);
+        this.users.each(this.printNewUser, this);
+      }
+      var user = this.users.add(user);
+      console.log(user);
+      this.printNewUser(user);
+    },
+
+    printNewUser: function(user){
+      var userView = new app.UserView({model: user});
+      this.$users.prepend(userView.render().el);
     }
 
   });
