@@ -4,16 +4,18 @@ $(function(){
 
   app.UserView = Backbone.View.extend({
 
-    tagName: 'div',
+    tagName: 'tr',
 
-    className: 'row user-container',
+    className: 'user-row',
 
     template: _.template($('script.user').html()),
 
-    events: {},
+    events: {
+      'click button.edit-activation': 'editActivation'
+    },
 
     initialize: function(){
-
+      this.model.on('change', this.render, this);
     },
 
     render: function(){
@@ -23,6 +25,18 @@ $(function(){
 
     destroy: function(){
       this.remove();
+    },
+
+    editActivation: function(){
+      this.$('button.edit-activation').attr('disabled', true);
+      if(this.model.get('actived')){
+        return app.proxy('PUT', '/user/' + this.model.get('id'), {actived: false}, function(){}, this._error, this);
+      }
+      app.proxy('PUT', '/user/' + this.model.get('id'), {actived: true}, function(){}, this._error, this);
+    },
+
+    _error: function(){
+      this.$('button.edit-activation').attr('disabled', false);
     }
 
   });

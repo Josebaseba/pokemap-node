@@ -7,7 +7,7 @@ module.exports = {
 
   offline: function(userId){
     User.update({id: userId}, {status: 'offline'}).exec(sails.log.silly);
-    User.publishUpdate(userId, {status: 'online'});
+    User.publishUpdate(userId, {status: 'offline'});
   }
 
 };

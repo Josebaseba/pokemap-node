@@ -6,15 +6,17 @@ $(function(){
 
     el: 'div#pokemap',
 
-    events: {},
+    events: {
+
+    },
 
     initialize: function(){
       /* AVOID SERVER CRASH LOST SOCKET :( */
       io.socket.on('connect', function(){
-        io.socket.get('/pokemon', this.suscribeToPokemons);
+        io.socket.get('/pokemon', function(){});
       });
-      io.socket.get('/pokemon', this.suscribeToPokemons);
-      io.socket.on('pokemon', this.pokemonEvent);
+      io.socket.get('/pokemon', this.suscribeToPokemons.bind(this));
+      io.socket.on('pokemon', this.pokemonEvent.bind(this));
     },
 
     suscribeToPokemons: function(pokemons, jwres){

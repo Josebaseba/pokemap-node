@@ -46,7 +46,6 @@ module.exports = {
   },
 
   online: function(req, res){
-    console.log('online');
     UserStatus.online(req.session.user.id);
   },
 

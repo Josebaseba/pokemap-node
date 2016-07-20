@@ -19,7 +19,11 @@ $(function(){
 
   app.UserCollection = Backbone.Collection.extend({
 
-    model: app.UserModel
+    model: app.UserModel,
+
+    comparator: function(model){
+      return - new Date(model.get('createdAt')).getTime();
+    }
 
   });
 
