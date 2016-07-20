@@ -45,11 +45,15 @@ module.exports = {
     });
   },
 
+  online: function(req, res){
+    console.log('online');
+    UserStatus.online(req.session.user.id);
+  },
+
   resetPassword: function(req, res){
-    if(!req.param('email')) return res.badRequest();
     User.findOne({email: req.param('email')}).exec(function(err, user){
       if(err) return res.serverError();
-      if(!user) return res.badRequest();
+      if(!user) return res.ok();
       var password = generatePassword();
       User.update({email: req.param('email')}, {password: password}).exec(function(err, user){
         if(err) return res.negotiate(err);

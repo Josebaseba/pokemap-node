@@ -34,8 +34,12 @@ module.exports.routes = {
 
   'GET /me': 'UserController.me',
 
+  'PUT /online': 'UserController.online',
+
   'GET /mapbox-token': 'IndexController.mapboxToken',
 
-  'GET /reset/:email': 'UserController.resetPassword'
+  'GET /reset/:email': 'UserController.resetPassword',
+
+  'GET /admin': 'AdminController.adminView'
 
 };

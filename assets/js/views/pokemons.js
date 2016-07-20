@@ -19,7 +19,7 @@ $(function(){
 
     suscribeToPokemons: function(pokemons, jwres){
       console.log(pokemons, jwres, 'SUB POK');
-      app.pokemons = new app.PokemonCollection(pokemons);
+      this.pokemons = new app.PokemonCollection(pokemons);
     },
 
     pokemonEvent: function(event){

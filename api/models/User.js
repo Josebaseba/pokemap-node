@@ -26,7 +26,8 @@ module.exports = {
     },
 
     password: {
-      type: 'string'
+      type: 'string',
+      protected: true
     },
 
     admin: {
@@ -36,6 +37,12 @@ module.exports = {
 
     message: {
       type: 'string'
+    },
+
+    status: {
+      type: 'string',
+      defaultsTo: 'offline',
+      enum: ['offline', 'online']
     },
 
     toJSON: function(){
@@ -76,6 +83,12 @@ module.exports = {
       options: {
         unique: true
       }
+    },
+    {
+      attributes: {
+        status: 1
+      },
+      options: {}
     }
   ],
 

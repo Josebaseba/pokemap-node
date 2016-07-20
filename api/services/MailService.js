@@ -13,7 +13,7 @@ module.exports = {
       if(err || !user) return;
       var helper = require('sendgrid').mail;
       var from_email = new helper.Email("pokemap@josebaseba.com");
-      var to_email = new helper.Email("josebalega@gmail.com");
+      var to_email = new helper.Email(user.email);
       var subject = "Ya estas en Pokemap!";
       var template = 'welcome';
       var data = {
@@ -43,7 +43,7 @@ module.exports = {
     if(sails.config.environment !== 'production') return;
     var helper = require('sendgrid').mail;
     var from_email = new helper.Email("pokemap@josebaseba.com");
-    var to_email = new helper.Email("josebalega@gmail.com");
+    var to_email = new helper.Email(user.email);
     var subject = "Cambio de contraseña en Pokemap";
     var template = 'reset';
     var data = {password: password};

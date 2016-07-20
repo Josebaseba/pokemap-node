@@ -117,10 +117,13 @@ module.exports.sockets = {
   * disconnects                                                              *
   *                                                                          *
   ***************************************************************************/
-  // afterDisconnect: function(session, socket, cb) {
-  //   // By default: do nothing.
-  //   return cb();
-  // },
+  afterDisconnect: function(session, socket, cb) {
+    // By default: do nothing.
+    if(!session.authenticated || !session.user || !session.user.id) return cb();
+    console.log('offline');
+    UserStatus.offline(session.user.id);
+    return cb();
+  },
 
   /***************************************************************************
   *                                                                          *

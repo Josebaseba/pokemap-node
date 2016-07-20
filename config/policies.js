@@ -25,16 +25,21 @@ module.exports.policies = {
 
   UserController: {
     '*': 'isAdmin',
+    'me': 'sessionAuth',
+    'online': 'sessionAuth',
     'login': true,
     'signup': true,
     'logout': true,
-    'me': 'sessionAuth',
     'resetPassword': true
   },
 
   PokemonController: {
     '*': 'isAdmin',
     'find': 'sessionAuth'
+  },
+
+  AdminController: {
+    '*': 'isAdmin'
   }
 
 };
