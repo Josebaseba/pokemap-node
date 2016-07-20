@@ -118,7 +118,7 @@ module.exports.sockets = {
   *                                                                          *
   ***************************************************************************/
   afterDisconnect: function(session, socket, cb) {
-    // By default: do nothing.
+    if(sails.lowering) return cb();
     if(!session.authenticated || !session.user || !session.user.id) return cb();
     UserStatus.offline(session.user.id);
     return cb();

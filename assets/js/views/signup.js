@@ -17,7 +17,7 @@ $(function(){
     },
 
     doSignup: function(){
-      //this.$signupBtn.attr('disabled', true);
+      this.$signupBtn.attr('disabled', true);
       var data = {
         name : this.$name.val(),
         email: this.$email.val(),
@@ -27,7 +27,7 @@ $(function(){
     },
 
     signedUp: function(){
-      //this.$('div.form-container').remove();
+      this.$('div.form-container').remove();
       this.$('div.success').show();
     },
 

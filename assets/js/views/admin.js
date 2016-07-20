@@ -41,7 +41,6 @@ $(function(){
         this.users.each(this.printNewUser, this);
       }
       var user = this.users.add(user);
-      console.log(user);
       this.printNewUser(user);
     },
 
