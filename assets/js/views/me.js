@@ -10,7 +10,9 @@ $(function(){
 
     initialize: function(){
       app.proxy('GET', '/me', {}, this.saveSession, this._error, this);
-      app.proxy('PUT', '/online', {}, function(){}, this._error);
+      app.proxy('PUT', '/online', {}, function(){
+        Backbone.trigger('loadUsers');
+      }, this._error);
     },
 
     saveSession: function(session){

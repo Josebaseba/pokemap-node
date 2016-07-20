@@ -101,12 +101,11 @@ module.exports.sockets = {
   * app's security.                                                          *
   *                                                                          *
   ***************************************************************************/
-  // beforeConnect: function(handshake, cb) {
-  //   // `true` allows the connection
-  //   return cb(null, true);
-  //
-  //   // (`false` would reject the connection)
-  // },
+  beforeConnect: function(handshake, cb) {
+    sails.connectedUsers += 1;
+    sails.sockets.broadcast('connections', 'connectedUsers', sails.connectedUsers);
+    return cb(null, true);
+  },
 
 
   /***************************************************************************
@@ -119,6 +118,8 @@ module.exports.sockets = {
   ***************************************************************************/
   afterDisconnect: function(session, socket, cb) {
     if(sails.lowering) return cb();
+    sails.connectedUsers -= 1;
+    sails.sockets.broadcast('connections', 'connectedUsers', sails.connectedUsers);
     if(!session.authenticated || !session.user || !session.user.id) return cb();
     UserStatus.offline(session.user.id);
     return cb();

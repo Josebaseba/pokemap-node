@@ -48,6 +48,7 @@ module.exports = {
 
   online: function(req, res){
     UserStatus.online(req.session.user.id);
+    return res.ok();
   },
 
   resetPassword: function(req, res){

@@ -11,6 +11,8 @@
 
 module.exports.bootstrap = function(cb) {
 
+  sails.connectedUsers = 0;
+
   sails.on('lower', function(){
     sails.lowering = true;
   });

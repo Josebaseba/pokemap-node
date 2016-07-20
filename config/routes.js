@@ -40,6 +40,8 @@ module.exports.routes = {
 
   'GET /reset/:email': 'UserController.resetPassword',
 
-  'GET /admin': 'AdminController.adminView'
+  'GET /admin': 'AdminController.adminView',
+
+  'GET /connections': 'AdminController.connectedUsers'
 
 };

@@ -12,6 +12,18 @@ $(function(){
 
     initialize: function(){
       this.$users = this.$('tbody.users');
+      this.$connected = this.$('span.total-connected');
+      this.listenTo(Backbone, 'loadUsers', this.loadUsers);
+      io.socket.get('/connections', this.connectedPeople.bind(this));
+      io.socket.on('connectedUsers', this.connectedPeople.bind(this));
+    },
+
+    /* NOT ONLY USERS, ALL THE PEOPLE VISITING THE WEB */
+    connectedPeople: function(num){
+      this.$connected.text(num);
+    },
+
+    loadUsers: function(){
       /* AVOID SERVER CRASH LOST SOCKET :( */
       io.socket.on('connect', function(){
         io.socket.get('/user', function(){});
