@@ -56,10 +56,16 @@ $(function(){
     },
 
     printPokemon: function(pokemon){
+      var text = '<b>' + pokemon.name + '</b><br>';
+      if(pokemon.expiration){
+        var date = new Date(pokemon.expiration);
+        var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        text += 'Hasta: <b>' + time + '</b>';
+      }
       var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/' + parseInt(pokemon.num) + '.png'});
       var marker = L.marker([pokemon.latitude, pokemon.longitude], {icon: pokeIcon})
                     .addTo(this.map)
-                    .bindPopup(pokemon.name);
+                    .bindPopup(text);
       marker.pokemonId = pokemon.id;
       this.markers[pokemon.id] = marker;
     },
