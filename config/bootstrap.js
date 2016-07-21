@@ -12,8 +12,8 @@
 module.exports.bootstrap = function(cb) {
 
   // CHECK IF WE SHOULD CREATE THE ADMIN
-  User.count().exec(function(err, count){
-    if(err || !count) return;
+  User.count({admin: true}).exec(function(err, count){
+    if(err || count) return;
     User.native(function(err, collection){
       if(err) return;
       var data = {
