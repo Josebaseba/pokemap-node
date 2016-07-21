@@ -22,10 +22,17 @@ $(function(){
     suscribeToPokemons: function(pokemons, jwres){
       console.log(pokemons, jwres, 'SUB POK');
       this.pokemons = new app.PokemonCollection(pokemons);
+      this.pokemons.each(function(pokemon){
+        Backbone.trigger('printPokemon', pokemon.toJSON());
+      });
     },
 
     pokemonEvent: function(event){
-      console.log('POKE EVENT', event);
+      if(event.verb === 'created'){
+        Backbone.trigger('printPokemon', event.data);
+      }else{
+        Backbone.trigger('destroyPokemon', event.id);
+      }
     }
 
   });

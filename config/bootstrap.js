@@ -11,11 +11,15 @@
 
 module.exports.bootstrap = function(cb) {
 
+  Pokemon.destroy().exec(function(){});
+
   sails.connectedUsers = 0;
 
   sails.on('lower', function(){
     sails.lowering = true;
   });
+
+  WildPokemon.init();
 
   User.update({status: 'online'}, {status: 'offline'}).exec(cb);
 

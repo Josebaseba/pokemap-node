@@ -8,8 +8,11 @@ $(function(){
 
     events: {},
 
+    markers: {},
+
     initialize: function(){
       this.listenTo(Backbone, 'printPokemon', this.printPokemon);
+      this.listenTo(Backbone, 'destroyPokemon', this.destroyPokemon);
       this.MarkerStyle = L.Icon.extend({
         options: {
           iconSize   : [40, 30],
@@ -32,15 +35,20 @@ $(function(){
           id: data.mapId,
           accessToken: data.accessToken
       }).addTo(this.map);
-      // TODO: REMOVE THIS AFTER MOCK
-      Backbone.trigger('printPokemon');
     },
 
     printPokemon: function(pokemon){
-      var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/6.png'});
-      var marker = L.marker([43.222, -2.729], {icon: pokeIcon})
+      var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/' + parseInt(pokemon.number) + '.png'});
+      var marker = L.marker([pokemon.longitude, pokemon.latitude], {icon: pokeIcon})
                     .addTo(this.map)
-                    .bindPopup("I am Charmander.");
+                    .bindPopup('I am ' + pokemon.name + '.');
+      marker.pokemonId = pokemon.id;
+      this.markers[pokemon.id] = marker;
+    },
+
+    destroyPokemon: function(pokemonId){
+      var marker = this.markers[pokemonId];
+      this.map.removeLayer(marker);
     },
 
     _error: function(err){
