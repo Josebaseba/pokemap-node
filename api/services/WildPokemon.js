@@ -5,9 +5,8 @@ var pokemons = require('../pokemons.json');
 module.exports = {
 
   init: function(){
-    //this.mock();
     var that = this;
-    //that.destroyExpired();
+    // //that.destroyExpired();
     this.loginPokeio(function logued(err){
       if(err) return sails.log.error('ERROR AT LOGIN:', err);
       var coords = that.calculateAllCoords();
@@ -20,8 +19,8 @@ module.exports = {
       type: 'coords',
       coords: {
         altitude: 0,
-        latitude: -2.73916,
-        longitude: 43.22966
+        longitude: -2.73916,
+        latitude: 43.22966
       }
     };
     var username = 'hackedbyme';
@@ -31,14 +30,14 @@ module.exports = {
   },
 
   calculateAllCoords: function(){
-    var west =  -2.73916;
-    var north =  43.221516
-    var east =  -2.734473
-    var south =  43.21152; // MOCKED UNTIL HERE
     // var west =  -2.73916;
-    // var north =  43.23066;
-    // var east =  -2.72320;
-    // var south =  43.21152;
+    // var north =  43.221516
+    // var east =  -2.734473
+    // var south =  43.21152; // MOCKED UNTIL HERE
+    var west =  -2.73916;
+    var north =  43.23066;
+    var east =  -2.72320;
+    var south =  43.21152;
     var points = [];
     var allLongitudes = [];
     while(west < east){
@@ -81,10 +80,9 @@ module.exports = {
               return setTimeout(next, 30000);
             }
             for (var i = hb.cells.length - 1; i >= 0; i--) {
-              console.log(hb.cells[i].MapPokemon);
               if(hb.cells[i].MapPokemon && hb.cells[i].MapPokemon[0]){
                 for (var x = hb.cells[i].MapPokemon.length - 1; x >= 0; x--){
-                  that.pokemonFound(hb.cells[i].MapPokemon[x])
+                  that.pokemonFound(hb.cells[i].MapPokemon[x]);
                 }
               }
             }
@@ -99,41 +97,31 @@ module.exports = {
   },
 
   pokemonFound: function(pokemonLocation){
-  //   { SpawnpointId: '0d4e35d4c61',
-  // EncounterId: Long { low: 33726077, high: -1939412224, unsigned: true },
-  // PokedexTypeId: 13,
-  // ExpirationTimeMs: Long { low: 252531044, high: 342, unsigned: false },
-  // Latitude: 43.216107912764784,
-  // Longitude: -2.7388279215132316 }
-    var pokemon = Pokeio.pokemonlist[pokemonLocation.PokedexNumber - 1];
-    console.log(pokemon);
+    //   { SpawnpointId: '0d4e35d4c61',
+    // EncounterId: Long { low: 33726077, high: -1939412224, unsigned: true },
+    // PokedexTypeId: 13,
+    // ExpirationTimeMs: Long { low: 252531044, high: 342, unsigned: false },
+    // Latitude: 43.216107912764784,
+    // Longitude: -2.7388279215132316 }
+    var pokemon = Pokeio.pokemonlist[pokemonLocation.PokedexTypeId - 1];
+    if(!pokemon) return;
+    pokemon.position = pokemon.id;
+    delete pokemon.id;
     pokemon.latitude = pokemonLocation.Latitude;
     pokemon.longitude = pokemonLocation.Longitude;
     pokemon.altitude = 0;
-    Pokemon.create(pokeData).exec(function(err, pokemon){
-      if(err) return sails.log.error(err);
-      Pokemon.publishCreate(pokemon);
-    });
-  },
-
-  mock: function(){
-    var mockLongitude = [43.222, 43.250, 43.270, 43.290, 43.300, 43.310, 43.315];
-    var mockLatitude = [-2.729, -2.735, -2.755, -2.745, -2.760, -2.765, -2.700];
-    setInterval(function(){
-      var pokemon = _.shuffle(pokemons)[0];
-      var pokeData = {
-        number: pokemon.Number,
-        name: pokemon.Name,
-        pokedex: pokemon,
-        altitude: 0,
-        latitude: _.shuffle(mockLatitude)[0],
-        longitude: _.shuffle(mockLongitude)[0]
-      };
-      Pokemon.create(pokeData).exec(function(err, pokemon){
+    var where = {
+      position: pokemon.position,
+      latitude: pokemon.latitude,
+      longitude: pokemon.longitude
+    };
+    Pokemon.findOne(where).exec(function(err, repited){
+      if(err || repited) return;
+      Pokemon.create(pokemon).exec(function(err, pokemon){
         if(err) return sails.log.error(err);
         Pokemon.publishCreate(pokemon);
       });
-    }, 3000);
+    });
   },
 
   destroyExpired: function(){
