@@ -5,6 +5,8 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
+    "bcrypt": "^0.8.0",
+    "connect-redis": "3.1.0",
     "ejs": "2.4.2",
     "grunt": "1.0.1",
     "grunt-contrib-clean": "1.0.0",
@@ -19,14 +21,13 @@
     "grunt-sails-linker": "~0.10.1",
     "grunt-sync": "0.5.2",
     "include-all": "~0.1.6",
+    "long": "^3.1.0",
+    "pokemon-go-node-api": "^1.0.0",
     "rc": "1.1.6",
     "sails": "~0.12.1",
     "sails-mongo": "~0.12.0",
-    "pokemon-go-node-api": "^1.0.0",
-    "connect-redis": "3.1.0",
-    "bcrypt": "^0.8.0",
-    "socket.io-redis": "^1.0.0",
-    "sendgrid": "^3.0.8"
+    "sendgrid": "^3.0.8",
+    "socket.io-redis": "^1.0.0"
   },
   "scripts": {
     "debug": "node debug app.js",

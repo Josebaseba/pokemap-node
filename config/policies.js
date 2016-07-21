@@ -26,6 +26,7 @@ module.exports.policies = {
   UserController: {
     '*': 'isAdmin',
     'me': 'sessionAuth',
+    'bot': 'sessionAuth',
     'online': 'sessionAuth',
     'login': true,
     'signup': true,

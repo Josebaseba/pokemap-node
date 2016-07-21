@@ -35,13 +35,31 @@ $(function(){
           id: data.mapId,
           accessToken: data.accessToken
       }).addTo(this.map);
+      this.listenToBotPosition();
+    },
+
+    listenToBotPosition: function(){
+      /* AVOID SERVER CRASH LOST SOCKET :( */
+      io.socket.on('connect', function(){
+        io.socket.get('/bot', function(){});
+      });
+      io.socket.get('/bot', this.printBot.bind(this));
+      io.socket.on('botLocation', this.printBot.bind(this));
+    },
+
+    printBot: function(bot){
+      if(!bot) return;
+      if(this.markers['bot']) this.map.removeLayer(this.markers['bot']);
+      var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/egg.png'});
+      var marker = L.marker([bot.latitude, bot.longitude], {icon: pokeIcon}).addTo(this.map);
+      this.markers['bot'] = marker;
     },
 
     printPokemon: function(pokemon){
       var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/' + parseInt(pokemon.num) + '.png'});
       var marker = L.marker([pokemon.latitude, pokemon.longitude], {icon: pokeIcon})
                     .addTo(this.map)
-                    .bindPopup('I am ' + pokemon.name + '.');
+                    .bindPopup(pokemon.name);
       marker.pokemonId = pokemon.id;
       this.markers[pokemon.id] = marker;
     },

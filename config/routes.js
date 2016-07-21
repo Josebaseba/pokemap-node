@@ -34,6 +34,8 @@ module.exports.routes = {
 
   'GET /me': 'UserController.me',
 
+  'GET /bot': 'UserController.bot',
+
   'PUT /online': 'UserController.online',
 
   'GET /mapbox-token': 'IndexController.mapboxToken',

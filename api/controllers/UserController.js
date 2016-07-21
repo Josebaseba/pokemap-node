@@ -51,6 +51,15 @@ module.exports = {
     return res.ok();
   },
 
+  bot: function(req, res){
+    if(!req.isSocket) return res.badRequest();
+    if(!sails.bot) return res.ok();
+    sails.sockets.join(req, 'bot', function(err){
+      if(err) return res.serverError(err);
+      return res.send(200, sails.bot);
+    });
+  },
+
   resetPassword: function(req, res){
     User.findOne({email: req.param('email')}).exec(function(err, user){
       if(err) return res.serverError();

@@ -6,7 +6,7 @@ module.exports = {
 
   init: function(){
     var that = this;
-    // //that.destroyExpired();
+    this.destroyExpired();
     this.loginPokeio(function logued(err){
       if(err) return sails.log.error('ERROR AT LOGIN:', err);
       var coords = that.calculateAllCoords();
@@ -74,6 +74,8 @@ module.exports = {
             sails.log.error('ERROR SET LOCATION');
             return setTimeout(next, 30000);
           }
+          sails.bot = coords;
+          sails.sockets.broadcast('bot', 'botLocation', sails.bot);
           Pokeio.Heartbeat(function(err, hb){
             if(err){
               sails.log.error('ERROR HEARTBEAT');
@@ -105,11 +107,12 @@ module.exports = {
     // Longitude: -2.7388279215132316 }
     var pokemon = Pokeio.pokemonlist[pokemonLocation.PokedexTypeId - 1];
     if(!pokemon) return;
-    pokemon.position = pokemon.id;
     delete pokemon.id;
     pokemon.latitude = pokemonLocation.Latitude;
     pokemon.longitude = pokemonLocation.Longitude;
     pokemon.altitude = 0;
+    if(pokemonLocation.ExpirationTimeMs.toNumber() < 0) return;
+    pokemon.expiration = new Date(pokemonLocation.ExpirationTimeMs.toNumber());
     var where = {
       position: pokemon.position,
       latitude: pokemon.latitude,
@@ -125,18 +128,14 @@ module.exports = {
   },
 
   destroyExpired: function(){
-    // TODO: This is a mock
     setInterval(function(){
-      Pokemon.count().exec(function(err, number){
+      Pokemon.destroy({expiration: {'<=': new Date()}}).exec(function(err, pokemons){
         if(err) return sails.log.error(err);
-        var position = _.random(-1, number + 1);
-        Pokemon.destroy().limit(1).skip(position).exec(function(err, pokemon){
-          if(err) return sails.log.error(err);
-          if(!pokemon.length) return;
-          Pokemon.publishDestroy(pokemon[0].id);
+        _.each(pokemons, function(pokemon){
+          Pokemon.publishDestroy(pokemon.id);
         });
       });
-    }, 6000);
+    }, 3000);
   }
 
 };
