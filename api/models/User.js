@@ -95,6 +95,7 @@ module.exports = {
   login: function(email, password, done){
     User.findOne({email: email}).exec(function(err, user){
       if(err) return done(err);
+      if(!user) return done();
       bcrypt.compare(password, user.password, function (err, valid){
         if(err || !valid) return done();
         return done(null, user.toJSON());

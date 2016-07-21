@@ -20,7 +20,6 @@ $(function(){
     },
 
     suscribeToPokemons: function(pokemons, jwres){
-      console.log(pokemons, jwres, 'SUB POK');
       this.pokemons = new app.PokemonCollection(pokemons);
       this.pokemons.each(function(pokemon){
         Backbone.trigger('printPokemon', pokemon.toJSON());
