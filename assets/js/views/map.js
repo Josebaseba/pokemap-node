@@ -38,7 +38,7 @@ $(function(){
     },
 
     printPokemon: function(pokemon){
-      var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/' + parseInt(pokemon.number) + '.png'});
+      var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/' + parseInt(pokemon.num) + '.png'});
       var marker = L.marker([pokemon.longitude, pokemon.latitude], {icon: pokeIcon})
                     .addTo(this.map)
                     .bindPopup('I am ' + pokemon.name + '.');
