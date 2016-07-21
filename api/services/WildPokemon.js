@@ -2,7 +2,45 @@ module.exports = {
 
   init: function(){
     this.mock();
+    this.calculateAllCoords();
     this.destroyExpired();
+  },
+
+  calculateAllCoords: function(){
+    var west =  -2.73916;
+    var north =  43.23066;
+    var east =  -2.72320;
+    var south =  43.21152;
+    var points = [];
+    var allLatitudes = [];
+    while(west < east){
+      allLatitudes.push(west);
+      west += 0.001;
+    }
+    var allLongitudes = [];
+    while(north > south){
+      allLongitudes.push(north);
+      north -= 0.001;
+    }
+    for(var i = 0; allLatitudes.length > i; i++){
+      for(var x = 0; allLongitudes.length > x; x++){
+        points.push({latitude: allLatitudes[i], longitude: allLongitudes[x]});
+      }
+    }
+    var x = 0;
+    async.forever(
+        function(next){
+          //console.log(points[x]);
+          x += 1;
+          if(x >= points.length) x = 0;
+          setTimeout(function(){
+            return next();
+          }, 200);
+        },
+        function(err){
+
+        }
+    );
   },
 
   mock: function(){

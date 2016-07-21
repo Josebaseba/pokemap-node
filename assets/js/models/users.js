@@ -8,7 +8,8 @@ $(function(){
       actived: false,
       admin: false,
       message: '',
-      status: 'offline'
+      status: 'offline',
+      createdAt: ''
     },
 
     sync: function(){

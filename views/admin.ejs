@@ -31,6 +31,7 @@
   <td>{{{ admin }}}</td>
   <td {{# if(status === 'online'){ }} style="color: #A0D468" {{# } }}>{{{ status }}}</td>
   <td>{{{ message }}}</td>
+  <td>{{{ createdAt }}}</td>
   <td>
     {{# if(!actived){ }}
       <button type="button" class="edit-activation btn btn-success btn-block">Activar</button>
@@ -38,5 +39,6 @@
       <button type="button" class="edit-activation btn btn-danger btn-block">Desactivar</button>
     {{# } }}
   </td>
+
 
 </script>

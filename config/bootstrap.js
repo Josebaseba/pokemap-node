@@ -11,6 +11,30 @@
 
 module.exports.bootstrap = function(cb) {
 
+  // CHECK IF WE SHOULD CREATE THE ADMIN
+  User.count().exec(function(err, count){
+    if(err || !count) return;
+    User.native(function(err, collection){
+      if(err) return;
+      var data = {
+        email: sails.config.admin.email,
+        name : sails.config.admin.name,
+        actived: true,
+        admin: true,
+        status: 'offline',
+        createdAt: new Date()
+      };
+      collection.insert(data, function(err, users){
+        if(err) return;
+        var id = String(users.ops[0]._id);
+        var password = sails.config.admin.password;
+        User.update({id: id}, {password: password}).exec(function(err, user){
+          if(!err) return sails.log.info('Admin created!');
+        });
+      });
+    });
+  });
+
   Pokemon.destroy().exec(function(){});
 
   sails.connectedUsers = 0;

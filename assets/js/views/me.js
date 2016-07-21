@@ -1,6 +1,6 @@
 $(function(){
 
-  if(!(!$('div#pokemap').length && !$('div#admin-view'))) return;
+  if(!$('div#pokemap').length && !$('div#admin-view').length) return;
 
   var Me = Backbone.View.extend({
 
@@ -11,7 +11,7 @@ $(function(){
     initialize: function(){
       app.proxy('GET', '/me', {}, this.saveSession, this._error, this);
       app.proxy('PUT', '/online', {}, function(){
-        Backbone.trigger('loadUsers');
+        if($('div#admin-view').length) Backbone.trigger('loadUsers');
       }, this._error);
     },
 
