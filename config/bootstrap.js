@@ -35,8 +35,6 @@ module.exports.bootstrap = function(cb) {
     });
   });
 
-  Pokemon.destroy().exec(function(){});
-
   sails.connectedUsers = 0;
 
   sails.on('lower', function(){
