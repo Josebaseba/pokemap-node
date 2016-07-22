@@ -1,6 +1,8 @@
 
 var pokemons = require('../pokemons.json');
 
+var whichBot = 1;
+
 module.exports = {
 
   init: function(){
@@ -14,9 +16,7 @@ module.exports = {
     if(this.bot) delete this.bot;
     var PokemonGO = require('pokemon-go-node-api');
     this.bot = new PokemonGO.Pokeio();
-    console.log('start login', new Date());
     this.loginPokeio(that, function logued(err){
-      console.log('logued');
       if(err){
         sails.log.error('ERROR AT LOGIN:', err);
         return setTimeout(function(){
@@ -29,17 +29,11 @@ module.exports = {
   },
 
   loginPokeio: function(that, done){
-    var location = {
-      type: 'coords',
-      coords: {
-        altitude: 0,
-        longitude: -2.73916,
-        latitude: 43.22966
-      }
-    };
-    var username = 'hackedbyme';
-    var password = 'simple4321';
-    var provider = 'ptc';
+    var location = sails.config.initialLocation;
+    var username = sails.config.botUsers[whichBot].username;
+    var password = sails.config.botUsers[whichBot].password;
+    var provider = sails.config.botUsers[whichBot].provider;
+    if(whichBot === 1) whichBot = 0; else whichBot = 0;
     that.bot.init(username, password, location, provider, function(err){
       if(err) return that.startProcess.call(that, 'Init error');
       if(that.bot.playerInfo.apiEndpoint === 'https://null/rpc'){
@@ -50,14 +44,10 @@ module.exports = {
   },
 
   calculateAllCoords: function(){
-    // var west =  -2.73916;
-    // var north =  43.221516
-    // var east =  -2.734473
-    // var south =  43.21152; // MOCKED UNTIL HERE
-    var west =  -2.73916;
-    var north =  43.23066;
-    var east =  -2.72320;
-    var south =  43.21152;
+    var west = sails.config.botMapCoords.west;
+    var north = sails.config.botMapCoords.north;
+    var east =  sails.config.botMapCoords.east;
+    var south = sails.config.botMapCoords.south;
     var points = [];
     var allLongitudes = [];
     while(west < east){
