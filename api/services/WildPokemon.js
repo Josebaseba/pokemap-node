@@ -78,7 +78,7 @@ module.exports = {
           sails.sockets.broadcast('bot', 'botLocation', sails.bot);
           Pokeio.Heartbeat(function(err, hb){
             if(err){
-              sails.log.error('ERROR HEARTBEAT');
+              sails.log.error('ERROR HEARTBEAT', err);
               return setTimeout(next, 30000);
             }
             for (var i = hb.cells.length - 1; i >= 0; i--) {
