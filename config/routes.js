@@ -36,6 +36,8 @@ module.exports.routes = {
 
   'GET /bot': 'UserController.bot',
 
+  'GET /pokemon-server': 'UserController.pokemonServerStatus',
+
   'PUT /online': 'UserController.online',
 
   'GET /mapbox-token': 'IndexController.mapboxToken',

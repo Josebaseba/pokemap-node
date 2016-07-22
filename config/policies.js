@@ -28,6 +28,7 @@ module.exports.policies = {
     'me': 'sessionAuth',
     'bot': 'sessionAuth',
     'online': 'sessionAuth',
+    'pokemonServerStatus': 'sessionAuth',
     'login': true,
     'signup': true,
     'logout': true,

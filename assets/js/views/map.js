@@ -13,6 +13,7 @@ $(function(){
     initialize: function(){
       this.listenTo(Backbone, 'printPokemon', this.printPokemon);
       this.listenTo(Backbone, 'destroyPokemon', this.destroyPokemon);
+      this.listenTo(Backbone, 'serverStatus', this.printServerStatus);
       this.MarkerStyle = L.Icon.extend({
         options: {
           iconSize   : [40, 30],
@@ -36,6 +37,7 @@ $(function(){
           accessToken: data.accessToken
       }).addTo(this.map);
       this.listenToBotPosition();
+      this.listenToPokemonServerStatus();
     },
 
     listenToBotPosition: function(){
@@ -45,6 +47,16 @@ $(function(){
       });
       io.socket.get('/bot', this.printBot.bind(this));
       io.socket.on('botLocation', this.printBot.bind(this));
+    },
+
+    listenToPokemonServerStatus: function(){
+      this.$serverStatus = this.$('span.server-status');
+      /* AVOID SERVER CRASH LOST SOCKET :( */
+      io.socket.on('connect', function(){
+        io.socket.get('/pokemon-server', function(){});
+      });
+      io.socket.get('/pokemon-server', this.emitStatus.bind(this));
+      io.socket.on('serverStatus', this.emitStatus.bind(this));
     },
 
     printBot: function(bot){
@@ -68,6 +80,13 @@ $(function(){
                     .bindPopup(text);
       marker.pokemonId = pokemon.id;
       this.markers[pokemon.id] = marker;
+    },
+
+    printServerStatus: function(status){
+      if(!this.$serverStatus || !this.$serverStatus.length) return;
+      this.$serverStatus.html('Pokemon server: ' + status.toUpperCase() + '&nbsp;');
+      if(status === 'online') return this.$serverStatus.css('color', 'green');
+      this.$serverStatus.css('color', 'red');
     },
 
     destroyPokemon: function(pokemonId){

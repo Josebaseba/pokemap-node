@@ -1,20 +1,34 @@
 
-var Pokeio = require('pokemon-go-node-api');
 var pokemons = require('../pokemons.json');
 
 module.exports = {
 
   init: function(){
-    var that = this;
     this.destroyExpired();
-    this.loginPokeio(function logued(err){
-      if(err) return sails.log.error('ERROR AT LOGIN:', err);
+    this.startProcess();
+  },
+
+  startProcess: function(){
+    var that = this;
+    UserStatus.pokemonServerStatus('offline');
+    if(this.bot) delete this.bot;
+    var PokemonGO = require('pokemon-go-node-api');
+    this.bot = new PokemonGO.Pokeio();
+    console.log('start login', new Date());
+    this.loginPokeio(that, function logued(err){
+      console.log('logued');
+      if(err){
+        sails.log.error('ERROR AT LOGIN:', err);
+        return setTimeout(function(){
+          that.startProcess();
+        }, 10000);
+      }
       var coords = that.calculateAllCoords();
       that.initializeWalkingBot(coords);
     });
   },
 
-  loginPokeio: function(done){
+  loginPokeio: function(that, done){
     var location = {
       type: 'coords',
       coords: {
@@ -26,7 +40,13 @@ module.exports = {
     var username = 'hackedbyme';
     var password = 'simple4321';
     var provider = 'ptc';
-    Pokeio.init(username, password, location, provider, done);
+    that.bot.init(username, password, location, provider, function(err){
+      if(err) return that.startProcess.call(that, 'Init error');
+      if(that.bot.playerInfo.apiEndpoint === 'https://null/rpc'){
+        return that.startProcess.call(that, 'Invalid endPoint');
+      }
+      return done();
+    });
   },
 
   calculateAllCoords: function(){
@@ -67,24 +87,31 @@ module.exports = {
   initializeWalkingBot: function(points){
     var step = 0;
     var that = this;
+    var errors = 0;
     async.forever(
       function(next){
-        Pokeio.SetLocation(points[step], function(err, coords){
+        that.bot.SetLocation(points[step], function(err, coords){
           if(err){
+            errors += 1;
             sails.log.error('ERROR SET LOCATION', err, new Date());
-            return setTimeout(next, 30000);
+            if(errors < 10) return setTimeout(next, 30000);
+            return next('Error in the Location');
           }
           sails.bot = coords;
           sails.sockets.broadcast('bot', 'botLocation', sails.bot);
-          Pokeio.Heartbeat(function(err, hb){
+          that.bot.Heartbeat(function(err, hb){
             if(err){
+              errors += 1;
               sails.log.error('ERROR HEARTBEAT', err, new Date());
-              return setTimeout(next, 30000);
+              if(errors < 3) return setTimeout(next, 3000);
+              return next('Error in the Heartbeat');
             }
+            errors = 0;
+            UserStatus.pokemonServerStatus('online');
             for (var i = hb.cells.length - 1; i >= 0; i--) {
               if(hb.cells[i].MapPokemon && hb.cells[i].MapPokemon[0]){
                 for (var x = hb.cells[i].MapPokemon.length - 1; x >= 0; x--){
-                  that.pokemonFound(hb.cells[i].MapPokemon[x]);
+                  that.pokemonFound(hb.cells[i].MapPokemon[x], that);
                 }
               }
             }
@@ -94,18 +121,21 @@ module.exports = {
           });
         });
       },
-      function(err){}
+      function(err){
+        sails.log.error('Stop async.forever ->', err);
+        that.startProcess();
+      }
     );
   },
 
-  pokemonFound: function(pokemonLocation){
+  pokemonFound: function(pokemonLocation, that){
     //   { SpawnpointId: '0d4e35d4c61',
     // EncounterId: Long { low: 33726077, high: -1939412224, unsigned: true },
     // PokedexTypeId: 13,
     // ExpirationTimeMs: Long { low: 252531044, high: 342, unsigned: false },
     // Latitude: 43.216107912764784,
     // Longitude: -2.7388279215132316 }
-    var pokemon = Pokeio.pokemonlist[pokemonLocation.PokedexTypeId - 1];
+    var pokemon = that.bot.pokemonlist[pokemonLocation.PokedexTypeId - 1];
     if(!pokemon) return;
     delete pokemon.id;
     pokemon.latitude = pokemonLocation.Latitude;
