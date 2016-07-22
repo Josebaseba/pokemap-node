@@ -55,8 +55,8 @@ $(function(){
       io.socket.on('connect', function(){
         io.socket.get('/pokemon-server', function(){});
       });
-      io.socket.get('/pokemon-server', this.emitStatus.bind(this));
-      io.socket.on('serverStatus', this.emitStatus.bind(this));
+      io.socket.get('/pokemon-server', this.printServerStatus.bind(this));
+      io.socket.on('serverStatus', this.printServerStatus.bind(this));
     },
 
     printBot: function(bot){
