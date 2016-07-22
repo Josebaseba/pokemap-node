@@ -71,14 +71,14 @@ module.exports = {
       function(next){
         Pokeio.SetLocation(points[step], function(err, coords){
           if(err){
-            sails.log.error('ERROR SET LOCATION');
+            sails.log.error('ERROR SET LOCATION', err, new Date());
             return setTimeout(next, 30000);
           }
           sails.bot = coords;
           sails.sockets.broadcast('bot', 'botLocation', sails.bot);
           Pokeio.Heartbeat(function(err, hb){
             if(err){
-              sails.log.error('ERROR HEARTBEAT', err);
+              sails.log.error('ERROR HEARTBEAT', err, new Date());
               return setTimeout(next, 30000);
             }
             for (var i = hb.cells.length - 1; i >= 0; i--) {
