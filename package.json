@@ -1,8 +1,8 @@
 {
   "name": "pokemap",
   "private": true,
-  "version": "0.1.1",
-  "description": "a Sails application",
+  "version": "0.2.0",
+  "description": "Pokemap",
   "keywords": [],
   "dependencies": {
     "bcrypt": "^0.8.0",

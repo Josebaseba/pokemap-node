@@ -71,7 +71,12 @@ $(function(){
       var text = '<b>' + pokemon.name + '</b><br>';
       if(pokemon.expiration){
         var date = new Date(pokemon.expiration);
-        var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        var hours = date.getHours()
+        var minutes = date.getMinutes();
+        if(minutes < 10) minutes = '0' + minutes;
+        var seconds = date.getSeconds();
+        if(seconds < 10) seconds = '0' + seconds;
+        var time = hours + ":" + minutes + ":" + seconds;
         text += 'Hasta: <b>' + time + '</b>';
       }
       var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/' + parseInt(pokemon.num) + '.png'});
