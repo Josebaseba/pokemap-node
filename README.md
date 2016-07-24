@@ -88,6 +88,8 @@ module.exports = {
 
 More info about the local.js file: [Sailsjs config](http://sailsjs.org/documentation/concepts/configuration/the-local-js-file)
 
+Change `/assets/js/views/map.js` line [32](https://github.com/Josebaseba/pokemap-node/blob/master/assets/js/views/map.js#L32) with your town coords, the center of the town.
+
 After that, go to `views/emails/reset.ejs` and `views/emails/welcome.ejs`, and change the href="" attributes to your future URL.
 
 Now launch your mongo server, `mongod --dbpath=.` and the redis server: `redis-server`. It works with the default values, but you can modify them inside: `config/connections.js`, `config/session.js` and `config/sockets.js`.
