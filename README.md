@@ -4,13 +4,13 @@ This pokemap shows all the pokemons in a certain area/town/city, in real time. T
 
 ![Pokemap example](/assets/img/pokegif.gif?raw=true)
 
-You can see the the bot position (the moving egg), to check were is it in each moment. You have an admin area, to accepts the requests of the people that want want to use it in your area. If you know how to upload all this project to a server you can make a lot of kids (and not only kids) really happy.
-
-The main core is created using [Sailsjs](http://sailsjs.org/), and the front with [Backbone](http://backbonejs.org/)
+You can see the the bot position (the moving egg), to check were is it in each moment. You have an admin area, to accepts the requests of the people that want want to use it in your area. If you upload this project to a server you can make a lot of kids (and not only kids) really happy.
 
 ## How can I use it?
 
 Requirements: node 6, mongo server, redis server, [MapBox account (free)](https://mapbox.com), [SendGrid account (free)](https://sendgrid.com), and two accounts in pokemonGo, both accounts have to be initialized in pokemonGo (I recommend one via google, and another one via pokeClub, this is a huge improvement of the user experience, because if one of the login type fails automatically the app will try the other login way. That's more uptime to the final user.)
+
+The backend is created using [Sails](http://sailsjs.org/), and the frontend with [Backbone](http://backbonejs.org/)
 
 ```
 git clone https://github.com/Josebaseba/pokemap-node
@@ -19,7 +19,7 @@ git clone https://github.com/Josebaseba/pokemap-node
 Go to the downloaded folder and:
 
 ```
-npm install
+sudo npm install
 ```
 
 I'm working with node 6, but it should work with node 4 too.
@@ -84,21 +84,33 @@ module.exports = {
 
 More info about the local.js file: [Sailsjs config](http://sailsjs.org/documentation/concepts/configuration/the-local-js-file)
 
+After that, go to `views/emails/reset.ejs` and `views/emails/welcome.ejs`, and change the href="" attributes to your future URL.
+
 Now launch your mongo server, `mongod --dbpath=.` and the redis server: `redis-server`. It works with the default values, but you can modify them inside: `config/connections.js`, `config/session.js` and `config/sockets.js`.
 
 I use redis, to store the sessions and the sockets, if we restart the node app, we don't loose the sessions, again, that's huge for the final user. And in mongo we store that pokemons that the bot found, until they get droped from the database, because of the expiration time of each pokemon.
 
 More info about how to configure the databases, sessions and sockets here: [Sails config](http://sailsjs.org/documentation/reference/configuration)
 
-Right now the limit of pokemons that you are going to see the first time that you log in the app is: 300, in my experience that's enougth but if you need more, because the area that you're working with is really huge then modify the `config/blueprints.js` file, changing the `defaultLimit` attribute. More info [blueprints](http://sailsjs.org/documentation/reference/configuration/sails-config-blueprints)
+To launch the app:
+
+```
+npm start
+```
+
+Right now the limit of pokemons that you are going to see the first time that you log in the app is: 300, in my experience that's enough but if you need more, because the area that you're working with is really huge then modify the `config/blueprints.js` file, changing the `defaultLimit` attribute. More info [blueprints](http://sailsjs.org/documentation/reference/configuration/sails-config-blueprints)
 
 ### Notes
+
+When you login as a admin, if you go to localhost:1337/admin or http://yoururl/admin to manage the new users. When you accept I new one, he'll get the password to login into the app.
 
 All the static content is in spanish right now, you can fork the project and change the language or it would be better if you take a look at this: [http://sailsjs.org/documentation/concepts/internationalization](internationalization).
 
 If you send me a new language I'll accept the pull request as soon as I can.
 
 This project is not really stable, the pokemonGo API is a private API, so who now how long is going to last this project, could be a year, six month, two week or forever and ever.
+
+If you're going to use the app somewhere, and if you open it to more kids, send me a message because I'll love to know it!
 
 ### Thanks
 
