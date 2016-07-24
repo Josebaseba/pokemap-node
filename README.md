@@ -8,7 +8,7 @@ You can see the the bot position (the moving egg), to check were is it in each m
 
 If you upload this project to a server you can make a lot of kids (and not only kids) really happy.
 
-Working demo: http://pokemap.josebaseba.com, request a invitation here: http://pokemap.josebaseba.com/signup and check the pokemons in my town.
+Working demo: http://pokemap.josebaseba.com, request a invitation here: http://pokemap.josebaseba.com/signup and check the pokemons in my town. <b>Please, note that the demo works ONLY in my town</b>, if you want it in your town, follow the explanation:
 
 ## How can I use it?
 
