@@ -4,7 +4,9 @@ This pokemap shows all the pokemons in a certain area/town/city, in real time. T
 
 ![Pokemap example](/assets/img/pokegif.gif?raw=true)
 
-You can see the the bot position (the moving egg), to check were is it in each moment. You have an admin area, to accepts the requests of the people that want want to use it in your area. If you upload this project to a server you can make a lot of kids (and not only kids) really happy.
+You can see the the bot position (the moving egg), to check were is it in each moment. You have an admin area, to accepts the requests of the people that want want to use it in your area. In the first connection you get the pokemons that still in the area.
+
+If you upload this project to a server you can make a lot of kids (and not only kids) really happy.
 
 ## How can I use it?
 
