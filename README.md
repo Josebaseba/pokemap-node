@@ -104,6 +104,20 @@ Right now the limit of pokemons that you are going to see the first time that yo
 
 When you login as a admin, if you go to localhost:1337/admin or http://yoururl/admin to manage the new users. When you accept I new one, he'll get the password to login into the app.
 
+The activation emails don't work in development environment. Comment the following lines to avoid that:
+
+```javascript
+// api/services/MailService.js file
+
+// line 11
+if(sails.config.environment !== 'production') return; // comment this
+
+// line 43
+if(sails.config.environment !== 'production') return; // comment this
+```
+
+Or use the NODE_ENV=production flag to test it.
+
 All the static content is in spanish right now, you can fork the project and change the language or it would be better if you take a look at this: [http://sailsjs.org/documentation/concepts/internationalization](internationalization).
 
 If you send me a new language I'll accept the pull request as soon as I can.
@@ -111,6 +125,56 @@ If you send me a new language I'll accept the pull request as soon as I can.
 This project is not really stable, the pokemonGo API is a private API, so who now how long is going to last this project, could be a year, six month, two week or forever and ever.
 
 If you're going to use the app somewhere, and if you open it to more kids, send me a message because I'll love to know it!
+
+### Uploading to a server
+
+Install nginx, redis, mongo, node, npm, and node-forever.
+
+Nginx config:
+
+```
+nano /etc/nginx/conf.d/default.conf
+```
+
+```
+server {
+  listen 80;
+  server_name yourdomain.com;
+
+  location / {
+    proxy_pass http://localhost:1337/;
+    proxy_set_header Host $host;
+    proxy_buffering off;
+    proxy_set_header X-Real-IP $remote_addr;
+    client_max_body_size 50M;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_redirect off;
+    proxy_http_version 1.1;
+    proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;
+    proxy_set_header  X-NginX-Proxy    true;
+  }
+
+  location ~* \.(jpg|jpeg|gif|png|ico|css|zip|pdf|txt|mp3|wav|bmp|doc|js|html|htm|eot|svg|ttf|woff|otf|woff2|map)$ {
+    access_log off;
+    expires max;
+    root /projecturl/.tmp/public;
+  }
+
+}
+```
+
+```
+sudo npm install -g forever
+```
+
+In your project folder:
+
+```
+NODE_ENV=production forever start app.js
+```
+
+In production launch it always with the NODE_ENV=production flag!
 
 ### Thanks
 
