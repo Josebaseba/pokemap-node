@@ -8,6 +8,8 @@ You can see the the bot position (the moving egg), to check were is it in each m
 
 If you upload this project to a server you can make a lot of kids (and not only kids) really happy.
 
+Working demo: http://pokemap.josebaseba.com, request a invitation here: http://pokemap.josebaseba.com/signup and check the pokemons in my town.
+
 ## How can I use it?
 
 Requirements: node 6, mongo server, redis server, [MapBox account (free)](https://mapbox.com), [SendGrid account (free)](https://sendgrid.com), and two accounts in pokemonGo, both accounts have to be initialized in pokemonGo (I recommend one via google, and another one via pokeClub, this is a huge improvement of the user experience, because if one of the login type fails automatically the app will try the other login way. That's more uptime to the final user.)
