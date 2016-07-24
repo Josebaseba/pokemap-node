@@ -31,7 +31,7 @@
   <td>{{{ admin }}}</td>
   <td {{# if(status === 'online'){ }} style="color: #A0D468" {{# } }}>{{{ status }}}</td>
   <td>{{{ message }}}</td>
-  <td>{{{ createdAt }}}</td>
+  <td>{{{ String(new Date(createdAt)).substring(0, 24) }}}</td>
   <td>
     {{# if(!actived){ }}
       <button type="button" class="edit-activation btn btn-success btn-block">Activar</button>
