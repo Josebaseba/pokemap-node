@@ -33,7 +33,7 @@ module.exports = {
     var username = sails.config.botUsers[whichBot].username;
     var password = sails.config.botUsers[whichBot].password;
     var provider = sails.config.botUsers[whichBot].provider;
-    if(whichBot === 1) whichBot = 0; else whichBot = 0;
+    if(whichBot === 1) whichBot = 0; else whichBot = 1;
     that.bot.init(username, password, location, provider, function(err){
       if(err) return that.startProcess.call(that, 'Init error');
       if(that.bot.playerInfo.apiEndpoint === 'https://null/rpc'){
