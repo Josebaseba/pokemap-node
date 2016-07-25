@@ -6,12 +6,11 @@ $(function(){
 
     el: 'div#admin-view',
 
-    events: {
-
-    },
+    events: {},
 
     initialize: function(){
       this.$users = this.$('tbody.users');
+      this.$totalUsers = this.$('span.total-users');
       this.$connected = this.$('span.total-connected');
       this.listenTo(Backbone, 'loadUsers', this.loadUsers);
       io.socket.get('/connections', this.connectedPeople.bind(this));
@@ -32,12 +31,13 @@ $(function(){
       io.socket.on('user', this.userEvent.bind(this));
     },
 
-    suscribeToUsers: function(users, jwres){
+    suscribeToUsers: function(users){
       this.users = new app.UserCollection(users);
       this.users.each(function(user){
         var userView = new app.UserView({model: user});
         this.$users.append(userView.render().el);
       }, this);
+      this.printTotalUsers(this.users.length);
     },
 
     userEvent: function(event){
@@ -49,16 +49,22 @@ $(function(){
 
     createUser: function(user){
       if(!this.users){
-        this.users = new app.UserCollection(users);
-        this.users.each(this.printNewUser, this);
+        this.users = new app.UserCollection(user);
+        this.printTotalUsers(this.users.length);
+        return this.users.each(this.printNewUser, this);
       }
       var user = this.users.add(user);
+      this.printTotalUsers(this.users.length);
       this.printNewUser(user);
     },
 
     printNewUser: function(user){
       var userView = new app.UserView({model: user});
       this.$users.prepend(userView.render().el);
+    },
+
+    printTotalUsers: function(totalUsers){
+      this.$totalUsers.text(totalUsers);
     }
 
   });
