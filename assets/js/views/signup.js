@@ -23,11 +23,13 @@ $(function(){
         email: this.$email.val(),
         message : this.$message.val()
       };
+      this.email = this.$email.val();
       app.proxy('POST', '/signup', data, this.signedUp, this.error, this);
     },
 
     signedUp: function(){
       this.$('div.form-container').remove();
+      this.$('span.user-email').text(this.email);
       this.$('div.success').show();
     },
 
