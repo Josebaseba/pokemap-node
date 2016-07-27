@@ -40,7 +40,7 @@ module.exports.routes = {
 
   'PUT /online': 'UserController.online',
 
-  'GET /mapbox-token': 'IndexController.mapboxToken',
+  'GET /carto-viz': 'IndexController.cartoViz',
 
   'GET /reset/:email': 'UserController.resetPassword',
 

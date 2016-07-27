@@ -12,7 +12,7 @@ Working demo: http://pokemap.josebaseba.com, request a invitation here: http://p
 
 ## How can I use it?
 
-Requirements: node 6, mongo server, redis server, [MapBox account (free)](https://mapbox.com), [SendGrid account (free)](https://sendgrid.com), and two accounts in pokemonGo, both accounts have to be initialized in pokemonGo (I recommend one via google, and another one via pokeClub, this is a huge improvement of the user experience, because if one of the login type fails automatically the app will try the other login way. That's more uptime to the final user.)
+Requirements: node 6, mongo server, redis server, [Carto account (free)](https://carto.com), [SendGrid account (free)](https://sendgrid.com), and two accounts in pokemonGo, both accounts have to be initialized in pokemonGo (I recommend one via google, and another one via pokeClub, this is a huge improvement of the user experience, because if one of the login type fails automatically the app will try the other login way. That's more uptime to the final user.)
 
 The backend is created using [Sails](http://sailsjs.org/), and the frontend with [Backbone](http://backbonejs.org/)
 
@@ -28,7 +28,7 @@ sudo npm install
 
 I'm working with node 6, but it should work with node 4 too.
 
-Now get your API keys in sendGrid and in Mapbox, in this last one, check your map and customize it.
+Now get your API keys in sendGrid and in Carto, in this last one, check your map and customize it.
 
 Now you need to create a local.js file inside the /config folder, and it should look like this:
 
@@ -37,10 +37,8 @@ module.exports = {
 
   sendGrid: 'SG.123thisISTheSENDGRIDapi',
 
-  mapBox: {
-    accessToken: 'pk.mapboxAccessToken',
-    mapId: 'user.mapId',
-    tileLayer: 'https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.mapboxAccessToken',
+  carto: {
+    viz: 'https://xxxxx.carto.com/api/v2/viz/234235532-53fd-235-bd93-345345/viz.json',
     attribution: '<span class="small h6 created-by"><span class="server-status"></span> Created by <a href="https://twitter.com/josebaseba" target="_blank">Josebaseba</a></span>'
   },
 

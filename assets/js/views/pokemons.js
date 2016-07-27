@@ -11,6 +11,10 @@ $(function(){
     },
 
     initialize: function(){
+      this.listenTo(Backbone, 'getPokemons', this.getPokemons);
+    },
+
+    getPokemons: function(){
       /* AVOID SERVER CRASH LOST SOCKET :( */
       io.socket.on('connect', function(){
         io.socket.get('/pokemon', function(){});

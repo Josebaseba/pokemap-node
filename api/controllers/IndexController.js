@@ -5,8 +5,8 @@ module.exports = {
     return res.view('app');
   },
 
-  mapboxToken: function(req, res){
-    return res.ok(sails.config.mapBox);
+  cartoViz: function(req, res){
+    return res.ok(sails.config.carto);
   }
 
 }

@@ -25,19 +25,22 @@ $(function(){
     },
 
     getTokens: function(){
-      app.proxy('GET', '/mapbox-token', {}, this.startLeaflet, this._error, this);
+      app.proxy('GET', '/carto-viz', {}, this.startCarto, this._error, this);
     },
 
-    startLeaflet: function(data){
-      this.map = L.map('pokemap').setView([43.222, -2.729], 16);
-      L.tileLayer(data.tileLayer, {
-          attribution: data.attribution,
-          maxZoom: 18,
-          id: data.mapId,
-          accessToken: data.accessToken
-      }).addTo(this.map);
-      this.listenToBotPosition();
-      this.listenToPokemonServerStatus();
+    startCarto: function(data){
+      var that = this;
+      cartodb.createVis('pokemap', data.viz, {carto_logo:false}).done(function(vis, layers) {
+        that.map = vis.getNativeMap();
+        that.setAttribution(data.attribution);
+        Backbone.trigger('getPokemons');
+        that.listenToBotPosition();
+        that.listenToPokemonServerStatus();
+      });
+    },
+
+    setAttribution: function(attributionHTML){
+      this.$('div.leaflet-bottom.leaflet-right').html(attributionHTML);
     },
 
     listenToBotPosition: function(){
