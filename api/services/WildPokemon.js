@@ -92,8 +92,8 @@ module.exports = {
           that.bot.Heartbeat(function(err, hb){
             if(err){
               errors += 1;
-              sails.log.error('ERROR HEARTBEAT', err, new Date());
-              if(errors < 3) return setTimeout(next, 3000);
+              //sails.log.error('ERROR HEARTBEAT', err, new Date());
+              if(errors < 3) return next();
               return next('Error in the Heartbeat');
             }
             errors = 0;
