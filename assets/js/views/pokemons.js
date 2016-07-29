@@ -12,6 +12,7 @@ $(function(){
 
     initialize: function(){
       this.listenTo(Backbone, 'getPokemons', this.getPokemons);
+      this.removeExpiredPokemons();
     },
 
     getPokemons: function(){
@@ -32,10 +33,32 @@ $(function(){
 
     pokemonEvent: function(event){
       if(event.verb === 'created'){
+        this.pokemons.add(event.data);
         Backbone.trigger('printPokemon', event.data);
       }else{
+        this.pokemons.remove({id: event.id});
         Backbone.trigger('destroyPokemon', event.id);
       }
+    },
+
+    removeExpiredPokemons: function(){
+      var that = this;
+      setInterval(function(){
+        if(!that.pokemons || !that.pokemons.length) return;
+        var expiredPokemons = that.getExpiredPokemons();
+        if(!expiredPokemons,length) return;
+        _.each(expiredPokemons, function(pokemon){
+          Backbone.trigger('destroyPokemon', pokemon.get('id'));
+          pokemon.destroy();
+        }, that);
+      }, 5000);
+    },
+
+    getExpiredPokemons: function(){
+      var date = new Date().getTime();
+      return this.pokemons.filter(function(pokemon){
+        return new Date(pokemon.get('expiration')).getTime() <= date;
+      });
     }
 
   });
