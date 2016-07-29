@@ -84,7 +84,7 @@ module.exports = {
           if(err){
             errors += 1;
             sails.log.error('ERROR SET LOCATION', err, new Date());
-            if(errors < 10) return setTimeout(next, 30000);
+            if(errors < 10) return setTimeout(next, 3000);
             return next('Error in the Location');
           }
           sails.bot = coords;
@@ -93,7 +93,7 @@ module.exports = {
             if(err){
               errors += 1;
               //sails.log.error('ERROR HEARTBEAT', err, new Date());
-              if(errors < 3) return next();
+              if(errors < 10) return next();
               return next('Error in the Heartbeat');
             }
             errors = 0;
