@@ -12,7 +12,7 @@ Working demo: http://pokemap.josebaseba.com, request a invitation here: http://p
 
 ## How can I use it?
 
-Requirements: node 6, mongo server, redis server, [Carto account (free)](https://carto.com), [SendGrid account (free)](https://sendgrid.com), and two accounts in pokemonGo, both accounts have to be initialized in pokemonGo (I recommend one via google, and another one via pokeClub, this is a huge improvement of the user experience, because if one of the login type fails automatically the app will try the other login way. That's more uptime to the final user.)
+Requirements: node 6, mongo server, redis server, [Carto account (free)](https://carto.com), [SendGrid account (free)](https://sendgrid.com), and two accounts in pokemonGo, both accounts have to be initialized in pokemonGo. Right now I realized that the google accounts goes much more faster with the requests, I don't know why, but my two bots are faster with google. You can create as much bots as you want in your local.js file, but each `botName` attribute must be different.
 
 The backend is created using [Sails](http://sailsjs.org/), and the frontend with [Backbone](http://backbonejs.org/)
 
@@ -63,12 +63,13 @@ module.exports = {
     username: 'pokemonLoginUsername',
     password: 'somepass',
     provider: 'ptc', // This is the pokeclub login
-    botName : 'rick'
+    botName : 'rick' // Required
   }, {
     username: 'somegmailaccount@gmail.com',
     password: 'logingooglepass',
     provider: 'google', // Via google
-    botName : 'morty'
+    botName : 'morty', // Required
+    reverse : true // Walks in the opposite direction
   }],
 
   // Which are the bot limits in each cardinal point?
