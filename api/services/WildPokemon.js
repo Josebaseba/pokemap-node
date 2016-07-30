@@ -93,8 +93,8 @@ module.exports = {
           that[botUserData.botName].Heartbeat(function(err, hb){
             if(err){
               errors += 1;
-              sails.log.error('ERROR HEARTBEAT', err, new Date());
-              if(errors < 30) return next();
+              //sails.log.error('ERROR HEARTBEAT', err, new Date());
+              if(errors < 20) return next();
               return next('Error in the Heartbeat');
             }
             errors = 0;
