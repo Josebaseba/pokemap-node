@@ -6,12 +6,11 @@ $(function(){
 
     el: 'div#pokemap',
 
-    events: {
-
-    },
+    events: {},
 
     initialize: function(){
       this.listenTo(Backbone, 'getPokemons', this.getPokemons);
+      this.listenTo(Backbone, 'refreshPokemons', this.refreshPokemons);
       this.removeExpiredPokemons();
     },
 
@@ -28,6 +27,22 @@ $(function(){
       this.pokemons = new app.PokemonCollection(pokemons);
       this.pokemons.each(function(pokemon){
         Backbone.trigger('printPokemon', pokemon.toJSON());
+      });
+    },
+
+    refreshPokemons: function(done){
+      if(!this.pokemons) return;
+      var that = this;
+      io.socket.get('/pokemon', function(pokemons){
+        _.each(_.clone(that.pokemons.models), function(pokemon) {
+          Backbone.trigger('destroyPokemon', pokemon.get('id'));
+          pokemon.destroy();
+        });
+        that.pokemons = new app.PokemonCollection(pokemons);
+        that.pokemons.each(function(pokemon){
+          Backbone.trigger('printPokemon', pokemon.toJSON());
+        });
+        return done();
       });
     },
 
