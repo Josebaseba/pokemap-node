@@ -62,13 +62,15 @@ $(function(){
       io.socket.on('serverStatus', this.printServerStatus.bind(this));
     },
 
-    printBot: function(bot){
-      if(!bot) return;
-      console.log(bot);
-      // if(this.markers['bot']) this.map.removeLayer(this.markers['bot']);
-      // var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/egg.png'});
-      // var marker = L.marker([bot.latitude, bot.longitude], {icon: pokeIcon}).addTo(this.map);
-      // this.markers['bot'] = marker;
+    printBot: function(bots){
+      if(!bots) return;
+      var botsNames = Object.keys(bots);
+      _.each(botsNames, function(botName){
+        if(this.markers[botName]) this.map.removeLayer(this.markers[botName]);
+        var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/egg.png'});
+        var marker = L.marker([bots[botName].latitude, bots[botName].longitude], {icon: pokeIcon}).addTo(this.map);
+        this.markers[botName] = marker;
+      }, this);
     },
 
     printPokemon: function(pokemon){

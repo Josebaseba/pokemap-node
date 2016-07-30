@@ -89,12 +89,12 @@ module.exports = {
           }
           if(!sails.bots) sails.bots = {};
           sails.bots[botUserData.botName] = coords;
-          sails.sockets.broadcast('bot', 'botLocation', sails.bot);
+          sails.sockets.broadcast('bot', 'botLocation', sails.bots);
           that[botUserData.botName].Heartbeat(function(err, hb){
             if(err){
               errors += 1;
               sails.log.error('ERROR HEARTBEAT', err, new Date());
-              if(errors < 10) return next();
+              if(errors < 30) return next();
               return next('Error in the Heartbeat');
             }
             errors = 0;
