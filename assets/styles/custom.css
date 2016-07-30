@@ -61,6 +61,10 @@ body {
   max-width: 32px;
 }
 
+#menu button:active, #menu button:hover {
+  color: #434a54;
+}
+
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
