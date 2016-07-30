@@ -22,7 +22,7 @@ $(function(){
       this.$refreshIcon.addClass('rotating');
       var that = this;
       Backbone.trigger('refreshPokemons', function(err){
-        if(!err) that.showSuccessModal();
+        if(!err) return that.showSuccessModal();
         that.$refreshIcon.removeClass('rotating');
         that.$refresh.attr('disabled', false);
       });
@@ -37,6 +37,8 @@ $(function(){
       var that = this;
       setTimeout(function(){
         that.$alert.html('');
+        that.$refreshIcon.removeClass('rotating');
+        that.$refresh.attr('disabled', false);
       }, 7500);
     },
 
