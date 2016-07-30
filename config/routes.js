@@ -38,6 +38,8 @@ module.exports.routes = {
 
   'GET /pokemon-server': 'UserController.pokemonServerStatus',
 
+  'POST /message': 'UserController.message',
+
   'PUT /online': 'UserController.online',
 
   'GET /carto-viz': 'IndexController.cartoViz',

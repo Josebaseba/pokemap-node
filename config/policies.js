@@ -28,6 +28,7 @@ module.exports.policies = {
     '*': 'isAdmin',
     'me': 'sessionAuth',
     'bot': 'sessionAuth',
+    'message': 'sessionAuth',
     'online': 'sessionAuth',
     'pokemonServerStatus': 'sessionAuth',
     'login': true,

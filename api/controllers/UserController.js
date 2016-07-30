@@ -60,6 +60,18 @@ module.exports = {
     });
   },
 
+  message: function(req, res){
+    if(!req.param('message')) return res.badRequest();
+    User.findOne({id: req.session.user.id}).exec(function(err, user){
+      if(err) return res.serverError(err);
+      if(!user) return res.notFound();
+      MailService.sendMessageToAdmin(user, req.param('message'), function(err){
+        if(err) return res.badRequest();
+        return res.ok();
+      });
+    });
+  },
+
   pokemonServerStatus: function(req, res){
     if(!req.isSocket) return res.badRequest();
     if(!sails.pokemonServerStatus) sails.pokemonServerStatus = 'offline';

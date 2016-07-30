@@ -43,7 +43,7 @@ $(function(){
     },
 
     showContactForm: function(){
-      // TODO: Send email to admin
+      Backbone.trigger('showContactForm');
     }
 
   });
