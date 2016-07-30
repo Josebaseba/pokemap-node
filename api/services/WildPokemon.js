@@ -1,43 +1,43 @@
 
 var pokemons = require('../pokemons.json');
 
-var whichBot = 1;
-
 module.exports = {
 
   init: function(){
     this.destroyExpired();
-    this.startProcess();
+    _.each(sails.config.botUsers, function(botUserData){
+      this.startProcess(botUserData);
+    }, this);
   },
 
-  startProcess: function(){
+  startProcess: function(botUserData){
     var that = this;
     UserStatus.pokemonServerStatus('offline');
-    if(this.bot) delete this.bot;
+    if(this[botUserData.botName]) delete this[botUserData.botName];
     var PokemonGO = require('pokemon-go-node-api');
-    this.bot = new PokemonGO.Pokeio();
-    this.loginPokeio(that, function logued(err){
+    this[botUserData.botName] = new PokemonGO.Pokeio();
+    this.loginPokeio(that, botUserData, function logued(err){
       if(err){
         sails.log.error('ERROR AT LOGIN:', err);
         return setTimeout(function(){
-          that.startProcess();
+          that.startProcess(botUserData);
         }, 10000);
       }
-      var coords = that.calculateAllCoords();
-      that.initializeWalkingBot(coords);
+      var points = that.calculateAllCoords();
+      if(botUserData.reverse) points = points.reverse();
+      that.initializeWalkingBot(points, botUserData);
     });
   },
 
-  loginPokeio: function(that, done){
+  loginPokeio: function(that, botUserData, done){
     var location = sails.config.initialLocation;
-    var username = sails.config.botUsers[whichBot].username;
-    var password = sails.config.botUsers[whichBot].password;
-    var provider = sails.config.botUsers[whichBot].provider;
-    if(whichBot === 1) whichBot = 0; else whichBot = 1;
-    that.bot.init(username, password, location, provider, function(err){
-      if(err) return that.startProcess.call(that, 'Init error');
-      if(that.bot.playerInfo.apiEndpoint === 'https://null/rpc'){
-        return that.startProcess.call(that, 'Invalid endPoint');
+    var username = botUserData.username;
+    var password = botUserData.password;
+    var provider = botUserData.provider;
+    this[botUserData.botName].init(username, password, location, provider, function(err){
+      if(err) return that.startProcess.call(that, botUserData);
+      if(that[botUserData.botName].playerInfo.apiEndpoint === 'https://null/rpc'){
+        return that.startProcess.call(that, botUserData);
       }
       return done();
     });
@@ -74,25 +74,26 @@ module.exports = {
     return points;
   },
 
-  initializeWalkingBot: function(points){
+  initializeWalkingBot: function(points, botUserData){
     var step = 0;
     var that = this;
     var errors = 0;
     async.forever(
       function(next){
-        that.bot.SetLocation(points[step], function(err, coords){
+        that[botUserData.botName].SetLocation(points[step], function(err, coords){
           if(err){
             errors += 1;
             sails.log.error('ERROR SET LOCATION', err, new Date());
             if(errors < 10) return setTimeout(next, 3000);
             return next('Error in the Location');
           }
-          sails.bot = coords;
+          if(!sails.bots) sails.bots = {};
+          sails.bots[botUserData.botName] = coords;
           sails.sockets.broadcast('bot', 'botLocation', sails.bot);
-          that.bot.Heartbeat(function(err, hb){
+          that[botUserData.botName].Heartbeat(function(err, hb){
             if(err){
               errors += 1;
-              //sails.log.error('ERROR HEARTBEAT', err, new Date());
+              sails.log.error('ERROR HEARTBEAT', err, new Date());
               if(errors < 10) return next();
               return next('Error in the Heartbeat');
             }
@@ -101,7 +102,7 @@ module.exports = {
             for (var i = hb.cells.length - 1; i >= 0; i--) {
               if(hb.cells[i].MapPokemon && hb.cells[i].MapPokemon[0]){
                 for (var x = hb.cells[i].MapPokemon.length - 1; x >= 0; x--){
-                  that.pokemonFound(hb.cells[i].MapPokemon[x], that);
+                  that.pokemonFound(hb.cells[i].MapPokemon[x], botUserData, that);
                 }
               }
             }
@@ -113,19 +114,19 @@ module.exports = {
       },
       function(err){
         sails.log.error('Stop async.forever ->', err);
-        that.startProcess();
+        that.startProcess(botUserData);
       }
     );
   },
 
-  pokemonFound: function(pokemonLocation, that){
+  pokemonFound: function(pokemonLocation, botUserData, that){
     //   { SpawnpointId: '0d4e35d4c61',
     // EncounterId: Long { low: 33726077, high: -1939412224, unsigned: true },
     // PokedexTypeId: 13,
     // ExpirationTimeMs: Long { low: 252531044, high: 342, unsigned: false },
     // Latitude: 43.216107912764784,
     // Longitude: -2.7388279215132316 }
-    var pokemon = that.bot.pokemonlist[pokemonLocation.PokedexTypeId - 1];
+    var pokemon = that[botUserData.botName].pokemonlist[pokemonLocation.PokedexTypeId - 1];
     if(!pokemon) return;
     delete pokemon.id;
     pokemon.latitude = pokemonLocation.Latitude;

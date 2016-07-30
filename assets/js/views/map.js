@@ -64,10 +64,11 @@ $(function(){
 
     printBot: function(bot){
       if(!bot) return;
-      if(this.markers['bot']) this.map.removeLayer(this.markers['bot']);
-      var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/egg.png'});
-      var marker = L.marker([bot.latitude, bot.longitude], {icon: pokeIcon}).addTo(this.map);
-      this.markers['bot'] = marker;
+      console.log(bot);
+      // if(this.markers['bot']) this.map.removeLayer(this.markers['bot']);
+      // var pokeIcon = new this.MarkerStyle({iconUrl: '/img/pokemons/egg.png'});
+      // var marker = L.marker([bot.latitude, bot.longitude], {icon: pokeIcon}).addTo(this.map);
+      // this.markers['bot'] = marker;
     },
 
     printPokemon: function(pokemon){

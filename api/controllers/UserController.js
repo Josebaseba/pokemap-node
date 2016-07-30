@@ -53,10 +53,10 @@ module.exports = {
 
   bot: function(req, res){
     if(!req.isSocket) return res.badRequest();
-    if(!sails.bot) return res.ok();
+    if(!sails.bots) return res.ok();
     sails.sockets.join(req, 'bot', function(err){
       if(err) return res.serverError(err);
-      return res.send(200, sails.bot);
+      return res.send(200, sails.bots);
     });
   },
 
