@@ -6,10 +6,6 @@ This pokemap shows all the pokemons in a certain area/town/city, in real time. T
 
 You can see the the bot position (the moving egg), to check were is it in each moment. You have an admin area, to accepts the requests of the people that want want to use it in your area. In the first connection you get the pokemons that still in the area.
 
-If you upload this project to a server you can make a lot of kids (and not only kids) really happy.
-
-Working demo: http://pokemap.josebaseba.com, request a invitation here: http://pokemap.josebaseba.com/signup and check the pokemons in my town. <b>Please, note that the demo works ONLY in my town</b>, if you want it in your town, follow the explanation:
-
 ## How can I use it?
 
 Requirements: node 6, mongo server, redis server, [Carto account (free)](https://carto.com), [SendGrid account (free)](https://sendgrid.com), and two accounts in pokemonGo, both accounts have to be initialized in pokemonGo. Right now I realized that the google accounts goes much more faster with the requests, I don't know why, but my two bots are faster with google. You can create as much bots as you want in your local.js file, but each `botName` attribute must be different.
