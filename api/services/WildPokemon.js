@@ -23,7 +23,7 @@ module.exports = {
           that.startProcess(botUserData);
         }, 10000);
       }
-      var points = that.calculateAllCoords();
+      var points = that.calculateAllCoords(botUserData.mapCoords);
       if(botUserData.reverse) points = points.reverse();
       that.initializeWalkingBot(points, botUserData);
     });
@@ -43,16 +43,16 @@ module.exports = {
     });
   },
 
-  calculateAllCoords: function(){
-    var west = sails.config.botMapCoords.west;
-    var north = sails.config.botMapCoords.north;
-    var east =  sails.config.botMapCoords.east;
-    var south = sails.config.botMapCoords.south;
+  calculateAllCoords: function(coords){
+    var west = coords.west;
+    var north = coords.north;
+    var east =  coords.east;
+    var south = coords.south;
     var points = [];
     var allLongitudes = [];
     while(west < east){
       allLongitudes.push(west);
-      west += 0.001;
+      west += 0.0005;
     }
     var allLatitudes = [];
     while(north > south){
