@@ -41,7 +41,7 @@ module.exports.bootstrap = function(cb) {
     sails.lowering = true;
   });
 
-  WildPokemon.init();
+  //WildPokemon.init();
 
   User.update({status: 'online'}, {status: 'offline'}).exec(cb);
 

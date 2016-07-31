@@ -116,3 +116,21 @@ body {
   max-width: 600px;
   margin: auto;
 }
+
+#full-screen-error {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#full-screen-error img {
+  margin: auto;
+  max-height: 700px;
+}
+
+#full-screen-error p {
+  font-size: 18px;
+}

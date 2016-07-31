@@ -21,7 +21,7 @@ $(function(){
           popupAnchor: [-25, -20]
         }
       });
-      this.getTokens();
+    //  this.getTokens();
     },
 
     getTokens: function(){
