@@ -35,7 +35,11 @@ module.exports = {
     var password = botUserData.password;
     var provider = botUserData.provider;
     this[botUserData.botName].init(username, password, location, provider, function(err){
-      if(err) return that.startProcess.call(that, botUserData);
+      if(err){
+        return setTimeout(function(){
+          that.loginPokeio(that, botUserData, done);
+        }, 10000);
+      }
       if(that[botUserData.botName].playerInfo.apiEndpoint === 'https://null/rpc'){
         return that.startProcess.call(that, botUserData);
       }
@@ -52,12 +56,12 @@ module.exports = {
     var allLongitudes = [];
     while(west < east){
       allLongitudes.push(west);
-      west += 0.0005;
+      west += 0.0003;
     }
     var allLatitudes = [];
     while(north > south){
       allLatitudes.push(north);
-      north -= 0.001;
+      north -= 0.0005;
     }
     for(var i = 0; allLatitudes.length > i; i++){
       for(var x = 0; allLongitudes.length > x; x++){
