@@ -12,6 +12,8 @@ Requirements: node 6, mongo server, redis server, [Carto account (free)](https:/
 
 The backend is created using [Sails](http://sailsjs.org/), and the frontend with [Backbone](http://backbonejs.org/)
 
+[Update] Niantic is blocking the AWS servers and DigitalOcean servers as far as I know. You'll need to find another servers provider, but you can use it at home. Maybe some day they'll become nice again with the developers...
+
 ```
 git clone https://github.com/Josebaseba/pokemap-node
 ```
