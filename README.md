@@ -61,23 +61,29 @@ module.exports = {
     username: 'pokemonLoginUsername',
     password: 'somepass',
     provider: 'ptc', // This is the pokeclub login
-    botName : 'rick' // Required
+    botName : 'rick', // Required unique
+    // Which are the bot limits in each cardinal point?
+    // The bots walk doing a square in the map, so add your limits:
+    mapCoords: {
+      west: -2.740102,
+      north: 43.219348,
+      east: -2.725081,
+      south: 43.214555
+    }
   }, {
     username: 'somegmailaccount@gmail.com',
     password: 'logingooglepass',
     provider: 'google', // Via google
-    botName : 'morty', // Required
-    reverse : true // Walks in the opposite direction
+    botName : 'morty', // Required unique
+    reverse : true, // Walks in the opposite direction
+    botMapCoords: {
+      west: -2.73916,
+      north: 43.23066,
+      east: -2.708366,
+      south: 43.21152
+   }
   }],
 
-  // Which are the bot limits in each cardinal point?
-  // The bots walk doing a square in the map, so add your limits:
-  botMapCoords: {
-    west: -2.73916,
-    north: 43.23066,
-    east: -2.708366,
-    south: 43.21152
-  }
 
 };
 
