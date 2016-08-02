@@ -109,6 +109,67 @@ npm start
 
 Right now the limit of pokemons that you are going to see the first time that you log in the app is: 300, in my experience that's enough but if you need more, because the area that you're working with is really huge then modify the `config/blueprints.js` file, changing the `defaultLimit` attribute. More info [blueprints](http://sailsjs.org/documentation/reference/configuration/sails-config-blueprints)
 
+To launch it ina  production environment, generate a `config/env/production.js` file: 
+
+```javascript
+/**
+ * Production environment settings
+ *
+ * This file can include shared settings for a production environment,
+ * such as API keys or remote database passwords.  If you're using
+ * a version control solution for your Sails app, this file will
+ * be committed to your repository unless you add it to your .gitignore
+ * file.  If your repository will be publicly viewable, don't add
+ * any private information to this file!
+ *
+ */
+
+module.exports = {
+
+  port: 1337,
+
+  log: {
+    level: "info"
+  },
+
+  blueprints: {
+    shortcuts: false // THIS IS MANDATORY FOR SECURITY REASONS
+  },
+
+  connections: {
+    mongodb: {
+      adapter: 'sails-mongo',
+      host: 'yourmongoip',
+      port: 27017,
+      user: 'pokemaping',
+      password: 'uieguirgunernug',
+      database: 'pokemaper'
+    }
+  },
+
+  session: {
+    host: 'yourredisip',
+    port: 6379,
+    pass: 'P98oZx}p',
+    prefix: 'sess:'
+  },
+
+  sockets: {
+    host: 'yourredisip',
+    port: 6379,
+    pass: 'KuKWeZpht9T8@,L>WLtCqbMUzhJ9P98oZx}p'
+  }
+
+};
+
+```
+
+And launch the app with:
+
+```
+NODE_ENV=production node app.js
+```
+
 ### Notes
 
 When you login as a admin, if you go to localhost:1337/admin or http://yoururl/admin to manage the new users. When you accept I new one, he'll get the password to login into the app.
