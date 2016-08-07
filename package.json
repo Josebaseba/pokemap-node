@@ -21,7 +21,7 @@
     "grunt-sails-linker": "~0.10.1",
     "grunt-sync": "0.5.2",
     "include-all": "~0.1.6",
-    "pokemon-go-node-api": "^1.0.0",
+    "pokemon-go-node-api": "https://github.com/SpencerSharkey/Pokemon-GO-node-api",
     "rc": "1.1.6",
     "sails": "~0.12.1",
     "sails-mongo": "~0.12.0",
