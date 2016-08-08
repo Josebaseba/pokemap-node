@@ -57,12 +57,12 @@ module.exports = {
     var allLongitudes = [];
     while(west < east){
       allLongitudes.push(west);
-      west += 0.0003;
+      west += 0.0005;
     }
     var allLatitudes = [];
     while(north > south){
       allLatitudes.push(north);
-      north -= 0.0005;
+      north -= 0.0008;
     }
     for(var i = 0; allLatitudes.length > i; i++){
       for(var x = 0; allLongitudes.length > x; x++){
@@ -93,8 +93,8 @@ module.exports = {
             return next('Error in the Location');
           }
           if(!sails.bots) sails.bots = {};
-          sails.bots[botUserData.botName] = coords;
-          sails.sockets.broadcast('bot', 'botLocation', sails.bots);
+          //sails.bots[botUserData.botName] = coords;
+          //sails.sockets.broadcast('bot', 'botLocation', sails.bots);
           that[botUserData.botName].Heartbeat(function(err, hb){
             if(err){
               errors += 1;
@@ -113,7 +113,7 @@ module.exports = {
             }
             step += 1;
             if(step > points.length - 1) step = 0;
-            return next();
+            setTimeout(next, 3000);
           });
         });
       },

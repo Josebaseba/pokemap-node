@@ -63,6 +63,8 @@ $(function(){
     },
 
     printBot: function(bots){
+      return;
+      // Remove egg functionality until I get a better solution to avoid the bann
       if(!bots) return;
       var botsNames = Object.keys(bots);
       _.each(botsNames, function(botName){
