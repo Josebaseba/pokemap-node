@@ -34,6 +34,7 @@ module.exports = {
     var username = botUserData.username;
     var password = botUserData.password;
     var provider = botUserData.provider;
+    this[botUserData.botName].SetDeviceInfo(botUserData.deviceInfo);
     this[botUserData.botName].init(username, password, location, provider, function(err){
       if(err){
         return setTimeout(function(){

@@ -69,6 +69,21 @@ module.exports = {
       north: 43.219348,
       east: -2.725081,
       south: 43.214555
+    },
+    "deviceInfo":{
+      "device_id":"14c12916a093aec43",
+      "android_board_name":"",
+      "android_bootloader":"",
+      "device_brand":"",
+      "device_model":"",
+      "device_model_identifier":"",
+      "device_model_boot":"",
+      "hardware_manufacturer":"",
+      "hardware_model":"",
+      "firmware_brand":"",
+      "firmware_tags":"",
+      "firmware_type":"",
+      "firmware_fingerprint":""
     }
   }, {
     username: 'somegmailaccount@gmail.com',
@@ -81,6 +96,21 @@ module.exports = {
       north: 43.23066,
       east: -2.708366,
       south: 43.21152
+   },
+   "deviceInfo":{
+     "device_id":"14c12956a193cbc43",
+     "android_board_name":"",
+     "android_bootloader":"",
+     "device_brand":"",
+     "device_model":"",
+     "device_model_identifier":"",
+     "device_model_boot":"",
+     "hardware_manufacturer":"",
+     "hardware_model":"",
+     "firmware_brand":"",
+     "firmware_tags":"",
+     "firmware_type":"",
+     "firmware_fingerprint":""
    }
   }],
 
@@ -109,7 +139,7 @@ npm start
 
 Right now the limit of pokemons that you are going to see the first time that you log in the app is: 300, in my experience that's enough but if you need more, because the area that you're working with is really huge then modify the `config/blueprints.js` file, changing the `defaultLimit` attribute. More info [blueprints](http://sailsjs.org/documentation/reference/configuration/sails-config-blueprints)
 
-To launch it ina  production environment, generate a `config/env/production.js` file: 
+To launch it ina  production environment, generate a `config/env/production.js` file:
 
 ```javascript
 /**
