@@ -23,7 +23,7 @@ module.exports = {
           that.startProcess(botUserData);
         }, 10000);
       }
-      var points = that.calculateAllCoords(botUserData.mapCoords);
+      var points = that.calculateAllCoords(botUserData.mapCoords, botUserData.vertical);
       if(botUserData.reverse) points = points.reverse();
       that.initializeWalkingBot(points, botUserData);
     });
@@ -48,7 +48,7 @@ module.exports = {
     });
   },
 
-  calculateAllCoords: function(coords){
+  calculateAllCoords: function(coords, vertical){
     var west = coords.west;
     var north = coords.north;
     var east =  coords.east;
@@ -63,6 +63,21 @@ module.exports = {
     while(north > south){
       allLatitudes.push(north);
       north -= 0.0008;
+    }
+    if(vertical){
+      for(var i = 0; allLongitudes.length > i; i++){
+        for(var x = 0; allLatitudes.length > x; x++){
+          points.push({
+            type: 'coords',
+            coords: {
+              altitude: 0,
+              latitude: allLatitudes[x],
+              longitude: allLongitudes[i]
+            }
+          });
+        }
+      }
+      return points;
     }
     for(var i = 0; allLatitudes.length > i; i++){
       for(var x = 0; allLongitudes.length > x; x++){

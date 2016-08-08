@@ -91,6 +91,7 @@ module.exports = {
     provider: 'google', // Via google
     botName : 'morty', // Required unique
     reverse : true, // Walks in the opposite direction
+    //vertical: true, // Use this option to make it go vertically
     botMapCoords: {
       west: -2.73916,
       north: 43.23066,
