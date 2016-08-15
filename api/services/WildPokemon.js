@@ -1,5 +1,5 @@
 
-var pokemons = require('../pokemons.json');
+//var pokemons = require('../pokemons.json');
 
 module.exports = {
 
@@ -108,8 +108,8 @@ module.exports = {
             return next('Error in the Location');
           }
           if(!sails.bots) sails.bots = {};
-          //sails.bots[botUserData.botName] = coords;
-          //sails.sockets.broadcast('bot', 'botLocation', sails.bots);
+          sails.bots[botUserData.botName] = coords;
+          sails.sockets.broadcast('bot', 'botLocation', sails.bots);
           that[botUserData.botName].Heartbeat(function(err, hb){
             if(err){
               errors += 1;

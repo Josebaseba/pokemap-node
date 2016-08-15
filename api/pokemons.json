@@ -1,1 +1,2372 @@
-[{"Number":"001","Name":"Bulbasaur","Classification":"Seed Pokèmon","Type I":["Grass"],"Type II":["Poison"],"Weaknesses":["Fire","Ice","Flying","Psychic"],"Fast Attack(s)":["Tackle","Vine Whip"],"Weight":"6.9 kg","Height":"0.7 m","Next Evolution Requirements":{"Amount":25,"Name":"Bulbasaur candies"},"Next evolution(s)":[{"Number":"002","Name":"Ivysaur"},{"Number":"003","Name":"Venusaur"}]},{"Number":"002","Name":"Ivysaur","Classification":"Seed Pokèmon","Type I":["Grass"],"Type II":["Poison"],"Weaknesses":["Fire","Ice","Flying","Psychic"],"Fast Attack(s)":["Razor Leaf","Vine Whip"],"Weight":"13.0 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"001","Name":"Bulbasaur"}],"Next Evolution Requirements":{"Amount":100,"Name":"Bulbasaur candies"},"Next evolution(s)":[{"Number":"003","Name":"Venusaur"}]},{"Number":"003","Name":"Venusaur","Classification":"Seed Pokèmon","Type I":["Grass"],"Type II":["Poison"],"Weaknesses":["Fire","Ice","Flying","Psychic"],"Fast Attack(s)":["Razor Leaf","Vine Whip"],"Weight":"100.0 kg","Height":"2.0 m","Previous evolution(s)":[{"Number":"001","Name":"Bulbasaur"},{"Number":"002","Name":"Ivysaur"}]},{"Number":"004","Name":"Charmander","Classification":"Lizard Pokèmon","Type I":["Fire"],"Weaknesses":["Water","Ground","Rock"],"Fast Attack(s)":["Ember","Scratch"],"Weight":"8.5 kg","Height":"0.6 m","Next Evolution Requirements":{"Amount":25,"Name":"Charmander candies"},"Next evolution(s)":[{"Number":"005","Name":"Charmeleon"},{"Number":"006","Name":"Charizard"}]},{"Number":"005","Name":"Charmeleon","Classification":"Flame Pokèmon","Type I":["Fire"],"Weaknesses":["Water","Ground","Rock"],"Fast Attack(s)":["Ember",""],"Weight":"19.0 kg","Height":"1.1 m","Previous evolution(s)":[{"Number":"004","Name":"Charmander"}],"Next Evolution Requirements":{"Amount":100,"Name":"Charmander candies"},"Next evolution(s)":[{"Number":"006","Name":"Charizard"}]},{"Number":"006","Name":"Charizard","Classification":"Flame Pokèmon","Type I":["Fire"],"Type II":["Flying"],"Weaknesses":["Water","Electric","Rock"],"Fast Attack(s)":["Ember","Wing Attack"],"Weight":"90.5 kg","Height":"1.7 m","Previous evolution(s)":[{"Number":"004","Name":"Charmander"},{"Number":"005","Name":"Charmeleon"}]},{"Number":"007","Name":"Squirtle","Classification":"Tiny Turtle Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Tackle","Bubble"],"Weight":"9.0 kg","Height":"0.5 m","Next Evolution Requirements":{"Amount":25,"Name":"Squirtle candies"},"Next evolution(s)":[{"Number":"008","Name":"Wartortle"},{"Number":"009","Name":"Blastoise"}]},{"Number":"008","Name":"Wartortle","Classification":"Turtle Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Bite","Water Gun"],"Weight":"22.5 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"007","Name":"Squirtle"}],"Next Evolution Requirements":{"Amount":100,"Name":"Squirtle candies"},"Next evolution(s)":[{"Number":"009","Name":"Blastoise"}]},{"Number":"009","Name":"Blastoise","Classification":"Shellfish Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Bite","Water Gun"],"Weight":"85.5 kg","Height":"1.6 m","Previous evolution(s)":[{"Number":"007","Name":"Squirtle"},{"Number":"008","Name":"Wartortle"}]},{"Number":"010","Name":"Caterpie","Classification":"Worm Pokèmon","Type I":["Bug"],"Weaknesses":["Fire","Flying","Rock"],"Fast Attack(s)":["Bug Bite","Tackle"],"Weight":"2.9 kg","Height":"0.3 m","Next Evolution Requirements":{"Amount":12,"Name":"Caterpie candies"},"Next evolution(s)":[{"Number":"011","Name":"Metapod"},{"Number":"012","Name":"Butterfree"}]},{"Number":"011","Name":"Metapod","Classification":"Cocoon Pokèmon","Type I":["Bug"],"Weaknesses":["Fire","Flying","Rock"],"Fast Attack(s)":["Bug Bite","Tackle"],"Weight":"9.9 kg","Height":"0.7 m","Previous evolution(s)":[{"Number":"010","Name":"Caterpie"}],"Next Evolution Requirements":{"Amount":50,"Name":"Caterpie candies"},"Next evolution(s)":[{"Number":"012","Name":"Butterfree"}]},{"Number":"012","Name":"Butterfree","Classification":"Butterfly Pokèmon","Type I":["Bug"],"Type II":["Flying"],"Weaknesses":["Fire","Electric","Ice","Flying","Rock"],"Fast Attack(s)":["Bug Bite","Confusion"],"Weight":"32.0 kg","Height":"1.1 m","Previous evolution(s)":[{"Number":"010","Name":"Caterpie"},{"Number":"011","Name":"Metapod"}]},{"Number":"013","Name":"Weedle","Classification":"Hairy Pokèmon","Type I":["Bug"],"Type II":["Poison"],"Weaknesses":["Fire","Flying","Psychic","Rock"],"Fast Attack(s)":["Bug Bite","Poison Sting"],"Weight":"3.2 kg","Height":"0.3 m","Next Evolution Requirements":{"Amount":12,"Name":"Weedle candies"},"Next evolution(s)":[{"Number":"014","Name":"Kakuna"},{"Number":"015","Name":"Beedrill"}]},{"Number":"014","Name":"Kakuna","Classification":"Cocoon Pokèmon","Type I":["Bug"],"Type II":["Poison"],"Weaknesses":["Fire","Flying","Psychic","Rock"],"Fast Attack(s)":["Bug Bite","Posion Sting"],"Weight":"10.0 kg","Height":"0.6 m","Previous evolution(s)":[{"Number":"013","Name":"Weedle"}],"Next Evolution Requirements":{"Amount":50,"Name":"Weedle candies"},"Next evolution(s)":[{"Number":"015","Name":"Beedrill"}]},{"Number":"015","Name":"Beedrill","Classification":"Poison Bee Pokèmon","Type I":["Bug"],"Type II":["Poison"],"Weaknesses":["Fire","Flying","Psychic","Rock"],"Fast Attack(s)":["Bug Bite","Poison Jab"],"Weight":"29.5 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"013","Name":"Weedle"},{"Number":"014","Name":"Kakuna"}]},{"Number":"016","Name":"Pidgey","Classification":"Tiny Bird Pokèmon","Type I":["Normal"],"Type II":["Flying"],"Weaknesses":["Electric","Rock"],"Fast Attack(s)":["Quick Attack","Tackle"],"Special Attack(s)":["Aerial Ace","Air Cutter","Twister"],"Weight":"1.8 kg","Height":"0.3 m","Next Evolution Requirements":{"Amount":12,"Name":"Pidgey candies"},"Next evolution(s)":[{"Number":"017","Name":"Pidgeotto"},{"Number":"018","Name":"Pidgeot"}]},{"Number":"017","Name":"Pidgeotto","Classification":"Bird Pokèmon","Type I":["Normal"],"Type II":["Flying"],"Weaknesses":["Electric","Rock"],"Fast Attack(s)":["Steel Wing","Wing Attack"],"Special Attack(s)":["Aerial Ace","Air Cutter","Twister"],"Weight":"30.0 kg","Height":"1.1 m","Previous evolution(s)":[{"Number":"016","Name":"Pidgey"}],"Next Evolution Requirements":{"Amount":50,"Name":"Pidgey candies"},"Next evolution(s)":[{"Number":"018","Name":"Pidgeot"}]},{"Number":"018","Name":"Pidgeot","Classification":"Bird Pokèmon","Type I":["Normal"],"Type II":["Flying"],"Weaknesses":["Electric","Rock"],"Fast Attack(s)":["Steel Wing","Wing Attack"],"Special Attack(s)":["Hurricane"],"Weight":"39.5 kg","Height":"1.5 m","Previous evolution(s)":[{"Number":"016","Name":"Pidgey"},{"Number":"017","Name":"Pidgeotto"}]},{"Number":"019","Name":"Rattata","Classification":"Mouse Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Quick Attack","Tackle"],"Special Attack(s)":["Body Slam","Dig","Hyper Fang"],"Weight":"3.5 kg","Height":"0.3 m","Next Evolution Requirements":{"Amount":25,"Name":"Rattata candies"},"Next evolution(s)":[{"Number":"020","Name":"Raticate"}]},{"Number":"020","Name":"Raticate","Classification":"Mouse Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Bite","Quick Attack"],"Special Attack(s)":["Dig","Hyper Beam","Hyper Fang"],"Weight":"18.5 kg","Height":"0.7 m","Previous evolution(s)":[{"Number":"019","Name":"Rattata"}]},{"Number":"021","Name":"Spearow","Classification":"Tiny Bird Pokèmon","Type I":["Normal"],"Type II":["Flying"],"Weaknesses":["Electric","Rock"],"Fast Attack(s)":["Peck","Quick Attack"],"Weight":"2.0 kg","Height":"0.3 m","Next Evolution Requirements":{"Amount":50,"Name":"Spearow candies"},"Next evolution(s)":[{"Number":"022","Name":"Fearow"}]},{"Number":"022","Name":"Fearow","Classification":"Beak Pokèmon","Type I":["Normal"],"Type II":["Flying"],"Weaknesses":["Electric","Rock"],"Fast Attack(s)":["Peck","Steel Wing"],"Weight":"38.0 kg","Height":"1.2 m","Previous evolution(s)":[{"Number":"021","Name":"Spearow"}]},{"Number":"023","Name":"Ekans","Classification":"Snake Pokèmon","Type I":["Poison"],"Weaknesses":["Ground","Psychic"],"Fast Attack(s)":["Acid","Poison Sting"],"Weight":"6.9 kg","Height":"2.0 m","Next Evolution Requirements":{"Amount":50,"Name":"Ekans candies"},"Next evolution(s)":[{"Number":"024","Name":"Arbok"}]},{"Number":"024","Name":"Arbok","Classification":"Cobra Pokèmon","Type I":["Poison"],"Weaknesses":["Ground","Psychic"],"Fast Attack(s)":["Acid","Bite"],"Weight":"65.0 kg","Height":"3.5 m","Previous evolution(s)":[{"Number":"023","Name":"Ekans"}]},{"Number":"025","Name":"Pikachu","Classification":"Mouse Pokèmon","Type I":["Electric"],"Weaknesses":["Ground"],"Fast Attack(s)":["Quick Attack","Thunder Shock"],"Weight":"6.0 kg","Height":"0.4 m","Next Evolution Requirements":{"Amount":50,"Name":"Pikachu candies"},"Next evolution(s)":[{"Number":"026","Name":"Raichu"}]},{"Number":"026","Name":"Raichu","Classification":"Mouse Pokèmon","Type I":["Electric"],"Weaknesses":["Ground"],"Fast Attack(s)":["Thunder Shock","Spark"],"Weight":"30.0 kg","Height":"0.8 m","Previous evolution(s)":[{"Number":"025","Name":"Pikachu"}]},{"Number":"027","Name":"Sandshrew","Classification":"Mouse Pokèmon","Type I":["Ground"],"Weaknesses":["Water","Grass","Ice"],"Fast Attack(s)":["Mud Shot","Scratch"],"Weight":"12.0 kg","Height":"0.6 m","Next Evolution Requirements":{"Amount":50,"Name":"Sandshrew candies"},"Next evolution(s)":[{"Number":"028","Name":"Sandslash"}]},{"Number":"028","Name":"Sandslash","Classification":"Mouse Pokèmon","Type I":["Ground"],"Weaknesses":["Water","Grass","Ice"],"Fast Attack(s)":["Metal Claw","Mud Shot"],"Weight":"29.5 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"027","Name":"Sandshrew"}]},{"Number":"029","Name":"Nidoran F","Classification":"Poison Pin Pokèmon","Type I":["Poison"],"Weaknesses":["Ground","Psychic"],"Fast Attack(s)":["Bite","Poison Sting"],"Weight":"7.0 kg","Height":"0.4 m","Next evolution(s)":[{"Number":"030","Name":"Nidorina"},{"Number":"031","Name":"Nidoqueen"}]},{"Number":"030","Name":"Nidorina","Classification":"Poison Pin Pokèmon","Type I":["Poison"],"Weaknesses":["Ground","Psychic"],"Fast Attack(s)":["Bite","Poison Sting"],"Weight":"20.0 kg","Height":"0.8 m","Previous evolution(s)":[{"Number":"029","Name":"Nidoran  F"}],"Next Evolution Requirements":{"Amount":100,"Name":"Nidoran F candies"},"Next evolution(s)":[{"Number":"031","Name":"Nidoqueen"}]},{"Number":"031","Name":"Nidoqueen","Classification":"Drill Pokèmon","Type I":["Poison"],"Type II":["Ground"],"Weaknesses":["Water","Ice","Ground","Psychic"],"Fast Attack(s)":["Bite","Poison Jab"],"Weight":"60.0 kg","Height":"1.3 m","Previous evolution(s)":[{"Number":"029","Name":"Nidoran F"},{"Number":"030","Name":"Nidorina"}]},{"Number":"032","Name":"Nidoran M","Classification":"Poison Pin Pokèmon","Type I":["Poison"],"Weaknesses":["Ground","Psychic"],"Fast Attack(s)":["Peck","Poison Sting"],"Weight":"9.0 kg","Height":"0.5 m","Next evolution(s)":[{"Number":"033","Name":"Nidorino"},{"Number":"034","Name":"Nidoking"}]},{"Number":"033","Name":"Nidorino","Classification":"Poison Pin Pokèmon","Type I":["Poison"],"Weaknesses":["Ground","Psychic"],"Fast Attack(s)":["Bite","Poison Jab"],"Weight":"19.5 kg","Height":"0.9 m","Previous evolution(s)":[{"Number":"032","Name":"Nidoran M"}],"Next Evolution Requirements":{"Amount":100,"Name":"NidoranM candies"},"Next evolution(s)":[{"Number":"034","Name":"Nidoking"}]},{"Number":"034","Name":"Nidoking","Classification":"Drill Pokèmon","Type I":["Poison"],"Type II":["Ground"],"Weaknesses":["Water","Ice","Ground","Psychic"],"Fast Attack(s)":["Fury Cutter","Poison Jab"],"Weight":"62.0 kg","Height":"1.4 m","Previous evolution(s)":[{"Number":"032","Name":"Nidoran M"},{"Number":"033","Name":"Nidorino"}]},{"Number":"035","Name":"Clefairy","Classification":"Fairy Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Pound","Zen Headbutt"],"Weight":"7.5 kg","Height":"0.6 m","Next Evolution Requirements":{"Amount":50,"Name":"Clefairy candies"},"Next evolution(s)":[{"Number":"036","Name":"Clefable"}]},{"Number":"036","Name":"Clefable","Classification":"Fairy Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Pound","Zen Headbutt"],"Weight":"40.0 kg","Height":"1.3 m","Previous evolution(s)":[{"Number":"035","Name":"Clefairy"}]},{"Number":"037","Name":"Vulpix","Classification":"Fox Pokèmon","Type I":["Fire"],"Weaknesses":["Water","Ground","Rock"],"Fast Attack(s)":["Ember","Quick Attack"],"Weight":"9.9 kg","Height":"0.6 m","Next Evolution Requirements":{"Amount":50,"Name":"Vulpi"},"Next evolution(s)":[{"Number":"038","Name":"Ninetales"}]},{"Number":"038","Name":"Ninetales","Classification":"Fox Pokèmon","Type I":["Fire"],"Weaknesses":["Water","Ground","Rock"],"Fast Attack(s)":["Ember","Quick Attack"],"Weight":"19.9 kg","Height":"1.1 m","Previous evolution(s)":[{"Number":"037","Name":"Vulpix"}]},{"Number":"039","Name":"Jigglypuff","Classification":"Balloon Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Feint Attack","Pound"],"Weight":"5.5 kg","Height":"0.5 m","Next Evolution Requirements":{"Amount":50,"Name":"Jigglypuff candies"},"Next evolution(s)":[{"Number":"039","Name":"Jigglypuff"}]},{"Number":"040","Name":"Wigglytuff","Classification":"Balloon Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Feint Attack","Pound"],"Weight":"12.0 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"040","Name":"Wigglytuff"}]},{"Number":"041","Name":"Zubat","Classification":"Bat Pokèmon","Type I":["Poison"],"Type II":["Flying"],"Weaknesses":["Electric","Ice","Psychic","Rock"],"Fast Attack(s)":["Bite","Quick Attack"],"Weight":"7.5 kg","Height":"0.8 m","Next Evolution Requirements":{"Amount":50,"Name":"Zubat candies"},"Next evolution(s)":[{"Number":"042","Name":"Golbat"}]},{"Number":"042","Name":"Golbat","Classification":"Bat Pokèmon","Type I":["Poison"],"Type II":["Flying"],"Weaknesses":["Electric","Ice","Psychic","Rock"],"Fast Attack(s)":["Bite","Wing Attack"],"Weight":"55.0 kg","Height":"1.6 m","Previous evolution(s)":[{"Number":"041","Name":"Zubat"}]},{"Number":"043","Name":"Oddish","Classification":"Weed Pokèmon","Type I":["Grass"],"Type II":["Poison"],"Weaknesses":["Fire","Ice","Flying","Psychic"],"Fast Attack(s)":["Acid","Razor Leaf"],"Weight":"5.4 kg","Height":"0.5 m","Next Evolution Requirements":{"Amount":25,"Name":"Oddish candies"},"Next evolution(s)":[{"Number":"044","Name":"Gloom"},{"Number":"045","Name":"Vileplume"}]},{"Number":"044","Name":"Gloom","Classification":"Weed Pokèmon","Type I":["Grass"],"Type II":["Poison"],"Weaknesses":["Fire","Ice","Flying","Psychic"],"Fast Attack(s)":["Acid","Razor Leaf"],"Weight":"8.6 kg","Height":"0.8 m","Previous evolution(s)":[{"Number":"043","Name":"Oddish"}],"Next Evolution Requirements":{"Amount":100,"Name":"Oddish candies"},"Next evolution(s)":[{"Number":"045","Name":"Vileplume"}]},{"Number":"045","Name":"Vileplume","Classification":"Flower Pokèmon","Type I":["Grass"],"Type II":["Poison"],"Weaknesses":["Fire","Ice","Flying","Psychic"],"Fast Attack(s)":["Acid",""],"Weight":"18.6 kg","Height":"1.2 m","Previous evolution(s)":[{"Number":"043","Name":"Oddish"},{"Number":"044","Name":"Gloom"}]},{"Number":"046","Name":"Paras","Classification":"Mushroom Pokèmon","Type I":["Bug"],"Type II":["Grass"],"Weaknesses":["Fire","Ice","Poison","Flying","Bug","Rock"],"Fast Attack(s)":["Bug Bite","Scratch"],"Weight":"5.4 kg","Height":"0.3 m","Next Evolution Requirements":{"Amount":50,"Name":"Paras candies"},"Next evolution(s)":[{"Number":"047","Name":"Parasect"}]},{"Number":"047","Name":"Parasect","Classification":"Mushroom Pokèmon","Type I":["Bug"],"Type II":["Grass"],"Weaknesses":["Fire","Ice","Poison","Flying","Bug","Rock"],"Fast Attack(s)":["Bug Bite","Fury Cutter"],"Weight":"29.5 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"046","Name":"Paras"}]},{"Number":"048","Name":"Venonat","Classification":"Insect Pokèmon","Type I":["Bug"],"Type II":["Poison"],"Weaknesses":["Fire","Flying","Psychic","Rock"],"Fast Attack(s)":["Bug Bite","Confusion"],"Weight":"30.0 kg","Height":"1.0 m","Next Evolution Requirements":{"Amount":50,"Name":"Venonat candies"},"Next evolution(s)":[{"Number":"049","Name":"Venomoth"}]},{"Number":"049","Name":"Venomoth","Classification":"Poison Moth Pokèmon","Type I":["Bug"],"Type II":["Poison"],"Weaknesses":["Fire","Flying","Psychic","Rock"],"Fast Attack(s)":["Bug Bite","Confusion"],"Weight":"12.5 kg","Height":"1.5 m","Previous evolution(s)":[{"Number":"048","Name":"Venonat"}]},{"Number":"050","Name":"Diglett","Classification":"Mole Pokèmon","Type I":["Ground"],"Weaknesses":["Water","Grass","Ice"],"Fast Attack(s)":["Mud Shot","Scratch"],"Weight":"0.8 kg","Height":"0.2 m","Next Evolution Requirements":{"Amount":50,"Name":"Diglett candies"},"Next evolution(s)":[{"Number":"051","Name":"Dugtrio"}]},{"Number":"051","Name":"Dugtrio","Classification":"Mole Pokèmon","Type I":["Ground"],"Weaknesses":["Water","Grass","Ice"],"Fast Attack(s)":["Mud Shot","Sucker Punch"],"Weight":"33.3 kg","Height":"0.7 m","Previous evolution(s)":[{"Number":"050","Name":"Diglett"}]},{"Number":"052","Name":"Meowth","Classification":"Scratch Cat Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Bite","Scratch"],"Weight":"4.2 kg","Height":"0.4 m","Next Evolution Requirements":{"Amount":50,"Name":"Meowth candies"},"Next evolution(s)":[{"Number":"053","Name":"Persian"}]},{"Number":"053","Name":"Persian","Classification":"Classy Cat Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Feint Attack","Scratch"],"Weight":"32.0 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"052","Name":"Meowth"}]},{"Number":"054","Name":"Psyduck","Classification":"Duck Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Water Gun","Zen Headbutt"],"Weight":"19.6 kg","Height":"0.8 m","Next Evolution Requirements":{"Amount":50,"Name":"Psyduck candies"},"Next evolution(s)":[{"Number":"055","Name":"Golduck"}]},{"Number":"055","Name":"Golduck","Classification":"Duck Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Confusion","Zen Headbutt"],"Weight":"76.6 kg","Height":"1.7 m","Previous evolution(s)":[{"Number":"054","Name":"Psyduck"}]},{"Number":"056","Name":"Mankey","Classification":"Pig Monkey Pokèmon","Type I":["Fighting"],"Weaknesses":["Flying","Psychic","Fairy"],"Fast Attack(s)":["Karate Chop","Scratch"],"Weight":"28.0 kg","Height":"0.5 m","Next Evolution Requirements":{"Amount":50,"Name":"Mankey candies"},"Next evolution(s)":[{"Number":"057","Name":"Primeape"}]},{"Number":"057","Name":"Primeape","Classification":"Pig Monkey Pokèmon","Type I":["Fighting"],"Weaknesses":["Flying","Psychic","Fairy"],"Fast Attack(s)":["Karate Chop","Low Kick"],"Weight":"32.0 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"056","Name":"Mankey"}]},{"Number":"058","Name":"Growlithe","Classification":"Puppy Pokèmon","Type I":["Fire"],"Weaknesses":["Water","Ground","Rock"],"Fast Attack(s)":["Bite","Ember"],"Weight":"19.0 kg","Height":"0.7 m","Next Evolution Requirements":{"Amount":50,"Name":"Growlithe candies"},"Next evolution(s)":[{"Number":"059","Name":"Arcanine"}]},{"Number":"059","Name":"Arcanine","Classification":"Legendary Pokèmon","Type I":["Fire"],"Weaknesses":["Water","Ground","Rock"],"Fast Attack(s)":["Bite","Fire Fang"],"Weight":"155.0 kg","Height":"1.9 m","Previous evolution(s)":[{"Number":"058","Name":"Growlithe"}]},{"Number":"060","Name":"Poliwag","Classification":"Tadpole Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Bubble","Mud Shot"],"Weight":"12.4 kg","Height":"0.6 m","Next Evolution Requirements":{"Amount":25,"Name":"Poliwag candies"},"Next evolution(s)":[{"Number":"061","Name":"Poliwhirl"},{"Number":"062","Name":"Poliwrath"}]},{"Number":"061","Name":"Poliwhirl","Classification":"Tadpole Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Bubble","Mud Shot"],"Weight":"20.0 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"060","Name":"Poliwag"}],"Next Evolution Requirements":{"Amount":100,"Name":"Poliwag candies"},"Next evolution(s)":[{"Number":"062","Name":"Poliwrath"}]},{"Number":"062","Name":"Poliwrath","Classification":"Tadpole Pokèmon","Type I":["Water"],"Type II":["Fighting"],"Weaknesses":["Electric","Grass","Flying","Psychic","Fairy"],"Fast Attack(s)":["Bubble","Mud Shot"],"Weight":"54.0 kg","Height":"1.3 m","Previous evolution(s)":[{"Number":"060","Name":"Poliwag"},{"Number":"061","Name":"Poliwhirl"}]},{"Number":"063","Name":"Abra","Classification":"Psi Pokèmon","Type I":["Psychic"],"Weaknesses":["Bug","Ghost","Dark"],"Fast Attack(s)":["Zen Headbutt",""],"Weight":"19.5 kg","Height":"0.9 m","Next Evolution Requirements":{"Amount":25,"Name":"Abra candies"},"Next evolution(s)":[{"Number":"064","Name":"Kadabra"},{"Number":"065","Name":"Alakazam"}]},{"Number":"064","Name":"Kadabra","Classification":"Psi Pokèmon","Type I":["Psychic"],"Weaknesses":["Bug","Ghost","Dark"],"Fast Attack(s)":["Confusion","Psycho Cut"],"Weight":"56.5 kg","Height":"1.3 m","Previous evolution(s)":[{"Number":"063","Name":"Abra"}],"Next Evolution Requirements":{"Amount":100,"Name":"Abra candies"},"Next evolution(s)":[{"Number":"065","Name":"Alakazam"}]},{"Number":"065","Name":"Alakazam","Classification":"Psi Pokèmon","Type I":["Psychic"],"Weaknesses":["Bug","Ghost","Dark"],"Fast Attack(s)":["Confusion","Psycho Cut"],"Weight":"48.0 kg","Height":"1.5 m","Previous evolution(s)":[{"Number":"063","Name":"Abra"},{"Number":"064","Name":"Kadabra"}]},{"Number":"066","Name":"Machop","Classification":"Superpower Pokèmon","Type I":["Fighting"],"Weaknesses":["Flying","Psychic","Fairy"],"Fast Attack(s)":["Karate Chop","Low Kick"],"Weight":"19.5 kg","Height":"0.8 m","Next Evolution Requirements":{"Amount":25,"Name":"Machop candies"},"Next evolution(s)":[{"Number":"067","Name":"Machoke"},{"Number":"068","Name":"Machamp"}]},{"Number":"067","Name":"Machoke","Classification":"Superpower Pokèmon","Type I":["Fighting"],"Weaknesses":["Flying","Psychic","Fairy"],"Fast Attack(s)":["Karate Chop","Low Kick"],"Weight":"70.5 kg","Height":"1.5 m","Previous evolution(s)":[{"Number":"066","Name":"Machop"}],"Next Evolution Requirements":{"Amount":100,"Name":"Machop candies"},"Next evolution(s)":[{"Number":"068","Name":"Machamp"}]},{"Number":"068","Name":"Machamp","Classification":"Superpower Pokèmon","Type I":["Fighting"],"Weaknesses":["Flying","Psychic","Fairy"],"Fast Attack(s)":["Bullet Punch","Karate Chop"],"Weight":"130.0 kg","Height":"1.6 m","Previous evolution(s)":[{"Number":"066","Name":"Machop"},{"Number":"067","Name":"Machoke"}]},{"Number":"069","Name":"Bellsprout","Classification":"Flower Pokèmon","Type I":["Grass"],"Type II":["Poison"],"Weaknesses":["Fire","Ice","Flying","Psychic"],"Fast Attack(s)":["Acid","Vine Whip"],"Weight":"4.0 kg","Height":"0.7 m","Next Evolution Requirements":{"Amount":25,"Name":"Bellsprout candies"},"Next evolution(s)":[{"Number":"070","Name":"Weepinbell"},{"Number":"071","Name":"Victreebel"}]},{"Number":"070","Name":"Weepinbell","Classification":"Flycatcher Pokèmon","Type I":["Grass"],"Type II":["Poison"],"Weaknesses":["Fire","Ice","Flying","Psychic"],"Fast Attack(s)":["Acid","Razor Leaf"],"Weight":"6.4 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"069","Name":"Bellsprout"}],"Next Evolution Requirements":{"Amount":100,"Name":"Bellsprout candies"},"Next evolution(s)":[{"Number":"071","Name":"Victreebel"}]},{"Number":"071","Name":"Victreebel","Classification":"Flycatcher Pokèmon","Type I":["Grass"],"Type II":["Poison"],"Weaknesses":["Fire","Ice","Flying","Psychic"],"Fast Attack(s)":["Acid","Razor Leaf"],"Weight":"15.5 kg","Height":"1.7 m","Previous evolution(s)":[{"Number":"069","Name":"Bellsprout"},{"Number":"070","Name":"Weepinbell"}]},{"Number":"072","Name":"Tentacool","Classification":"Jellyfish Pokèmon","Type I":["Water"],"Type II":["Poison"],"Weaknesses":["Electric","Ground","Psychic"],"Fast Attack(s)":["Bubble","Poison Sting"],"Weight":"45.5 kg","Height":"0.9 m","Next Evolution Requirements":{"Amount":50,"Name":"Tentacool candies"},"Next evolution(s)":[{"Number":"073","Name":"Tentacruel"}]},{"Number":"073","Name":"Tentacruel","Classification":"Jellyfish Pokèmon","Type I":["Water"],"Type II":["Poison"],"Weaknesses":["Electric","Ground","Psychic"],"Fast Attack(s)":["Acid","Poison Jab"],"Weight":"55.0 kg","Height":"1.6 m","Previous evolution(s)":[{"Number":"072","Name":"Tentacool"}]},{"Number":"074","Name":"Geodude","Classification":"Rock Pokèmon","Type I":["Rock"],"Type II":["Ground"],"Weaknesses":["Water","Grass","Ice","Fighting","Ground","Steel"],"Fast Attack(s)":["Rock Throw","Tackle"],"Weight":"20.0 kg","Height":"0.4 m","Next Evolution Requirements":{"Amount":25,"Name":"Geodude candies"},"Next evolution(s)":[{"Number":"075","Name":"Graveler"},{"Number":"076","Name":"Golem"}]},{"Number":"075","Name":"Graveler","Classification":"Rock Pokèmon","Type I":["Rock"],"Type II":["Ground"],"Weaknesses":["Water","Grass","Ice","Fighting","Ground","Steel"],"Fast Attack(s)":["Mud Shot","Rock Throw"],"Weight":"105.0 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"074","Name":"Geodude"}],"Next Evolution Requirements":{"Amount":100,"Name":"Geodude candies"},"Next evolution(s)":[{"Number":"076","Name":"Golem"}]},{"Number":"076","Name":"Golem","Classification":"Megaton Pokèmon","Type I":["Rock"],"Type II":["Ground"],"Weaknesses":["Water","Grass","Ice","Fighting","Ground","Steel"],"Fast Attack(s)":["Mud Shot","Rock Throw"],"Weight":"300.0 kg","Height":"1.4 m","Previous evolution(s)":[{"Number":"074","Name":"Geodude"},{"Number":"075","Name":"Graveler"}]},{"Number":"077","Name":"Ponyta","Classification":"Fire Horse Pokèmon","Type I":["Fire"],"Weaknesses":["Water","Ground","Rock"],"Fast Attack(s)":["Ember","Tackle"],"Weight":"30.0 kg","Height":"1.0 m","Next Evolution Requirements":{"Amount":50,"Name":"Ponyta candies"},"Next evolution(s)":[{"Number":"078","Name":"Rapidash"}]},{"Number":"078","Name":"Rapidash","Classification":"Fire Horse Pokèmon","Type I":["Fire"],"Weaknesses":["Water","Ground","Rock"],"Fast Attack(s)":["Ember","Low Kick"],"Weight":"95.0 kg","Height":"1.7 m","Previous evolution(s)":[{"Number":"077","Name":"Ponyta"}]},{"Number":"079","Name":"Slowpoke","Classification":"Dopey Pokèmon","Type I":["Water"],"Type II":["Psychic"],"Weaknesses":["Electric","Grass","Bug","Ghost","Dark"],"Fast Attack(s)":["Confusion","Water Gun"],"Weight":"36.0 kg","Height":"1.2 m","Next Evolution Requirements":{"Amount":50,"Name":"Slowpoke candies"},"Next evolution(s)":[{"Number":"080","Name":"Slowbro"}]},{"Number":"080","Name":"Slowbro","Classification":"Hermit Crab Pokèmon","Type I":["Water"],"Type II":["Psychic"],"Weaknesses":["Electric","Grass","Bug","Ghost","Dark"],"Fast Attack(s)":["Confusion","Water Gun"],"Weight":"78.5 kg","Height":"1.6 m","Previous evolution(s)":[{"Number":"079","Name":"Slowpoke"}]},{"Number":"081","Name":"Magnemite","Classification":"Magnet Pokèmon","Type I":["Electric"],"Type II":["Steel"],"Weaknesses":["Fire","Water","Ground"],"Fast Attack(s)":["Spark","Thunder Shock"],"Weight":"6.0 kg","Height":"0.3 m","Next Evolution Requirements":{"Amount":50,"Name":"Magnemite candies"},"Next evolution(s)":[{"Number":"082","Name":"Magneton"}]},{"Number":"082","Name":"Magneton","Classification":"Magnet Pokèmon","Type I":["Electric"],"Type II":["Steel"],"Weaknesses":["Fire","Water","Ground"],"Fast Attack(s)":["Spark","Thunder Shock"],"Weight":"60.0 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"081","Name":"Magnemite"}]},{"Number":"083","Name":"Farfetch'd","Classification":"Wild Duck Pokèmon","Type I":["Normal"],"Type II":["Flying"],"Weaknesses":["Electric","Rock"],"Fast Attack(s)":["Unknown"],"Special Attack(s)":["Unknown"],"Weight":"15.0 kg","Height":"0.8 m"},{"Number":"084","Name":"Doduo","Classification":"Twin Bird Pokèmon","Type I":["Normal"],"Type II":["Flying"],"Weaknesses":["Electric","Rock"],"Fast Attack(s)":["Peck","Quick Attack"],"Weight":"39.2 kg","Height":"1.4 m","Next Evolution Requirements":{"Amount":50,"Name":"Doduo candies"},"Next evolution(s)":[{"Number":"085","Name":"Dodrio"}]},{"Number":"085","Name":"Dodrio","Classification":"Triple Bird Pokèmon","Type I":["Normal"],"Type II":["Flying"],"Weaknesses":["Electric","Rock"],"Fast Attack(s)":["Feint Attack","Steel Wing"],"Weight":"85.2 kg","Height":"1.8 m","Previous evolution(s)":[{"Number":"084","Name":"Doduo"}]},{"Number":"086","Name":"Seel","Classification":"Sea Lion Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Ice Shard","Water Gun"],"Weight":"90.0 kg","Height":"1.1 m","Next Evolution Requirements":{"Amount":50,"Name":"Seel candies"},"Next evolution(s)":[{"Number":"087","Name":"Dewgong"}]},{"Number":"087","Name":"Dewgong","Classification":"Sea Lion Pokèmon","Type I":["Water"],"Type II":["Ice"],"Weaknesses":["Electric","Grass","Fighting","Rock"],"Fast Attack(s)":["Frost Breath","Ice Shard"],"Weight":"120.0 kg","Height":"1.7 m","Previous evolution(s)":[{"Number":"086","Name":"Seel"}]},{"Number":"088","Name":"Grimer","Classification":"Sludge Pokèmon","Type I":["Poison"],"Weaknesses":["Ground","Psychic"],"Fast Attack(s)":["Acid","Mud Slap"],"Weight":"30.0 kg","Height":"0.9 m","Next Evolution Requirements":{"Amount":50,"Name":"Grimer candies"},"Next evolution(s)":[{"Number":"089","Name":"Muk"}]},{"Number":"089","Name":"Muk","Classification":"Sludge Pokèmon","Type I":["Poison"],"Weaknesses":["Ground","Psychic"],"Fast Attack(s)":["Poison Jab",""],"Weight":"30.0 kg","Height":"1.2 m","Previous evolution(s)":[{"Number":"088","Name":"Grimer"}]},{"Number":"090","Name":"Shellder","Classification":"Bivalve Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Ice Shard","Tackle"],"Weight":"4.0 kg","Height":"0.3 m","Next Evolution Requirements":{"Amount":50,"Name":"Shellder candies"},"Next evolution(s)":[{"Number":"091","Name":"Cloyster"}]},{"Number":"091","Name":"Cloyster","Classification":"Bivalve Pokèmon","Type I":["Water"],"Type II":["Ice"],"Weaknesses":["Electric","Grass","Fighting","Rock"],"Fast Attack(s)":["Frost Breath","Ice Shard"],"Weight":"132.5 kg","Height":"1.5 m","Previous evolution(s)":[{"Number":"090","Name":"Shellder"}]},{"Number":"092","Name":"Gastly","Classification":"Gas Pokèmon","Type I":["Ghost"],"Type II":["Poison"],"Weaknesses":["Ground","Psychic","Ghost","Dark"],"Fast Attack(s)":["Lick","Sucker Punch"],"Weight":"0.1 kg","Height":"1.3 m","Next Evolution Requirements":{"Amount":25,"Name":"Gastly candies"},"Next evolution(s)":[{"Number":"093","Name":"Haunter"},{"Number":"094","Name":"Gengar"}]},{"Number":"093","Name":"Haunter","Classification":"Gas Pokèmon","Type I":["Ghost"],"Type II":["Poison"],"Weaknesses":["Ground","Psychic","Ghost","Dark"],"Fast Attack(s)":["Lick","Shadow Claw"],"Weight":"0.1 kg","Height":"1.6 m","Previous evolution(s)":[{"Number":"092","Name":"Gastly"}],"Next Evolution Requirements":{"Amount":100,"Name":"Gastly candies"},"Next evolution(s)":[{"Number":"094","Name":"Gengar"}]},{"Number":"094","Name":"Gengar","Classification":"Shadow Pokèmon","Type I":["Ghost"],"Type II":["Poison"],"Weaknesses":["Ground","Psychic","Ghost","Dark"],"Fast Attack(s)":["Shadow Claw","Sucker Punch"],"Weight":"40.5 kg","Height":"1.5 m","Previous evolution(s)":[{"Number":"092","Name":"Gastly"},{"Number":"093","Name":"Haunter"}]},{"Number":"095","Name":"Onix","Classification":"Rock Snake Pokèmon","Type I":["Rock"],"Type II":["Ground"],"Weaknesses":["Water","Grass","Ice","Fighting","Ground","Steel"],"Fast Attack(s)":["Rock Throw","Tackle"],"Weight":"210.0 kg","Height":"8.8 m"},{"Number":"096","Name":"Drowzee","Classification":"Hypnosis Pokèmon","Type I":["Psychic"],"Weaknesses":["Bug","Ghost","Dark"],"Fast Attack(s)":["Confusion","Pound"],"Weight":"32.4 kg","Height":"1.0 m","Next Evolution Requirements":{"Amount":50,"Name":"Drowzee candies"},"Next evolution(s)":[{"Number":"097","Name":"Hypno"}]},{"Number":"097","Name":"Hypno","Classification":"Hypnosis Pokèmon","Type I":["Psychic"],"Weaknesses":["Bug","Ghost","Dark"],"Fast Attack(s)":["Confusion","Zen Headbutt"],"Weight":"75.6 kg","Height":"1.6 m","Previous evolution(s)":[{"Number":"096","Name":"Drowzee"}]},{"Number":"098","Name":"Krabby","Classification":"River Crab Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Bubble","Mud Shot"],"Weight":"6.5 kg","Height":"0.4 m","Next Evolution Requirements":{"Amount":50,"Name":"Krabby candies"},"Next evolution(s)":[{"Number":"099","Name":"Kingler"}]},{"Number":"099","Name":"Kingler","Classification":"Pincer Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Metal Claw","Mud Shot"],"Weight":"60.0 kg","Height":"1.3 m","Previous evolution(s)":[{"Number":"098","Name":"Krabby"}]},{"Number":"100","Name":"Voltorb","Classification":"Ball Pokèmon","Type I":["Electric"],"Weaknesses":["Ground"],"Fast Attack(s)":["Spark","Tackle"],"Weight":"10.4 kg","Height":"0.5 m","Next Evolution Requirements":{"Amount":50,"Name":"Voltorb candies"},"Next evolution(s)":[{"Number":"101","Name":"Electrode"}]},{"Number":"101","Name":"Electrode","Classification":"Ball Pokèmon","Type I":["Electric"],"Weaknesses":["Ground"],"Fast Attack(s)":["Spark",""],"Weight":"66.6 kg","Height":"1.2 m","Previous evolution(s)":[{"Number":"100","Name":"Voltorb"}]},{"Number":"102","Name":"Exeggcute","Classification":"Egg Pokèmon","Type I":["Grass"],"Type II":["Psychic"],"Weaknesses":["Fire","Ice","Poison","Flying","Bug","Ghost","Dark"],"Fast Attack(s)":["Confusion",""],"Weight":"2.5 kg","Height":"0.4 m","Next Evolution Requirements":{"Amount":50,"Name":"E"},"Next evolution(s)":[{"Number":"103","Name":"Exeggutor"}]},{"Number":"103","Name":"Exeggutor","Classification":"Coconut Pokèmon","Type I":["Grass"],"Type II":["Psychic"],"Weaknesses":["Fire","Ice","Poison","Flying","Bug","Ghost","Dark"],"Fast Attack(s)":["Confusion","Zen Headbutt"],"Weight":"120.0 kg","Height":"2.0 m","Previous evolution(s)":[{"Number":"102","Name":"Exeggcute"}]},{"Number":"104","Name":"Cubone","Classification":"Lonely Pokèmon","Type I":["Ground"],"Weaknesses":["Water","Grass","Ice"],"Fast Attack(s)":["Mud Slap","Rock Smash"],"Weight":"6.5 kg","Height":"0.4 m","Next Evolution Requirements":{"Amount":50,"Name":"Cubone candies"},"Next evolution(s)":[{"Number":"105","Name":"Marowak"}]},{"Number":"105","Name":"Marowak","Classification":"Bone Keeper Pokèmon","Type I":["Ground"],"Weaknesses":["Water","Grass","Ice"],"Fast Attack(s)":["Mud Slap","Rock Smash"],"Weight":"45.0 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"104","Name":"Cubone"}]},{"Number":"106","Name":"Hitmonlee","Classification":"Kicking Pokèmon","Type I":["Fighting"],"Weaknesses":["Flying","Psychic","Fairy"],"Fast Attack(s)":["Low Kick","Rock Smash"],"Weight":"49.8 kg","Height":"1.5 m","Next evolution(s)":[{"Number":"107","Name":"Hitmonchan"}]},{"Number":"107","Name":"Hitmonchan","Classification":"Punching Pokèmon","Type I":["Fighting"],"Weaknesses":["Flying","Psychic","Fairy"],"Fast Attack(s)":["Bullet Punch","Rock Smash"],"Weight":"50.2 kg","Height":"1.4 m","Previous evolution(s)":[{"Number":"106","Name":"Hitmonlee"}]},{"Number":"108","Name":"Lickitung","Classification":"Licking Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Lick","Zen Headbutt"],"Weight":"65.5 kg","Height":"1.2 m"},{"Number":"109","Name":"Koffing","Classification":"Poison Gas Pokèmon","Type I":["Poison"],"Weaknesses":["Ground","Psychic"],"Fast Attack(s)":["Acid","Tackle"],"Weight":"1.0 kg","Height":"0.6 m","Next Evolution Requirements":{"Amount":50,"Name":"Koffing candies"},"Next evolution(s)":[{"Number":"110","Name":"Weezing"}]},{"Number":"110","Name":"Weezing","Classification":"Poison Gas Pokèmon","Type I":["Poison"],"Weaknesses":["Ground","Psychic"],"Fast Attack(s)":["Acid","Tackle"],"Weight":"9.5 kg","Height":"1.2 m","Previous evolution(s)":[{"Number":"109","Name":"Koffing"}]},{"Number":"111","Name":"Rhyhorn","Classification":"Spikes Pokèmon","Type I":["Ground"],"Type II":["Rock"],"Weaknesses":["Water","Grass","Ice","Fighting","Ground","Steel"],"Fast Attack(s)":["Mud Slap","Rock Smash"],"Weight":"115.0 kg","Height":"1.0 m","Next Evolution Requirements":{"Amount":50,"Name":"Rhyhorn candies"},"Next evolution(s)":[{"Number":"112","Name":"Rhydon"}]},{"Number":"112","Name":"Rhydon","Classification":"Drill Pokèmon","Type I":["Ground"],"Type II":["Rock"],"Weaknesses":["Water","Grass","Ice","Fighting","Ground","Steel"],"Fast Attack(s)":["Mud Slap","Rock Smash"],"Weight":"120.0 kg","Height":"1.9 m","Previous evolution(s)":[{"Number":"111","Name":"Rhyhorn"}]},{"Number":"113","Name":"Chansey","Classification":"Egg Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Pound","Zen Headbutt"],"Weight":"34.6 kg","Height":"1.1 m"},{"Number":"114","Name":"Tangela","Classification":"Vine Pokèmon","Type I":["Grass"],"Weaknesses":["Fire","Ice","Poison","Flying","Bug"],"Fast Attack(s)":["Vine Whip",""],"Weight":"35.0 kg","Height":"1.0 m"},{"Number":"115","Name":"Kangaskhan","Classification":"Parent Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Low Kick",""],"Weight":"80.0 kg","Height":"2.2 m"},{"Number":"116","Name":"Horsea","Classification":"Dragon Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Bubble","Water Gun"],"Weight":"8.0 kg","Height":"0.4 m","Next Evolution Requirements":{"Amount":50,"Name":"Horsea candies"},"Next evolution(s)":[{"Number":"117","Name":"Seadra"}]},{"Number":"117","Name":"Seadra","Classification":"Dragon Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Dragon Breath","Water Gun"],"Weight":"25.0 kg","Height":"1.2 m","Previous evolution(s)":[{"Number":"116","Name":"Horsea"}]},{"Number":"118","Name":"Goldeen","Classification":"Goldfish Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Peck","Mud Shot"],"Weight":"15.0 kg","Height":"0.6 m","Next Evolution Requirements":{"Amount":50,"Name":"Goldeen candies"},"Next evolution(s)":[{"Number":"119","Name":"Seaking"}]},{"Number":"119","Name":"Seaking","Classification":"Goldfish Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Peck","Poison Jab"],"Weight":"39.0 kg","Height":"1.3 m","Previous evolution(s)":[{"Number":"118","Name":"Goldeen"}]},{"Number":"120","Name":"Staryu","Classification":"Starshape Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Quick Attack","Water Gun"],"Weight":"34.5 kg","Height":"0.8 m","Next Evolution Requirements":{"Amount":50,"Name":"Staryu candies"},"Next evolution(s)":[{"Number":"120","Name":"Staryu"}]},{"Number":"121","Name":"Starmie","Classification":"Mysterious Pokèmon","Type I":["Water"],"Type II":["Psychic"],"Weaknesses":["Electric","Grass","Bug","Ghost","Dark"],"Fast Attack(s)":["Quick Attack","Water Gun"],"Weight":"80.0 kg","Height":"1.1 m","Previous evolution(s)":[{"Number":"121","Name":"Starmie"}]},{"Number":"122","Name":"Mr. Mime","Classification":"Barrier Pokèmon","Type I":["Psychic"],"Weaknesses":["Bug","Ghost","Dark"],"Fast Attack(s)":["Confusion","Zen Headbutt"],"Weight":"54.5 kg","Height":"1.3 m"},{"Number":"123","Name":"Scyther","Classification":"Mantis Pokèmon","Type I":["Bug"],"Type II":["Flying"],"Weaknesses":["Fire","Electric","Ice","Flying","Rock"],"Fast Attack(s)":["Fury Cutter","Steel Wing"],"Weight":"56.0 kg","Height":"1.5 m"},{"Number":"124","Name":"Jynx","Classification":"Humanshape Pokèmon","Type I":["Ice"],"Type II":["Psychic"],"Weaknesses":["Fire","Bug","Rock","Ghost","Dark","Steel"],"Fast Attack(s)":["Frost Breath","Pound"],"Weight":"40.6 kg","Height":"1.4 m"},{"Number":"125","Name":"Electabuzz","Classification":"Electric Pokèmon","Type I":["Electric"],"Weaknesses":["Ground"],"Fast Attack(s)":["Low Kick","Thunder Shock"],"Weight":"30.0 kg","Height":"1.1 m"},{"Number":"126","Name":"Magmar","Classification":"Spitfire Pokèmon","Type I":["Fire"],"Weaknesses":["Water","Ground","Rock"],"Fast Attack(s)":["Ember","Karate Chop"],"Weight":"44.5 kg","Height":"1.3 m"},{"Number":"127","Name":"Pinsir","Classification":"Stagbeetle Pokèmon","Type I":["Bug"],"Weaknesses":["Fire","Flying","Rock"],"Fast Attack(s)":["Fury Cutter","Rock Smash"],"Weight":"55.0 kg","Height":"1.5 m"},{"Number":"128","Name":"Tauros","Classification":"Wild Bull Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Tackle","Zen Headbutt"],"Weight":"88.4 kg","Height":"1.4 m"},{"Number":"129","Name":"Magikarp","Classification":"Fish Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Splash",""],"Weight":"10.0 kg","Height":"0.9 m","Next Evolution Requirements":{"Amount":400,"Name":"Magikarp candies"},"Next evolution(s)":[{"Number":"130","Name":"Gyarados"}]},{"Number":"130","Name":"Gyarados","Classification":"Atrocious Pokèmon","Type I":["Water"],"Type II":["Flying"],"Weaknesses":["Electric","Rock"],"Fast Attack(s)":["Bite","Dragon Breath"],"Weight":"235.0 kg","Height":"6.5 m","Previous evolution(s)":[{"Number":"129","Name":"Magikarp"}]},{"Number":"131","Name":"Lapras","Classification":"Transport Pokèmon","Type I":["Water"],"Type II":["Ice"],"Weaknesses":["Electric","Grass","Fighting","Rock"],"Fast Attack(s)":["Frost Breath","Ice Shard"],"Weight":"220.0 kg","Height":"2.5 m"},{"Number":"132","Name":"Ditto","Classification":"Transform Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Unknown"],"Special Attack(s)":["Unknown"],"Weight":"4.0 kg","Height":"0.3 m"},{"Number":"133","Name":"Eevee","Classification":"Evolution Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Quick Attack","Tackle"],"Weight":"6.5 kg","Height":"0.3 m","Next Evolution Requirements":{"Amount":25,"Name":"Eevee candies"},"Next evolution(s)":[{"Number":"134","Name":"Vaporeon"},{"Number":"135","Name":"Jolteon"},{"Number":"136","Name":"Flareon"}]},{"Number":"134","Name":"Vaporeon","Classification":"Bubble Jet Pokèmon","Type I":["Water"],"Weaknesses":["Electric","Grass"],"Fast Attack(s)":["Water Gun",""],"Weight":"29.0 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"133","Name":"Eevee"}]},{"Number":"135","Name":"Jolteon","Classification":"Lightning Pokèmon","Type I":["Electric"],"Weaknesses":["Ground"],"Fast Attack(s)":["Thunder Shock",""],"Weight":"24.5 kg","Height":"0.8 m","Previous evolution(s)":[{"Number":"133","Name":"Eevee"}]},{"Number":"136","Name":"Flareon","Classification":"Flame Pokèmon","Type I":["Fire"],"Weaknesses":["Water","Ground","Rock"],"Fast Attack(s)":["Ember",""],"Weight":"25.0 kg","Height":"0.9 m","Previous evolution(s)":[{"Number":"133","Name":"Eevee"}]},{"Number":"137","Name":"Porygon","Classification":"Virtual Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Quick Attack","Tackle"],"Weight":"36.5 kg","Height":"0.8 m"},{"Number":"138","Name":"Omanyte","Classification":"Spiral Pokèmon","Type I":["Rock"],"Type II":["Water"],"Weaknesses":["Electric","Grass","Fighting","Ground"],"Fast Attack(s)":["Water Gun",""],"Weight":"7.5 kg","Height":"0.4 m","Next Evolution Requirements":{"Amount":50,"Name":"Omanyte candies"},"Next evolution(s)":[{"Number":"139","Name":"Omastar"}]},{"Number":"139","Name":"Omastar","Classification":"Spiral Pokèmon","Type I":["Rock"],"Type II":["Water"],"Weaknesses":["Electric","Grass","Fighting","Ground"],"Fast Attack(s)":["Rock Throw","Water Gun"],"Weight":"35.0 kg","Height":"1.0 m","Previous evolution(s)":[{"Number":"138","Name":"Omanyte"}]},{"Number":"140","Name":"Kabuto","Classification":"Shellfish Pokèmon","Type I":["Rock"],"Type II":["Water"],"Weaknesses":["Electric","Grass","Fighting","Ground"],"Fast Attack(s)":["Mud Shot","Scratch"],"Weight":"11.5 kg","Height":"0.5 m","Next Evolution Requirements":{"Amount":50,"Name":"Kabuto candies"},"Next evolution(s)":[{"Number":"141","Name":"Kabutops"}]},{"Number":"141","Name":"Kabutops","Classification":"Shellfish Pokèmon","Type I":["Rock"],"Type II":["Water"],"Weaknesses":["Electric","Grass","Fighting","Ground"],"Fast Attack(s)":["Fury Cutter","Mud Shot"],"Weight":"40.5 kg","Height":"1.3 m","Previous evolution(s)":[{"Number":"140","Name":"Kabuto"}]},{"Number":"142","Name":"Aerodactyl","Classification":"Fossil Pokèmon","Type I":["Rock"],"Type II":["Flying"],"Weaknesses":["Water","Electric","Ice","Rock","Steel"],"Fast Attack(s)":["Bite","Steel Wing"],"Weight":"59.0 kg","Height":"1.8 m"},{"Number":"143","Name":"Snorlax","Classification":"Sleeping Pokèmon","Type I":["Normal"],"Weaknesses":["Fighting"],"Fast Attack(s)":["Lick","Zen Headbutt"],"Weight":"460.0 kg","Height":"2.1 m"},{"Number":"144","Name":"Articuno","Classification":"Freeze Pokèmon","Type I":["Ice"],"Type II":["Flying"],"Weaknesses":["Fire","Electric","Rock","Steel"],"Fast Attack(s)":["Unknown"],"Special Attack(s)":["Unknown"],"Weight":"55.4 kg","Height":"1.7 m"},{"Number":"145","Name":"Zapdos","Classification":"Electric Pokèmon","Type I":["Electric"],"Type II":["Flying"],"Weaknesses":["Ice","Rock"],"Fast Attack(s)":["Unknown"],"Special Attack(s)":["Unknown"],"Weight":"52.6 kg","Height":"1.6 m"},{"Number":"146","Name":"Moltres","Classification":"Flame Pokèmon","Type I":["Fire"],"Type II":["Flying"],"Weaknesses":["Water","Electric","Rock"],"Fast Attack(s)":["Unknown"],"Special Attack(s)":["Unknown"],"Weight":"60.0 kg","Height":"2.0 m"},{"Number":"147","Name":"Dratini","Classification":"Dragon Pokèmon","Type I":["Dragon"],"Weaknesses":["Ice","Dragon","Fairy"],"Fast Attack(s)":["Dragon Breath",""],"Weight":"3.3 kg","Height":"1.8 m","Next Evolution Requirements":{"Amount":25,"Name":"Dratini candies"}},{"Number":"148","Name":"Dragonair","Classification":"Dragon Pokèmon","Type I":["Dragon"],"Weaknesses":["Ice","Dragon","Fairy"],"Fast Attack(s)":["Dragon Breath",""],"Weight":"16.5 kg","Height":"4.0 m","Next Evolution Requirements":{"Amount":100,"Name":"Dratini candies"},"Next evolution(s)":[{"Number":"149","Name":"Dragonite"}]},{"Number":"149","Name":"Dragonite","Classification":"Dragon Pokèmon","Type I":["Dragon"],"Type II":["Flying"],"Weaknesses":["Ice","Rock","Dragon","Fairy"],"Fast Attack(s)":["Dragon Breath","Steel Wing"],"Weight":"210.0 kg","Height":"2.2 m","Previous evolution(s)":[{"Number":"148","Name":"Dragonair"}]},{"Number":"150","Name":"Mewtwo","Classification":"Genetic Pokèmon","Type I":["Psychic"],"Weaknesses":["Bug","Ghost","Dark"],"Fast Attack(s)":["Unknown"],"Special Attack(s)":["Unknown"],"Weight":"122.0 kg","Height":"2.0 m"},{"Number":"151","Name":"Mew","Classification":"New Species Pokèmon","Type I":["Psychic"],"Weaknesses":["Bug","Ghost","Dark"],"Fast Attack(s)":["Unknown"],"Special Attack(s)":["Unknown"],"Weight":"4.0 kg","Height":"0.4 m"}]
+[{
+	"number": 1,
+	"name": "Bulbasaur",
+	"classification": "Seed Pokemon",
+	"Type I": ["Grass"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+	"fastAttacks": ["Tackle", "Vine Whip"],
+	"weight": "6.9 kg",
+	"height": "0.7 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Bulbasaur candies"
+	},
+	"Next evolution(s)": [{
+		"number": "002",
+		"name": "Ivysaur"
+	}, {
+		"number": "003",
+		"name": "Venusaur"
+	}]
+}, {
+	"number": 2,
+	"name": "Ivysaur",
+	"classification": "Seed Pokemon",
+	"Type I": ["Grass"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+	"fastAttacks": ["Razor Leaf", "Vine Whip"],
+	"weight": "13.0 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "001",
+		"name": "Bulbasaur"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "Bulbasaur candies"
+	},
+	"Next evolution(s)": [{
+		"number": "003",
+		"name": "Venusaur"
+	}]
+}, {
+	"number": 3,
+	"name": "Venusaur",
+	"classification": "Seed Pokemon",
+	"Type I": ["Grass"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+	"fastAttacks": ["Razor Leaf", "Vine Whip"],
+	"weight": "100.0 kg",
+	"height": "2.0 m",
+	"Previous evolution(s)": [{
+		"number": "001",
+		"name": "Bulbasaur"
+	}, {
+		"number": "002",
+		"name": "Ivysaur"
+	}]
+}, {
+	"number": 4,
+	"name": "Charmander",
+	"classification": "Lizard Pokemon",
+	"Type I": ["Fire"],
+	"weaknesses": ["Water", "Ground", "Rock"],
+	"fastAttacks": ["Ember", "Scratch"],
+	"weight": "8.5 kg",
+	"height": "0.6 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Charmander candies"
+	},
+	"Next evolution(s)": [{
+		"number": "005",
+		"name": "Charmeleon"
+	}, {
+		"number": "006",
+		"name": "Charizard"
+	}]
+}, {
+	"number": 5,
+	"name": "Charmeleon",
+	"classification": "Flame Pokemon",
+	"Type I": ["Fire"],
+	"weaknesses": ["Water", "Ground", "Rock"],
+	"fastAttacks": ["Ember", ""],
+	"weight": "19.0 kg",
+	"height": "1.1 m",
+	"Previous evolution(s)": [{
+		"number": "004",
+		"name": "Charmander"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "Charmander candies"
+	},
+	"Next evolution(s)": [{
+		"number": "006",
+		"name": "Charizard"
+	}]
+}, {
+	"number": 6,
+	"name": "Charizard",
+	"classification": "Flame Pokemon",
+	"Type I": ["Fire"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Water", "Electric", "Rock"],
+	"fastAttacks": ["Ember", "Wing Attack"],
+	"weight": "90.5 kg",
+	"height": "1.7 m",
+	"Previous evolution(s)": [{
+		"number": "004",
+		"name": "Charmander"
+	}, {
+		"number": "005",
+		"name": "Charmeleon"
+	}]
+}, {
+	"number": 7,
+	"name": "Squirtle",
+	"classification": "Tiny Turtle Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Tackle", "Bubble"],
+	"weight": "9.0 kg",
+	"height": "0.5 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Squirtle candies"
+	},
+	"Next evolution(s)": [{
+		"number": "008",
+		"name": "Wartortle"
+	}, {
+		"number": "009",
+		"name": "Blastoise"
+	}]
+}, {
+	"number": 8,
+	"name": "Wartortle",
+	"classification": "Turtle Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Bite", "Water Gun"],
+	"weight": "22.5 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "007",
+		"name": "Squirtle"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "Squirtle candies"
+	},
+	"Next evolution(s)": [{
+		"number": "009",
+		"name": "Blastoise"
+	}]
+}, {
+	"number": 9,
+	"name": "Blastoise",
+	"classification": "Shellfish Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Bite", "Water Gun"],
+	"weight": "85.5 kg",
+	"height": "1.6 m",
+	"Previous evolution(s)": [{
+		"number": "007",
+		"name": "Squirtle"
+	}, {
+		"number": "008",
+		"name": "Wartortle"
+	}]
+}, {
+	"number": 10,
+	"name": "Caterpie",
+	"classification": "Worm Pokemon",
+	"Type I": ["Bug"],
+	"weaknesses": ["Fire", "Flying", "Rock"],
+	"fastAttacks": ["Bug Bite", "Tackle"],
+	"weight": "2.9 kg",
+	"height": "0.3 m",
+	"evolution": {
+		"Amount": 12,
+		"name": "Caterpie candies"
+	},
+	"Next evolution(s)": [{
+		"number": "011",
+		"name": "Metapod"
+	}, {
+		"number": "012",
+		"name": "Butterfree"
+	}]
+}, {
+	"number": 11,
+	"name": "Metapod",
+	"classification": "Cocoon Pokemon",
+	"Type I": ["Bug"],
+	"weaknesses": ["Fire", "Flying", "Rock"],
+	"fastAttacks": ["Bug Bite", "Tackle"],
+	"weight": "9.9 kg",
+	"height": "0.7 m",
+	"Previous evolution(s)": [{
+		"number": "010",
+		"name": "Caterpie"
+	}],
+	"evolution": {
+		"Amount": 50,
+		"name": "Caterpie candies"
+	},
+	"Next evolution(s)": [{
+		"number": "012",
+		"name": "Butterfree"
+	}]
+}, {
+	"number": 12,
+	"name": "Butterfree",
+	"classification": "Butterfly Pokemon",
+	"Type I": ["Bug"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Fire", "Electric", "Ice", "Flying", "Rock"],
+	"fastAttacks": ["Bug Bite", "Confusion"],
+	"weight": "32.0 kg",
+	"height": "1.1 m",
+	"Previous evolution(s)": [{
+		"number": "010",
+		"name": "Caterpie"
+	}, {
+		"number": "011",
+		"name": "Metapod"
+	}]
+}, {
+	"number": 13,
+	"name": "Weedle",
+	"classification": "Hairy Pokemon",
+	"Type I": ["Bug"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Flying", "Psychic", "Rock"],
+	"fastAttacks": ["Bug Bite", "Poison Sting"],
+	"weight": "3.2 kg",
+	"height": "0.3 m",
+	"evolution": {
+		"Amount": 12,
+		"name": "Weedle candies"
+	},
+	"Next evolution(s)": [{
+		"number": "014",
+		"name": "Kakuna"
+	}, {
+		"number": "015",
+		"name": "Beedrill"
+	}]
+}, {
+	"number": 14,
+	"name": "Kakuna",
+	"classification": "Cocoon Pokemon",
+	"Type I": ["Bug"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Flying", "Psychic", "Rock"],
+	"fastAttacks": ["Bug Bite", "Posion Sting"],
+	"weight": "10.0 kg",
+	"height": "0.6 m",
+	"Previous evolution(s)": [{
+		"number": "013",
+		"name": "Weedle"
+	}],
+	"evolution": {
+		"Amount": 50,
+		"name": "Weedle candies"
+	},
+	"Next evolution(s)": [{
+		"number": "015",
+		"name": "Beedrill"
+	}]
+}, {
+	"number": 15,
+	"name": "Beedrill",
+	"classification": "Poison Bee Pokemon",
+	"Type I": ["Bug"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Flying", "Psychic", "Rock"],
+	"fastAttacks": ["Bug Bite", "Poison Jab"],
+	"weight": "29.5 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "013",
+		"name": "Weedle"
+	}, {
+		"number": "014",
+		"name": "Kakuna"
+	}]
+}, {
+	"number": 16,
+	"name": "Pidgey",
+	"classification": "Tiny Bird Pokemon",
+	"Type I": ["Normal"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Electric", "Rock"],
+	"fastAttacks": ["Quick Attack", "Tackle"],
+	"Special Attack(s)": ["Aerial Ace", "Air Cutter", "Twister"],
+	"weight": "1.8 kg",
+	"height": "0.3 m",
+	"evolution": {
+		"Amount": 12,
+		"name": "Pidgey candies"
+	},
+	"Next evolution(s)": [{
+		"number": "017",
+		"name": "Pidgeotto"
+	}, {
+		"number": "018",
+		"name": "Pidgeot"
+	}]
+}, {
+	"number": 17,
+	"name": "Pidgeotto",
+	"classification": "Bird Pokemon",
+	"Type I": ["Normal"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Electric", "Rock"],
+	"fastAttacks": ["Steel Wing", "Wing Attack"],
+	"Special Attack(s)": ["Aerial Ace", "Air Cutter", "Twister"],
+	"weight": "30.0 kg",
+	"height": "1.1 m",
+	"Previous evolution(s)": [{
+		"number": "016",
+		"name": "Pidgey"
+	}],
+	"evolution": {
+		"Amount": 50,
+		"name": "Pidgey candies"
+	},
+	"Next evolution(s)": [{
+		"number": "018",
+		"name": "Pidgeot"
+	}]
+}, {
+	"number": 18,
+	"name": "Pidgeot",
+	"classification": "Bird Pokemon",
+	"Type I": ["Normal"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Electric", "Rock"],
+	"fastAttacks": ["Steel Wing", "Wing Attack"],
+	"Special Attack(s)": ["Hurricane"],
+	"weight": "39.5 kg",
+	"height": "1.5 m",
+	"Previous evolution(s)": [{
+		"number": "016",
+		"name": "Pidgey"
+	}, {
+		"number": "017",
+		"name": "Pidgeotto"
+	}]
+}, {
+	"number": 19,
+	"name": "Rattata",
+	"classification": "Mouse Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Quick Attack", "Tackle"],
+	"Special Attack(s)": ["Body Slam", "Dig", "Hyper Fang"],
+	"weight": "3.5 kg",
+	"height": "0.3 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Rattata candies"
+	},
+	"Next evolution(s)": [{
+		"number": "020",
+		"name": "Raticate"
+	}]
+}, {
+	"number": 20,
+	"name": "Raticate",
+	"classification": "Mouse Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Bite", "Quick Attack"],
+	"Special Attack(s)": ["Dig", "Hyper Beam", "Hyper Fang"],
+	"weight": "18.5 kg",
+	"height": "0.7 m",
+	"Previous evolution(s)": [{
+		"number": "019",
+		"name": "Rattata"
+	}]
+}, {
+	"number": 21,
+	"name": "Spearow",
+	"classification": "Tiny Bird Pokemon",
+	"Type I": ["Normal"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Electric", "Rock"],
+	"fastAttacks": ["Peck", "Quick Attack"],
+	"weight": "2.0 kg",
+	"height": "0.3 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Spearow candies"
+	},
+	"Next evolution(s)": [{
+		"number": "022",
+		"name": "Fearow"
+	}]
+}, {
+	"number": 22,
+	"name": "Fearow",
+	"classification": "Beak Pokemon",
+	"Type I": ["Normal"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Electric", "Rock"],
+	"fastAttacks": ["Peck", "Steel Wing"],
+	"weight": "38.0 kg",
+	"height": "1.2 m",
+	"Previous evolution(s)": [{
+		"number": "021",
+		"name": "Spearow"
+	}]
+}, {
+	"number": 23,
+	"name": "Ekans",
+	"classification": "Snake Pokemon",
+	"Type I": ["Poison"],
+	"weaknesses": ["Ground", "Psychic"],
+	"fastAttacks": ["Acid", "Poison Sting"],
+	"weight": "6.9 kg",
+	"height": "2.0 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Ekans candies"
+	},
+	"Next evolution(s)": [{
+		"number": "024",
+		"name": "Arbok"
+	}]
+}, {
+	"number": 24,
+	"name": "Arbok",
+	"classification": "Cobra Pokemon",
+	"Type I": ["Poison"],
+	"weaknesses": ["Ground", "Psychic"],
+	"fastAttacks": ["Acid", "Bite"],
+	"weight": "65.0 kg",
+	"height": "3.5 m",
+	"Previous evolution(s)": [{
+		"number": "023",
+		"name": "Ekans"
+	}]
+}, {
+	"number": 25,
+	"name": "Pikachu",
+	"classification": "Mouse Pokemon",
+	"Type I": ["Electric"],
+	"weaknesses": ["Ground"],
+	"fastAttacks": ["Quick Attack", "Thunder Shock"],
+	"weight": "6.0 kg",
+	"height": "0.4 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Pikachu candies"
+	},
+	"Next evolution(s)": [{
+		"number": "026",
+		"name": "Raichu"
+	}]
+}, {
+	"number": 26,
+	"name": "Raichu",
+	"classification": "Mouse Pokemon",
+	"Type I": ["Electric"],
+	"weaknesses": ["Ground"],
+	"fastAttacks": ["Thunder Shock", "Spark"],
+	"weight": "30.0 kg",
+	"height": "0.8 m",
+	"Previous evolution(s)": [{
+		"number": "025",
+		"name": "Pikachu"
+	}]
+}, {
+	"number": 27,
+	"name": "Sandshrew",
+	"classification": "Mouse Pokemon",
+	"Type I": ["Ground"],
+	"weaknesses": ["Water", "Grass", "Ice"],
+	"fastAttacks": ["Mud Shot", "Scratch"],
+	"weight": "12.0 kg",
+	"height": "0.6 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Sandshrew candies"
+	},
+	"Next evolution(s)": [{
+		"number": "028",
+		"name": "Sandslash"
+	}]
+}, {
+	"number": 28,
+	"name": "Sandslash",
+	"classification": "Mouse Pokemon",
+	"Type I": ["Ground"],
+	"weaknesses": ["Water", "Grass", "Ice"],
+	"fastAttacks": ["Metal Claw", "Mud Shot"],
+	"weight": "29.5 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "027",
+		"name": "Sandshrew"
+	}]
+}, {
+	"number": 29,
+	"name": "Nidoran F",
+	"classification": "Poison Pin Pokemon",
+	"Type I": ["Poison"],
+	"weaknesses": ["Ground", "Psychic"],
+	"fastAttacks": ["Bite", "Poison Sting"],
+	"weight": "7.0 kg",
+	"height": "0.4 m",
+	"Next evolution(s)": [{
+		"number": "030",
+		"name": "Nidorina"
+	}, {
+		"number": "031",
+		"name": "Nidoqueen"
+	}]
+}, {
+	"number": 30,
+	"name": "Nidorina",
+	"classification": "Poison Pin Pokemon",
+	"Type I": ["Poison"],
+	"weaknesses": ["Ground", "Psychic"],
+	"fastAttacks": ["Bite", "Poison Sting"],
+	"weight": "20.0 kg",
+	"height": "0.8 m",
+	"Previous evolution(s)": [{
+		"number": "029",
+		"name": "Nidoran  F"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "Nidoran F candies"
+	},
+	"Next evolution(s)": [{
+		"number": "031",
+		"name": "Nidoqueen"
+	}]
+}, {
+	"number": 31,
+	"name": "Nidoqueen",
+	"classification": "Drill Pokemon",
+	"Type I": ["Poison"],
+	"Type II": ["Ground"],
+	"weaknesses": ["Water", "Ice", "Ground", "Psychic"],
+	"fastAttacks": ["Bite", "Poison Jab"],
+	"weight": "60.0 kg",
+	"height": "1.3 m",
+	"Previous evolution(s)": [{
+		"number": "029",
+		"name": "Nidoran F"
+	}, {
+		"number": "030",
+		"name": "Nidorina"
+	}]
+}, {
+	"number": 32,
+	"name": "Nidoran M",
+	"classification": "Poison Pin Pokemon",
+	"Type I": ["Poison"],
+	"weaknesses": ["Ground", "Psychic"],
+	"fastAttacks": ["Peck", "Poison Sting"],
+	"weight": "9.0 kg",
+	"height": "0.5 m",
+	"Next evolution(s)": [{
+		"number": "033",
+		"name": "Nidorino"
+	}, {
+		"number": "034",
+		"name": "Nidoking"
+	}]
+}, {
+	"number": 33,
+	"name": "Nidorino",
+	"classification": "Poison Pin Pokemon",
+	"Type I": ["Poison"],
+	"weaknesses": ["Ground", "Psychic"],
+	"fastAttacks": ["Bite", "Poison Jab"],
+	"weight": "19.5 kg",
+	"height": "0.9 m",
+	"Previous evolution(s)": [{
+		"number": "032",
+		"name": "Nidoran M"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "NidoranM candies"
+	},
+	"Next evolution(s)": [{
+		"number": "034",
+		"name": "Nidoking"
+	}]
+}, {
+	"number": 34,
+	"name": "Nidoking",
+	"classification": "Drill Pokemon",
+	"Type I": ["Poison"],
+	"Type II": ["Ground"],
+	"weaknesses": ["Water", "Ice", "Ground", "Psychic"],
+	"fastAttacks": ["Fury Cutter", "Poison Jab"],
+	"weight": "62.0 kg",
+	"height": "1.4 m",
+	"Previous evolution(s)": [{
+		"number": "032",
+		"name": "Nidoran M"
+	}, {
+		"number": "033",
+		"name": "Nidorino"
+	}]
+}, {
+	"number": 35,
+	"name": "Clefairy",
+	"classification": "Fairy Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Pound", "Zen Headbutt"],
+	"weight": "7.5 kg",
+	"height": "0.6 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Clefairy candies"
+	},
+	"Next evolution(s)": [{
+		"number": "036",
+		"name": "Clefable"
+	}]
+}, {
+	"number": 36,
+	"name": "Clefable",
+	"classification": "Fairy Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Pound", "Zen Headbutt"],
+	"weight": "40.0 kg",
+	"height": "1.3 m",
+	"Previous evolution(s)": [{
+		"number": "035",
+		"name": "Clefairy"
+	}]
+}, {
+	"number": 37,
+	"name": "Vulpix",
+	"classification": "Fox Pokemon",
+	"Type I": ["Fire"],
+	"weaknesses": ["Water", "Ground", "Rock"],
+	"fastAttacks": ["Ember", "Quick Attack"],
+	"weight": "9.9 kg",
+	"height": "0.6 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Vulpi"
+	},
+	"Next evolution(s)": [{
+		"number": "038",
+		"name": "Ninetales"
+	}]
+}, {
+	"number": 38,
+	"name": "Ninetales",
+	"classification": "Fox Pokemon",
+	"Type I": ["Fire"],
+	"weaknesses": ["Water", "Ground", "Rock"],
+	"fastAttacks": ["Ember", "Quick Attack"],
+	"weight": "19.9 kg",
+	"height": "1.1 m",
+	"Previous evolution(s)": [{
+		"number": "037",
+		"name": "Vulpix"
+	}]
+}, {
+	"number": 39,
+	"name": "Jigglypuff",
+	"classification": "Balloon Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Feint Attack", "Pound"],
+	"weight": "5.5 kg",
+	"height": "0.5 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Jigglypuff candies"
+	},
+	"Next evolution(s)": [{
+		"number": "039",
+		"name": "Jigglypuff"
+	}]
+}, {
+	"number": 40,
+	"name": "Wigglytuff",
+	"classification": "Balloon Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Feint Attack", "Pound"],
+	"weight": "12.0 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "040",
+		"name": "Wigglytuff"
+	}]
+}, {
+	"number": 41,
+	"name": "Zubat",
+	"classification": "Bat Pokemon",
+	"Type I": ["Poison"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Electric", "Ice", "Psychic", "Rock"],
+	"fastAttacks": ["Bite", "Quick Attack"],
+	"weight": "7.5 kg",
+	"height": "0.8 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Zubat candies"
+	},
+	"Next evolution(s)": [{
+		"number": "042",
+		"name": "Golbat"
+	}]
+}, {
+	"number": 42,
+	"name": "Golbat",
+	"classification": "Bat Pokemon",
+	"Type I": ["Poison"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Electric", "Ice", "Psychic", "Rock"],
+	"fastAttacks": ["Bite", "Wing Attack"],
+	"weight": "55.0 kg",
+	"height": "1.6 m",
+	"Previous evolution(s)": [{
+		"number": "041",
+		"name": "Zubat"
+	}]
+}, {
+	"number": 43,
+	"name": "Oddish",
+	"classification": "Weed Pokemon",
+	"Type I": ["Grass"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+	"fastAttacks": ["Acid", "Razor Leaf"],
+	"weight": "5.4 kg",
+	"height": "0.5 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Oddish candies"
+	},
+	"Next evolution(s)": [{
+		"number": "044",
+		"name": "Gloom"
+	}, {
+		"number": "045",
+		"name": "Vileplume"
+	}]
+}, {
+	"number": 44,
+	"name": "Gloom",
+	"classification": "Weed Pokemon",
+	"Type I": ["Grass"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+	"fastAttacks": ["Acid", "Razor Leaf"],
+	"weight": "8.6 kg",
+	"height": "0.8 m",
+	"Previous evolution(s)": [{
+		"number": "043",
+		"name": "Oddish"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "Oddish candies"
+	},
+	"Next evolution(s)": [{
+		"number": "045",
+		"name": "Vileplume"
+	}]
+}, {
+	"number": 45,
+	"name": "Vileplume",
+	"classification": "Flower Pokemon",
+	"Type I": ["Grass"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+	"fastAttacks": ["Acid", ""],
+	"weight": "18.6 kg",
+	"height": "1.2 m",
+	"Previous evolution(s)": [{
+		"number": "043",
+		"name": "Oddish"
+	}, {
+		"number": "044",
+		"name": "Gloom"
+	}]
+}, {
+	"number": 46,
+	"name": "Paras",
+	"classification": "Mushroom Pokemon",
+	"Type I": ["Bug"],
+	"Type II": ["Grass"],
+	"weaknesses": ["Fire", "Ice", "Poison", "Flying", "Bug", "Rock"],
+	"fastAttacks": ["Bug Bite", "Scratch"],
+	"weight": "5.4 kg",
+	"height": "0.3 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Paras candies"
+	},
+	"Next evolution(s)": [{
+		"number": "047",
+		"name": "Parasect"
+	}]
+}, {
+	"number": 47,
+	"name": "Parasect",
+	"classification": "Mushroom Pokemon",
+	"Type I": ["Bug"],
+	"Type II": ["Grass"],
+	"weaknesses": ["Fire", "Ice", "Poison", "Flying", "Bug", "Rock"],
+	"fastAttacks": ["Bug Bite", "Fury Cutter"],
+	"weight": "29.5 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "046",
+		"name": "Paras"
+	}]
+}, {
+	"number": 48,
+	"name": "Venonat",
+	"classification": "Insect Pokemon",
+	"Type I": ["Bug"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Flying", "Psychic", "Rock"],
+	"fastAttacks": ["Bug Bite", "Confusion"],
+	"weight": "30.0 kg",
+	"height": "1.0 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Venonat candies"
+	},
+	"Next evolution(s)": [{
+		"number": "049",
+		"name": "Venomoth"
+	}]
+}, {
+	"number": 49,
+	"name": "Venomoth",
+	"classification": "Poison Moth Pokemon",
+	"Type I": ["Bug"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Flying", "Psychic", "Rock"],
+	"fastAttacks": ["Bug Bite", "Confusion"],
+	"weight": "12.5 kg",
+	"height": "1.5 m",
+	"Previous evolution(s)": [{
+		"number": "048",
+		"name": "Venonat"
+	}]
+}, {
+	"number": 50,
+	"name": "Diglett",
+	"classification": "Mole Pokemon",
+	"Type I": ["Ground"],
+	"weaknesses": ["Water", "Grass", "Ice"],
+	"fastAttacks": ["Mud Shot", "Scratch"],
+	"weight": "0.8 kg",
+	"height": "0.2 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Diglett candies"
+	},
+	"Next evolution(s)": [{
+		"number": "051",
+		"name": "Dugtrio"
+	}]
+}, {
+	"number": 51,
+	"name": "Dugtrio",
+	"classification": "Mole Pokemon",
+	"Type I": ["Ground"],
+	"weaknesses": ["Water", "Grass", "Ice"],
+	"fastAttacks": ["Mud Shot", "Sucker Punch"],
+	"weight": "33.3 kg",
+	"height": "0.7 m",
+	"Previous evolution(s)": [{
+		"number": "050",
+		"name": "Diglett"
+	}]
+}, {
+	"number": 52,
+	"name": "Meowth",
+	"classification": "Scratch Cat Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Bite", "Scratch"],
+	"weight": "4.2 kg",
+	"height": "0.4 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Meowth candies"
+	},
+	"Next evolution(s)": [{
+		"number": "053",
+		"name": "Persian"
+	}]
+}, {
+	"number": 53,
+	"name": "Persian",
+	"classification": "Classy Cat Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Feint Attack", "Scratch"],
+	"weight": "32.0 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "052",
+		"name": "Meowth"
+	}]
+}, {
+	"number": 54,
+	"name": "Psyduck",
+	"classification": "Duck Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Water Gun", "Zen Headbutt"],
+	"weight": "19.6 kg",
+	"height": "0.8 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Psyduck candies"
+	},
+	"Next evolution(s)": [{
+		"number": "055",
+		"name": "Golduck"
+	}]
+}, {
+	"number": 55,
+	"name": "Golduck",
+	"classification": "Duck Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Confusion", "Zen Headbutt"],
+	"weight": "76.6 kg",
+	"height": "1.7 m",
+	"Previous evolution(s)": [{
+		"number": "054",
+		"name": "Psyduck"
+	}]
+}, {
+	"number": 56,
+	"name": "Mankey",
+	"classification": "Pig Monkey Pokemon",
+	"Type I": ["Fighting"],
+	"weaknesses": ["Flying", "Psychic", "Fairy"],
+	"fastAttacks": ["Karate Chop", "Scratch"],
+	"weight": "28.0 kg",
+	"height": "0.5 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Mankey candies"
+	},
+	"Next evolution(s)": [{
+		"number": "057",
+		"name": "Primeape"
+	}]
+}, {
+	"number": 57,
+	"name": "Primeape",
+	"classification": "Pig Monkey Pokemon",
+	"Type I": ["Fighting"],
+	"weaknesses": ["Flying", "Psychic", "Fairy"],
+	"fastAttacks": ["Karate Chop", "Low Kick"],
+	"weight": "32.0 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "056",
+		"name": "Mankey"
+	}]
+}, {
+	"number": 58,
+	"name": "Growlithe",
+	"classification": "Puppy Pokemon",
+	"Type I": ["Fire"],
+	"weaknesses": ["Water", "Ground", "Rock"],
+	"fastAttacks": ["Bite", "Ember"],
+	"weight": "19.0 kg",
+	"height": "0.7 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Growlithe candies"
+	},
+	"Next evolution(s)": [{
+		"number": "059",
+		"name": "Arcanine"
+	}]
+}, {
+	"number": 59,
+	"name": "Arcanine",
+	"classification": "Legendary Pokemon",
+	"Type I": ["Fire"],
+	"weaknesses": ["Water", "Ground", "Rock"],
+	"fastAttacks": ["Bite", "Fire Fang"],
+	"weight": "155.0 kg",
+	"height": "1.9 m",
+	"Previous evolution(s)": [{
+		"number": "058",
+		"name": "Growlithe"
+	}]
+}, {
+	"number": 60,
+	"name": "Poliwag",
+	"classification": "Tadpole Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Bubble", "Mud Shot"],
+	"weight": "12.4 kg",
+	"height": "0.6 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Poliwag candies"
+	},
+	"Next evolution(s)": [{
+		"number": "061",
+		"name": "Poliwhirl"
+	}, {
+		"number": "062",
+		"name": "Poliwrath"
+	}]
+}, {
+	"number": 61,
+	"name": "Poliwhirl",
+	"classification": "Tadpole Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Bubble", "Mud Shot"],
+	"weight": "20.0 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "060",
+		"name": "Poliwag"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "Poliwag candies"
+	},
+	"Next evolution(s)": [{
+		"number": "062",
+		"name": "Poliwrath"
+	}]
+}, {
+	"number": 62,
+	"name": "Poliwrath",
+	"classification": "Tadpole Pokemon",
+	"Type I": ["Water"],
+	"Type II": ["Fighting"],
+	"weaknesses": ["Electric", "Grass", "Flying", "Psychic", "Fairy"],
+	"fastAttacks": ["Bubble", "Mud Shot"],
+	"weight": "54.0 kg",
+	"height": "1.3 m",
+	"Previous evolution(s)": [{
+		"number": "060",
+		"name": "Poliwag"
+	}, {
+		"number": "061",
+		"name": "Poliwhirl"
+	}]
+}, {
+	"number": 63,
+	"name": "Abra",
+	"classification": "Psi Pokemon",
+	"Type I": ["Psychic"],
+	"weaknesses": ["Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Zen Headbutt", ""],
+	"weight": "19.5 kg",
+	"height": "0.9 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Abra candies"
+	},
+	"Next evolution(s)": [{
+		"number": "064",
+		"name": "Kadabra"
+	}, {
+		"number": "065",
+		"name": "Alakazam"
+	}]
+}, {
+	"number": 64,
+	"name": "Kadabra",
+	"classification": "Psi Pokemon",
+	"Type I": ["Psychic"],
+	"weaknesses": ["Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Confusion", "Psycho Cut"],
+	"weight": "56.5 kg",
+	"height": "1.3 m",
+	"Previous evolution(s)": [{
+		"number": "063",
+		"name": "Abra"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "Abra candies"
+	},
+	"Next evolution(s)": [{
+		"number": "065",
+		"name": "Alakazam"
+	}]
+}, {
+	"number": 65,
+	"name": "Alakazam",
+	"classification": "Psi Pokemon",
+	"Type I": ["Psychic"],
+	"weaknesses": ["Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Confusion", "Psycho Cut"],
+	"weight": "48.0 kg",
+	"height": "1.5 m",
+	"Previous evolution(s)": [{
+		"number": "063",
+		"name": "Abra"
+	}, {
+		"number": "064",
+		"name": "Kadabra"
+	}]
+}, {
+	"number": 66,
+	"name": "Machop",
+	"classification": "Superpower Pokemon",
+	"Type I": ["Fighting"],
+	"weaknesses": ["Flying", "Psychic", "Fairy"],
+	"fastAttacks": ["Karate Chop", "Low Kick"],
+	"weight": "19.5 kg",
+	"height": "0.8 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Machop candies"
+	},
+	"Next evolution(s)": [{
+		"number": "067",
+		"name": "Machoke"
+	}, {
+		"number": "068",
+		"name": "Machamp"
+	}]
+}, {
+	"number": 67,
+	"name": "Machoke",
+	"classification": "Superpower Pokemon",
+	"Type I": ["Fighting"],
+	"weaknesses": ["Flying", "Psychic", "Fairy"],
+	"fastAttacks": ["Karate Chop", "Low Kick"],
+	"weight": "70.5 kg",
+	"height": "1.5 m",
+	"Previous evolution(s)": [{
+		"number": "066",
+		"name": "Machop"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "Machop candies"
+	},
+	"Next evolution(s)": [{
+		"number": "068",
+		"name": "Machamp"
+	}]
+}, {
+	"number": 68,
+	"name": "Machamp",
+	"classification": "Superpower Pokemon",
+	"Type I": ["Fighting"],
+	"weaknesses": ["Flying", "Psychic", "Fairy"],
+	"fastAttacks": ["Bullet Punch", "Karate Chop"],
+	"weight": "130.0 kg",
+	"height": "1.6 m",
+	"Previous evolution(s)": [{
+		"number": "066",
+		"name": "Machop"
+	}, {
+		"number": "067",
+		"name": "Machoke"
+	}]
+}, {
+	"number": 69,
+	"name": "Bellsprout",
+	"classification": "Flower Pokemon",
+	"Type I": ["Grass"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+	"fastAttacks": ["Acid", "Vine Whip"],
+	"weight": "4.0 kg",
+	"height": "0.7 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Bellsprout candies"
+	},
+	"Next evolution(s)": [{
+		"number": "070",
+		"name": "Weepinbell"
+	}, {
+		"number": "071",
+		"name": "Victreebel"
+	}]
+}, {
+	"number": 70,
+	"name": "Weepinbell",
+	"classification": "Flycatcher Pokemon",
+	"Type I": ["Grass"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+	"fastAttacks": ["Acid", "Razor Leaf"],
+	"weight": "6.4 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "069",
+		"name": "Bellsprout"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "Bellsprout candies"
+	},
+	"Next evolution(s)": [{
+		"number": "071",
+		"name": "Victreebel"
+	}]
+}, {
+	"number": 71,
+	"name": "Victreebel",
+	"classification": "Flycatcher Pokemon",
+	"Type I": ["Grass"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Fire", "Ice", "Flying", "Psychic"],
+	"fastAttacks": ["Acid", "Razor Leaf"],
+	"weight": "15.5 kg",
+	"height": "1.7 m",
+	"Previous evolution(s)": [{
+		"number": "069",
+		"name": "Bellsprout"
+	}, {
+		"number": "070",
+		"name": "Weepinbell"
+	}]
+}, {
+	"number": 72,
+	"name": "Tentacool",
+	"classification": "Jellyfish Pokemon",
+	"Type I": ["Water"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Electric", "Ground", "Psychic"],
+	"fastAttacks": ["Bubble", "Poison Sting"],
+	"weight": "45.5 kg",
+	"height": "0.9 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Tentacool candies"
+	},
+	"Next evolution(s)": [{
+		"number": "073",
+		"name": "Tentacruel"
+	}]
+}, {
+	"number": 73,
+	"name": "Tentacruel",
+	"classification": "Jellyfish Pokemon",
+	"Type I": ["Water"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Electric", "Ground", "Psychic"],
+	"fastAttacks": ["Acid", "Poison Jab"],
+	"weight": "55.0 kg",
+	"height": "1.6 m",
+	"Previous evolution(s)": [{
+		"number": "072",
+		"name": "Tentacool"
+	}]
+}, {
+	"number": 74,
+	"name": "Geodude",
+	"classification": "Rock Pokemon",
+	"Type I": ["Rock"],
+	"Type II": ["Ground"],
+	"weaknesses": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
+	"fastAttacks": ["Rock Throw", "Tackle"],
+	"weight": "20.0 kg",
+	"height": "0.4 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Geodude candies"
+	},
+	"Next evolution(s)": [{
+		"number": "075",
+		"name": "Graveler"
+	}, {
+		"number": "076",
+		"name": "Golem"
+	}]
+}, {
+	"number": 75,
+	"name": "Graveler",
+	"classification": "Rock Pokemon",
+	"Type I": ["Rock"],
+	"Type II": ["Ground"],
+	"weaknesses": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
+	"fastAttacks": ["Mud Shot", "Rock Throw"],
+	"weight": "105.0 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "074",
+		"name": "Geodude"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "Geodude candies"
+	},
+	"Next evolution(s)": [{
+		"number": "076",
+		"name": "Golem"
+	}]
+}, {
+	"number": 76,
+	"name": "Golem",
+	"classification": "Megaton Pokemon",
+	"Type I": ["Rock"],
+	"Type II": ["Ground"],
+	"weaknesses": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
+	"fastAttacks": ["Mud Shot", "Rock Throw"],
+	"weight": "300.0 kg",
+	"height": "1.4 m",
+	"Previous evolution(s)": [{
+		"number": "074",
+		"name": "Geodude"
+	}, {
+		"number": "075",
+		"name": "Graveler"
+	}]
+}, {
+	"number": 77,
+	"name": "Ponyta",
+	"classification": "Fire Horse Pokemon",
+	"Type I": ["Fire"],
+	"weaknesses": ["Water", "Ground", "Rock"],
+	"fastAttacks": ["Ember", "Tackle"],
+	"weight": "30.0 kg",
+	"height": "1.0 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Ponyta candies"
+	},
+	"Next evolution(s)": [{
+		"number": "078",
+		"name": "Rapidash"
+	}]
+}, {
+	"number": 78,
+	"name": "Rapidash",
+	"classification": "Fire Horse Pokemon",
+	"Type I": ["Fire"],
+	"weaknesses": ["Water", "Ground", "Rock"],
+	"fastAttacks": ["Ember", "Low Kick"],
+	"weight": "95.0 kg",
+	"height": "1.7 m",
+	"Previous evolution(s)": [{
+		"number": "077",
+		"name": "Ponyta"
+	}]
+}, {
+	"number": 79,
+	"name": "Slowpoke",
+	"classification": "Dopey Pokemon",
+	"Type I": ["Water"],
+	"Type II": ["Psychic"],
+	"weaknesses": ["Electric", "Grass", "Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Confusion", "Water Gun"],
+	"weight": "36.0 kg",
+	"height": "1.2 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Slowpoke candies"
+	},
+	"Next evolution(s)": [{
+		"number": "080",
+		"name": "Slowbro"
+	}]
+}, {
+	"number": 80,
+	"name": "Slowbro",
+	"classification": "Hermit Crab Pokemon",
+	"Type I": ["Water"],
+	"Type II": ["Psychic"],
+	"weaknesses": ["Electric", "Grass", "Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Confusion", "Water Gun"],
+	"weight": "78.5 kg",
+	"height": "1.6 m",
+	"Previous evolution(s)": [{
+		"number": "079",
+		"name": "Slowpoke"
+	}]
+}, {
+	"number": 81,
+	"name": "Magnemite",
+	"classification": "Magnet Pokemon",
+	"Type I": ["Electric"],
+	"Type II": ["Steel"],
+	"weaknesses": ["Fire", "Water", "Ground"],
+	"fastAttacks": ["Spark", "Thunder Shock"],
+	"weight": "6.0 kg",
+	"height": "0.3 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Magnemite candies"
+	},
+	"Next evolution(s)": [{
+		"number": "082",
+		"name": "Magneton"
+	}]
+}, {
+	"number": 82,
+	"name": "Magneton",
+	"classification": "Magnet Pokemon",
+	"Type I": ["Electric"],
+	"Type II": ["Steel"],
+	"weaknesses": ["Fire", "Water", "Ground"],
+	"fastAttacks": ["Spark", "Thunder Shock"],
+	"weight": "60.0 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "081",
+		"name": "Magnemite"
+	}]
+}, {
+	"number": 83,
+	"name": "Farfetch'd",
+	"classification": "Wild Duck Pokemon",
+	"Type I": ["Normal"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Electric", "Rock"],
+	"fastAttacks": ["Unknown"],
+	"Special Attack(s)": ["Unknown"],
+	"weight": "15.0 kg",
+	"height": "0.8 m"
+}, {
+	"number": 84,
+	"name": "Doduo",
+	"classification": "Twin Bird Pokemon",
+	"Type I": ["Normal"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Electric", "Rock"],
+	"fastAttacks": ["Peck", "Quick Attack"],
+	"weight": "39.2 kg",
+	"height": "1.4 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Doduo candies"
+	},
+	"Next evolution(s)": [{
+		"number": "085",
+		"name": "Dodrio"
+	}]
+}, {
+	"number": 85,
+	"name": "Dodrio",
+	"classification": "Triple Bird Pokemon",
+	"Type I": ["Normal"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Electric", "Rock"],
+	"fastAttacks": ["Feint Attack", "Steel Wing"],
+	"weight": "85.2 kg",
+	"height": "1.8 m",
+	"Previous evolution(s)": [{
+		"number": "084",
+		"name": "Doduo"
+	}]
+}, {
+	"number": 86,
+	"name": "Seel",
+	"classification": "Sea Lion Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Ice Shard", "Water Gun"],
+	"weight": "90.0 kg",
+	"height": "1.1 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Seel candies"
+	},
+	"Next evolution(s)": [{
+		"number": "087",
+		"name": "Dewgong"
+	}]
+}, {
+	"number": 87,
+	"name": "Dewgong",
+	"classification": "Sea Lion Pokemon",
+	"Type I": ["Water"],
+	"Type II": ["Ice"],
+	"weaknesses": ["Electric", "Grass", "Fighting", "Rock"],
+	"fastAttacks": ["Frost Breath", "Ice Shard"],
+	"weight": "120.0 kg",
+	"height": "1.7 m",
+	"Previous evolution(s)": [{
+		"number": "086",
+		"name": "Seel"
+	}]
+}, {
+	"number": 88,
+	"name": "Grimer",
+	"classification": "Sludge Pokemon",
+	"Type I": ["Poison"],
+	"weaknesses": ["Ground", "Psychic"],
+	"fastAttacks": ["Acid", "Mud Slap"],
+	"weight": "30.0 kg",
+	"height": "0.9 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Grimer candies"
+	},
+	"Next evolution(s)": [{
+		"number": "089",
+		"name": "Muk"
+	}]
+}, {
+	"number": 89,
+	"name": "Muk",
+	"classification": "Sludge Pokemon",
+	"Type I": ["Poison"],
+	"weaknesses": ["Ground", "Psychic"],
+	"fastAttacks": ["Poison Jab", ""],
+	"weight": "30.0 kg",
+	"height": "1.2 m",
+	"Previous evolution(s)": [{
+		"number": "088",
+		"name": "Grimer"
+	}]
+}, {
+	"number": 90,
+	"name": "Shellder",
+	"classification": "Bivalve Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Ice Shard", "Tackle"],
+	"weight": "4.0 kg",
+	"height": "0.3 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Shellder candies"
+	},
+	"Next evolution(s)": [{
+		"number": "091",
+		"name": "Cloyster"
+	}]
+}, {
+	"number": 91,
+	"name": "Cloyster",
+	"classification": "Bivalve Pokemon",
+	"Type I": ["Water"],
+	"Type II": ["Ice"],
+	"weaknesses": ["Electric", "Grass", "Fighting", "Rock"],
+	"fastAttacks": ["Frost Breath", "Ice Shard"],
+	"weight": "132.5 kg",
+	"height": "1.5 m",
+	"Previous evolution(s)": [{
+		"number": "090",
+		"name": "Shellder"
+	}]
+}, {
+	"number": 92,
+	"name": "Gastly",
+	"classification": "Gas Pokemon",
+	"Type I": ["Ghost"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Ground", "Psychic", "Ghost", "Dark"],
+	"fastAttacks": ["Lick", "Sucker Punch"],
+	"weight": "0.1 kg",
+	"height": "1.3 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Gastly candies"
+	},
+	"Next evolution(s)": [{
+		"number": "093",
+		"name": "Haunter"
+	}, {
+		"number": "094",
+		"name": "Gengar"
+	}]
+}, {
+	"number": 93,
+	"name": "Haunter",
+	"classification": "Gas Pokemon",
+	"Type I": ["Ghost"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Ground", "Psychic", "Ghost", "Dark"],
+	"fastAttacks": ["Lick", "Shadow Claw"],
+	"weight": "0.1 kg",
+	"height": "1.6 m",
+	"Previous evolution(s)": [{
+		"number": "092",
+		"name": "Gastly"
+	}],
+	"evolution": {
+		"Amount": 100,
+		"name": "Gastly candies"
+	},
+	"Next evolution(s)": [{
+		"number": "094",
+		"name": "Gengar"
+	}]
+}, {
+	"number": 94,
+	"name": "Gengar",
+	"classification": "Shadow Pokemon",
+	"Type I": ["Ghost"],
+	"Type II": ["Poison"],
+	"weaknesses": ["Ground", "Psychic", "Ghost", "Dark"],
+	"fastAttacks": ["Shadow Claw", "Sucker Punch"],
+	"weight": "40.5 kg",
+	"height": "1.5 m",
+	"Previous evolution(s)": [{
+		"number": "092",
+		"name": "Gastly"
+	}, {
+		"number": "093",
+		"name": "Haunter"
+	}]
+}, {
+	"number": 95,
+	"name": "Onix",
+	"classification": "Rock Snake Pokemon",
+	"Type I": ["Rock"],
+	"Type II": ["Ground"],
+	"weaknesses": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
+	"fastAttacks": ["Rock Throw", "Tackle"],
+	"weight": "210.0 kg",
+	"height": "8.8 m"
+}, {
+	"number": 96,
+	"name": "Drowzee",
+	"classification": "Hypnosis Pokemon",
+	"Type I": ["Psychic"],
+	"weaknesses": ["Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Confusion", "Pound"],
+	"weight": "32.4 kg",
+	"height": "1.0 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Drowzee candies"
+	},
+	"Next evolution(s)": [{
+		"number": "097",
+		"name": "Hypno"
+	}]
+}, {
+	"number": 97,
+	"name": "Hypno",
+	"classification": "Hypnosis Pokemon",
+	"Type I": ["Psychic"],
+	"weaknesses": ["Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Confusion", "Zen Headbutt"],
+	"weight": "75.6 kg",
+	"height": "1.6 m",
+	"Previous evolution(s)": [{
+		"number": "096",
+		"name": "Drowzee"
+	}]
+}, {
+	"number": 98,
+	"name": "Krabby",
+	"classification": "River Crab Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Bubble", "Mud Shot"],
+	"weight": "6.5 kg",
+	"height": "0.4 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Krabby candies"
+	},
+	"Next evolution(s)": [{
+		"number": "099",
+		"name": "Kingler"
+	}]
+}, {
+	"number": 99,
+	"name": "Kingler",
+	"classification": "Pincer Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Metal Claw", "Mud Shot"],
+	"weight": "60.0 kg",
+	"height": "1.3 m",
+	"Previous evolution(s)": [{
+		"number": "098",
+		"name": "Krabby"
+	}]
+}, {
+	"number": 100,
+	"name": "Voltorb",
+	"classification": "Ball Pokemon",
+	"Type I": ["Electric"],
+	"weaknesses": ["Ground"],
+	"fastAttacks": ["Spark", "Tackle"],
+	"weight": "10.4 kg",
+	"height": "0.5 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Voltorb candies"
+	},
+	"Next evolution(s)": [{
+		"number": "101",
+		"name": "Electrode"
+	}]
+}, {
+	"number": 101,
+	"name": "Electrode",
+	"classification": "Ball Pokemon",
+	"Type I": ["Electric"],
+	"weaknesses": ["Ground"],
+	"fastAttacks": ["Spark", ""],
+	"weight": "66.6 kg",
+	"height": "1.2 m",
+	"Previous evolution(s)": [{
+		"number": "100",
+		"name": "Voltorb"
+	}]
+}, {
+	"number": 102,
+	"name": "Exeggcute",
+	"classification": "Egg Pokemon",
+	"Type I": ["Grass"],
+	"Type II": ["Psychic"],
+	"weaknesses": ["Fire", "Ice", "Poison", "Flying", "Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Confusion", ""],
+	"weight": "2.5 kg",
+	"height": "0.4 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "E"
+	},
+	"Next evolution(s)": [{
+		"number": "103",
+		"name": "Exeggutor"
+	}]
+}, {
+	"number": 103,
+	"name": "Exeggutor",
+	"classification": "Coconut Pokemon",
+	"Type I": ["Grass"],
+	"Type II": ["Psychic"],
+	"weaknesses": ["Fire", "Ice", "Poison", "Flying", "Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Confusion", "Zen Headbutt"],
+	"weight": "120.0 kg",
+	"height": "2.0 m",
+	"Previous evolution(s)": [{
+		"number": "102",
+		"name": "Exeggcute"
+	}]
+}, {
+	"number": 104,
+	"name": "Cubone",
+	"classification": "Lonely Pokemon",
+	"Type I": ["Ground"],
+	"weaknesses": ["Water", "Grass", "Ice"],
+	"fastAttacks": ["Mud Slap", "Rock Smash"],
+	"weight": "6.5 kg",
+	"height": "0.4 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Cubone candies"
+	},
+	"Next evolution(s)": [{
+		"number": "105",
+		"name": "Marowak"
+	}]
+}, {
+	"number": 105,
+	"name": "Marowak",
+	"classification": "Bone Keeper Pokemon",
+	"Type I": ["Ground"],
+	"weaknesses": ["Water", "Grass", "Ice"],
+	"fastAttacks": ["Mud Slap", "Rock Smash"],
+	"weight": "45.0 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "104",
+		"name": "Cubone"
+	}]
+}, {
+	"number": 106,
+	"name": "Hitmonlee",
+	"classification": "Kicking Pokemon",
+	"Type I": ["Fighting"],
+	"weaknesses": ["Flying", "Psychic", "Fairy"],
+	"fastAttacks": ["Low Kick", "Rock Smash"],
+	"weight": "49.8 kg",
+	"height": "1.5 m",
+	"Next evolution(s)": [{
+		"number": "107",
+		"name": "Hitmonchan"
+	}]
+}, {
+	"number": 107,
+	"name": "Hitmonchan",
+	"classification": "Punching Pokemon",
+	"Type I": ["Fighting"],
+	"weaknesses": ["Flying", "Psychic", "Fairy"],
+	"fastAttacks": ["Bullet Punch", "Rock Smash"],
+	"weight": "50.2 kg",
+	"height": "1.4 m",
+	"Previous evolution(s)": [{
+		"number": "106",
+		"name": "Hitmonlee"
+	}]
+}, {
+	"number": 108,
+	"name": "Lickitung",
+	"classification": "Licking Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Lick", "Zen Headbutt"],
+	"weight": "65.5 kg",
+	"height": "1.2 m"
+}, {
+	"number": 109,
+	"name": "Koffing",
+	"classification": "Poison Gas Pokemon",
+	"Type I": ["Poison"],
+	"weaknesses": ["Ground", "Psychic"],
+	"fastAttacks": ["Acid", "Tackle"],
+	"weight": "1.0 kg",
+	"height": "0.6 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Koffing candies"
+	},
+	"Next evolution(s)": [{
+		"number": "110",
+		"name": "Weezing"
+	}]
+}, {
+	"number": 110,
+	"name": "Weezing",
+	"classification": "Poison Gas Pokemon",
+	"Type I": ["Poison"],
+	"weaknesses": ["Ground", "Psychic"],
+	"fastAttacks": ["Acid", "Tackle"],
+	"weight": "9.5 kg",
+	"height": "1.2 m",
+	"Previous evolution(s)": [{
+		"number": "109",
+		"name": "Koffing"
+	}]
+}, {
+	"number": 111,
+	"name": "Rhyhorn",
+	"classification": "Spikes Pokemon",
+	"Type I": ["Ground"],
+	"Type II": ["Rock"],
+	"weaknesses": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
+	"fastAttacks": ["Mud Slap", "Rock Smash"],
+	"weight": "115.0 kg",
+	"height": "1.0 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Rhyhorn candies"
+	},
+	"Next evolution(s)": [{
+		"number": "112",
+		"name": "Rhydon"
+	}]
+}, {
+	"number": 112,
+	"name": "Rhydon",
+	"classification": "Drill Pokemon",
+	"Type I": ["Ground"],
+	"Type II": ["Rock"],
+	"weaknesses": ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
+	"fastAttacks": ["Mud Slap", "Rock Smash"],
+	"weight": "120.0 kg",
+	"height": "1.9 m",
+	"Previous evolution(s)": [{
+		"number": "111",
+		"name": "Rhyhorn"
+	}]
+}, {
+	"number": 113,
+	"name": "Chansey",
+	"classification": "Egg Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Pound", "Zen Headbutt"],
+	"weight": "34.6 kg",
+	"height": "1.1 m"
+}, {
+	"number": 114,
+	"name": "Tangela",
+	"classification": "Vine Pokemon",
+	"Type I": ["Grass"],
+	"weaknesses": ["Fire", "Ice", "Poison", "Flying", "Bug"],
+	"fastAttacks": ["Vine Whip", ""],
+	"weight": "35.0 kg",
+	"height": "1.0 m"
+}, {
+	"number": 115,
+	"name": "Kangaskhan",
+	"classification": "Parent Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Low Kick", ""],
+	"weight": "80.0 kg",
+	"height": "2.2 m"
+}, {
+	"number": 116,
+	"name": "Horsea",
+	"classification": "Dragon Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Bubble", "Water Gun"],
+	"weight": "8.0 kg",
+	"height": "0.4 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Horsea candies"
+	},
+	"Next evolution(s)": [{
+		"number": "117",
+		"name": "Seadra"
+	}]
+}, {
+	"number": 117,
+	"name": "Seadra",
+	"classification": "Dragon Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Dragon Breath", "Water Gun"],
+	"weight": "25.0 kg",
+	"height": "1.2 m",
+	"Previous evolution(s)": [{
+		"number": "116",
+		"name": "Horsea"
+	}]
+}, {
+	"number": 118,
+	"name": "Goldeen",
+	"classification": "Goldfish Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Peck", "Mud Shot"],
+	"weight": "15.0 kg",
+	"height": "0.6 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Goldeen candies"
+	},
+	"Next evolution(s)": [{
+		"number": "119",
+		"name": "Seaking"
+	}]
+}, {
+	"number": 119,
+	"name": "Seaking",
+	"classification": "Goldfish Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Peck", "Poison Jab"],
+	"weight": "39.0 kg",
+	"height": "1.3 m",
+	"Previous evolution(s)": [{
+		"number": "118",
+		"name": "Goldeen"
+	}]
+}, {
+	"number": 120,
+	"name": "Staryu",
+	"classification": "Starshape Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Quick Attack", "Water Gun"],
+	"weight": "34.5 kg",
+	"height": "0.8 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Staryu candies"
+	},
+	"Next evolution(s)": [{
+		"number": "120",
+		"name": "Staryu"
+	}]
+}, {
+	"number": 121,
+	"name": "Starmie",
+	"classification": "Mysterious Pokemon",
+	"Type I": ["Water"],
+	"Type II": ["Psychic"],
+	"weaknesses": ["Electric", "Grass", "Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Quick Attack", "Water Gun"],
+	"weight": "80.0 kg",
+	"height": "1.1 m",
+	"Previous evolution(s)": [{
+		"number": "121",
+		"name": "Starmie"
+	}]
+}, {
+	"number": 122,
+	"name": "Mr. Mime",
+	"classification": "Barrier Pokemon",
+	"Type I": ["Psychic"],
+	"weaknesses": ["Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Confusion", "Zen Headbutt"],
+	"weight": "54.5 kg",
+	"height": "1.3 m"
+}, {
+	"number": 123,
+	"name": "Scyther",
+	"classification": "Mantis Pokemon",
+	"Type I": ["Bug"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Fire", "Electric", "Ice", "Flying", "Rock"],
+	"fastAttacks": ["Fury Cutter", "Steel Wing"],
+	"weight": "56.0 kg",
+	"height": "1.5 m"
+}, {
+	"number": 124,
+	"name": "Jynx",
+	"classification": "Humanshape Pokemon",
+	"Type I": ["Ice"],
+	"Type II": ["Psychic"],
+	"weaknesses": ["Fire", "Bug", "Rock", "Ghost", "Dark", "Steel"],
+	"fastAttacks": ["Frost Breath", "Pound"],
+	"weight": "40.6 kg",
+	"height": "1.4 m"
+}, {
+	"number": 125,
+	"name": "Electabuzz",
+	"classification": "Electric Pokemon",
+	"Type I": ["Electric"],
+	"weaknesses": ["Ground"],
+	"fastAttacks": ["Low Kick", "Thunder Shock"],
+	"weight": "30.0 kg",
+	"height": "1.1 m"
+}, {
+	"number": 126,
+	"name": "Magmar",
+	"classification": "Spitfire Pokemon",
+	"Type I": ["Fire"],
+	"weaknesses": ["Water", "Ground", "Rock"],
+	"fastAttacks": ["Ember", "Karate Chop"],
+	"weight": "44.5 kg",
+	"height": "1.3 m"
+}, {
+	"number": 127,
+	"name": "Pinsir",
+	"classification": "Stagbeetle Pokemon",
+	"Type I": ["Bug"],
+	"weaknesses": ["Fire", "Flying", "Rock"],
+	"fastAttacks": ["Fury Cutter", "Rock Smash"],
+	"weight": "55.0 kg",
+	"height": "1.5 m"
+}, {
+	"number": 128,
+	"name": "Tauros",
+	"classification": "Wild Bull Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Tackle", "Zen Headbutt"],
+	"weight": "88.4 kg",
+	"height": "1.4 m"
+}, {
+	"number": 129,
+	"name": "Magikarp",
+	"classification": "Fish Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Splash", ""],
+	"weight": "10.0 kg",
+	"height": "0.9 m",
+	"evolution": {
+		"Amount": 400,
+		"name": "Magikarp candies"
+	},
+	"Next evolution(s)": [{
+		"number": "130",
+		"name": "Gyarados"
+	}]
+}, {
+	"number": 130,
+	"name": "Gyarados",
+	"classification": "Atrocious Pokemon",
+	"Type I": ["Water"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Electric", "Rock"],
+	"fastAttacks": ["Bite", "Dragon Breath"],
+	"weight": "235.0 kg",
+	"height": "6.5 m",
+	"Previous evolution(s)": [{
+		"number": "129",
+		"name": "Magikarp"
+	}]
+}, {
+	"number": 131,
+	"name": "Lapras",
+	"classification": "Transport Pokemon",
+	"Type I": ["Water"],
+	"Type II": ["Ice"],
+	"weaknesses": ["Electric", "Grass", "Fighting", "Rock"],
+	"fastAttacks": ["Frost Breath", "Ice Shard"],
+	"weight": "220.0 kg",
+	"height": "2.5 m"
+}, {
+	"number": 132,
+	"name": "Ditto",
+	"classification": "Transform Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Unknown"],
+	"Special Attack(s)": ["Unknown"],
+	"weight": "4.0 kg",
+	"height": "0.3 m"
+}, {
+	"number": 133,
+	"name": "Eevee",
+	"classification": "",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Quick Attack", "Tackle"],
+	"weight": "6.5 kg",
+	"height": "0.3 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Eevee candies"
+	},
+	"Next evolution(s)": [{
+		"number": "134",
+		"name": "Vaporeon"
+	}, {
+		"number": "135",
+		"name": "Jolteon"
+	}, {
+		"number": "136",
+		"name": "Flareon"
+	}]
+}, {
+	"number": 134,
+	"name": "Vaporeon",
+	"classification": "Bubble Jet Pokemon",
+	"Type I": ["Water"],
+	"weaknesses": ["Electric", "Grass"],
+	"fastAttacks": ["Water Gun", ""],
+	"weight": "29.0 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "133",
+		"name": "Eevee"
+	}]
+}, {
+	"number": 135,
+	"name": "Jolteon",
+	"classification": "Lightning Pokemon",
+	"Type I": ["Electric"],
+	"weaknesses": ["Ground"],
+	"fastAttacks": ["Thunder Shock", ""],
+	"weight": "24.5 kg",
+	"height": "0.8 m",
+	"Previous evolution(s)": [{
+		"number": "133",
+		"name": "Eevee"
+	}]
+}, {
+	"number": 136,
+	"name": "Flareon",
+	"classification": "Flame Pokemon",
+	"Type I": ["Fire"],
+	"weaknesses": ["Water", "Ground", "Rock"],
+	"fastAttacks": ["Ember", ""],
+	"weight": "25.0 kg",
+	"height": "0.9 m",
+	"Previous evolution(s)": [{
+		"number": "133",
+		"name": "Eevee"
+	}]
+}, {
+	"number": 137,
+	"name": "Porygon",
+	"classification": "Virtual Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Quick Attack", "Tackle"],
+	"weight": "36.5 kg",
+	"height": "0.8 m"
+}, {
+	"number": 138,
+	"name": "Omanyte",
+	"classification": "Spiral Pokemon",
+	"Type I": ["Rock"],
+	"Type II": ["Water"],
+	"weaknesses": ["Electric", "Grass", "Fighting", "Ground"],
+	"fastAttacks": ["Water Gun", ""],
+	"weight": "7.5 kg",
+	"height": "0.4 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Omanyte candies"
+	},
+	"Next evolution(s)": [{
+		"number": "139",
+		"name": "Omastar"
+	}]
+}, {
+	"number": 139,
+	"name": "Omastar",
+	"classification": "Spiral Pokemon",
+	"Type I": ["Rock"],
+	"Type II": ["Water"],
+	"weaknesses": ["Electric", "Grass", "Fighting", "Ground"],
+	"fastAttacks": ["Rock Throw", "Water Gun"],
+	"weight": "35.0 kg",
+	"height": "1.0 m",
+	"Previous evolution(s)": [{
+		"number": "138",
+		"name": "Omanyte"
+	}]
+}, {
+	"number": 140,
+	"name": "Kabuto",
+	"classification": "Shellfish Pokemon",
+	"Type I": ["Rock"],
+	"Type II": ["Water"],
+	"weaknesses": ["Electric", "Grass", "Fighting", "Ground"],
+	"fastAttacks": ["Mud Shot", "Scratch"],
+	"weight": "11.5 kg",
+	"height": "0.5 m",
+	"evolution": {
+		"Amount": 50,
+		"name": "Kabuto candies"
+	},
+	"Next evolution(s)": [{
+		"number": "141",
+		"name": "Kabutops"
+	}]
+}, {
+	"number": 141,
+	"name": "Kabutops",
+	"classification": "Shellfish Pokemon",
+	"Type I": ["Rock"],
+	"Type II": ["Water"],
+	"weaknesses": ["Electric", "Grass", "Fighting", "Ground"],
+	"fastAttacks": ["Fury Cutter", "Mud Shot"],
+	"weight": "40.5 kg",
+	"height": "1.3 m",
+	"Previous evolution(s)": [{
+		"number": "140",
+		"name": "Kabuto"
+	}]
+}, {
+	"number": 142,
+	"name": "Aerodactyl",
+	"classification": "Fossil Pokemon",
+	"Type I": ["Rock"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Water", "Electric", "Ice", "Rock", "Steel"],
+	"fastAttacks": ["Bite", "Steel Wing"],
+	"weight": "59.0 kg",
+	"height": "1.8 m"
+}, {
+	"number": 143,
+	"name": "Snorlax",
+	"classification": "Sleeping Pokemon",
+	"Type I": ["Normal"],
+	"weaknesses": ["Fighting"],
+	"fastAttacks": ["Lick", "Zen Headbutt"],
+	"weight": "460.0 kg",
+	"height": "2.1 m"
+}, {
+	"number": 144,
+	"name": "Articuno",
+	"classification": "Freeze Pokemon",
+	"Type I": ["Ice"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Fire", "Electric", "Rock", "Steel"],
+	"fastAttacks": ["Unknown"],
+	"Special Attack(s)": ["Unknown"],
+	"weight": "55.4 kg",
+	"height": "1.7 m"
+}, {
+	"number": 145,
+	"name": "Zapdos",
+	"classification": "Electric Pokemon",
+	"Type I": ["Electric"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Ice", "Rock"],
+	"fastAttacks": ["Unknown"],
+	"Special Attack(s)": ["Unknown"],
+	"weight": "52.6 kg",
+	"height": "1.6 m"
+}, {
+	"number": 146,
+	"name": "Moltres",
+	"classification": "Flame Pokemon",
+	"Type I": ["Fire"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Water", "Electric", "Rock"],
+	"fastAttacks": ["Unknown"],
+	"Special Attack(s)": ["Unknown"],
+	"weight": "60.0 kg",
+	"height": "2.0 m"
+}, {
+	"number": 147,
+	"name": "Dratini",
+	"classification": "Dragon Pokemon",
+	"Type I": ["Dragon"],
+	"weaknesses": ["Ice", "Dragon", "Fairy"],
+	"fastAttacks": ["Dragon Breath", ""],
+	"weight": "3.3 kg",
+	"height": "1.8 m",
+	"evolution": {
+		"Amount": 25,
+		"name": "Dratini candies"
+	}
+}, {
+	"number": 148,
+	"name": "Dragonair",
+	"classification": "Dragon Pokemon",
+	"Type I": ["Dragon"],
+	"weaknesses": ["Ice", "Dragon", "Fairy"],
+	"fastAttacks": ["Dragon Breath", ""],
+	"weight": "16.5 kg",
+	"height": "4.0 m",
+	"evolution": {
+		"Amount": 100,
+		"name": "Dratini candies"
+	},
+	"Next evolution(s)": [{
+		"number": "149",
+		"name": "Dragonite"
+	}]
+}, {
+	"number": 149,
+	"name": "Dragonite",
+	"classification": "Dragon Pokemon",
+	"Type I": ["Dragon"],
+	"Type II": ["Flying"],
+	"weaknesses": ["Ice", "Rock", "Dragon", "Fairy"],
+	"fastAttacks": ["Dragon Breath", "Steel Wing"],
+	"weight": "210.0 kg",
+	"height": "2.2 m",
+	"Previous evolution(s)": [{
+		"number": "148",
+		"name": "Dragonair"
+	}]
+}, {
+	"number": 150,
+	"name": "Mewtwo",
+	"classification": "Genetic Pokemon",
+	"Type I": ["Psychic"],
+	"weaknesses": ["Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Unknown"],
+	"Special Attack(s)": ["Unknown"],
+	"weight": "122.0 kg",
+	"height": "2.0 m"
+}, {
+	"number": 151,
+	"name": "Mew",
+	"classification": "New Species Pokemon",
+	"Type I": ["Psychic"],
+	"weaknesses": ["Bug", "Ghost", "Dark"],
+	"fastAttacks": ["Unknown"],
+	"Special Attack(s)": ["Unknown"],
+	"weight": "4.0 kg",
+	"height": "0.4 m"
+}]

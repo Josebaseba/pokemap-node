@@ -10,6 +10,17 @@ module.exports = {
       if(err) return res.serverError(err);
       return res.send(200, sails.connectedUsers);
     });
+  },
+
+  pokedexAlert: function(req, res){
+    var pokedexAlert = req.param('pokedexAlert');
+    pokedexAlert = pokedexAlert === 'true' ? true : false;
+    User
+      .update({email: sails.config.admin.email}, {pokedexAlert: pokedexAlert})
+      .exec(function(err){
+        if(err) return res.negotiate(err);
+        return res.ok();
+      });
   }
 
 };

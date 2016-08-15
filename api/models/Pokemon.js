@@ -9,7 +9,13 @@ module.exports = {
 
   schema: false,
 
-  attributes: {
+  attributes: {},
 
+  afterCreate: function(values, next){
+    var num = parseInt(values.num);
+    if(num && sails.config.pokedex[num]){
+      MailService.sendPokedexAlert(num, values.expiration, values.createdAt);
+    }
+    return next();
   }
 };

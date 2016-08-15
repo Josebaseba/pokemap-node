@@ -48,6 +48,8 @@ module.exports.routes = {
 
   'GET /admin': 'AdminController.adminView',
 
-  'GET /connections': 'AdminController.connectedUsers'
+  'GET /connections': 'AdminController.connectedUsers',
+
+  'GET /pokedex/:pokedexAlert': 'AdminController.pokedexAlert'
 
 };

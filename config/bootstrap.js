@@ -9,7 +9,7 @@
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.bootstrap.html
  */
 
-module.exports.bootstrap = function(cb) {
+module.exports.bootstrap = function(done) {
 
   // CHECK IF WE SHOULD CREATE THE ADMIN
   User.count({admin: true}).exec(function(err, count){
@@ -43,6 +43,19 @@ module.exports.bootstrap = function(cb) {
 
   WildPokemon.init();
 
-  User.update({status: 'online'}, {status: 'offline'}).exec(cb);
+  User.update({status: 'online'}, {status: 'offline'}).exec(function(){});
+
+  // CREATE / UPDATE POKEDEX
+
+  var pokedex = JSON.parse(require('fs').readFileSync('./api/pokemons.json', 'utf8'));
+
+  async.eachLimit(pokedex, 50, function(pokemon, next){
+    Pokedex.count({number: pokemon.number}).exec(function(err, pokemonExist){
+      if(err) return next(err);
+      if(pokemonExist) return next();
+      pokemon.img = sails.config.pokedex.imageURL.replace(/\[.*?\]/g, pokemon.number);
+      Pokedex.create(pokemon).exec(next);
+    });
+  }, done);
 
 };

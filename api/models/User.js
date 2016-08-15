@@ -39,6 +39,11 @@ module.exports = {
       type: 'string'
     },
 
+    pokedexAlert: {
+      type: 'boolean',
+      defaultsTo: false
+    },
+
     status: {
       type: 'string',
       defaultsTo: 'offline',
