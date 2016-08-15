@@ -277,9 +277,13 @@ NODE_ENV=production forever start app.js
 
 In production launch it always with the NODE_ENV=production flag!
 
-### TO-DO
+### Email alert
 
-Be able to choose which pokemon do you want, and if the pokemon appears in your town you'll get an email alert with the location and the time that you have to get it.
+<b>DONE</b> (Just for the admin): Be able to choose which pokemon do you want, and if the pokemon appears in your town you'll get an email alert with the location and the time that you have to get it.
+
+Go to: /pokedex/true url to activate it or to /pokedex/false url to deactivate the alerts.
+
+In the `config/pokedex.js` file edit which pokemon are you looking for (by number).
 
 ### Thanks
 
