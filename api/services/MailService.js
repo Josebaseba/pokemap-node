@@ -94,12 +94,13 @@ module.exports = {
         var helper = require('sendgrid').mail;
         var from_email = new helper.Email('pokemap@josebaseba.com');
         var to_email = new helper.Email(sails.config.admin.email);
-        var subject = pokemon.name + ' appeared!!';
+        var expiration = parseDate(expiration);
+        var subject = pokemon.name + ' - ' + expiration;
         var template = 'pokemonFound';
         var data = {
           pokemon   : pokemon.name,
           image     : pokemon.img,
-          expiration: parseDate(expiration),
+          expiration: expiration,
           createdAt : parseDate(createdAt)
         };
         compileTemplate(template, data, function emailHTMLParsed(err, html){

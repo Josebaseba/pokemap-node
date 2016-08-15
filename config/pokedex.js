@@ -10,7 +10,7 @@ module.exports.pokedex = {
   6: true,
   7: false,
   8: false,
-  9: false,
+  9: true,
   10: false,
   11: false,
   12: false,
