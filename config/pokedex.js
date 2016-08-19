@@ -126,7 +126,7 @@ module.exports.pokedex = {
   122: false,
   123: false,
   124: false,
-  125: true,
+  125: false,
   126: false,
   127: false,
   128: true,
